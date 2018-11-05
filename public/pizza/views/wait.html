@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				background-image: url(../images/06_02.png);
+				background-size:cover;
+				box-sizing: border-box;
+				overflow: hidden;
+				padding: 0.32rem;
+
+			}
+			a {
+				transform: translateX(100%);
+			}
+			.logo{
+				width: 2.54rem;
+				height: 0.72rem;
+			}
+			.wait{
+				text-align: center;
+			}
+			.wait img{
+				width: 5.1rem;
+				height:1.16rem;
+				margin-top: 3.75rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="logo">
+				<img src="../images/logo.png"  class="logo"/>
+			</div>
+			<div class="wait">
+			<img src="../images/wait.png" />
+			</div>
+			</div>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.js"></script>
+		<script type="text/javascript">
+//            var uid = chuanzhi().uid;
+//            var room_id = chuanzhi().room_id;
+//
+//            ws = new WebSocket("ws://127.0.0.1:7272");
+//            // 服务端主动推送消息时会触发这里的onmessage
+//            ws.onmessage = function(e) {
+//                console.log("onmessage_begin");
+//                // json数据转换成js对象
+//                var data = JSON.parse(e.data);
+//                var type = data.type || '';
+//                switch(type) {
+//                    case 'ping':
+//                        ws.send('{"type":"pong"}');
+//                        console.log("onmessage_ping");
+//                        console.log(data.msg);
+//                        break;
+//                    // Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+//                    case 'init':
+//                        console.log("onmessage_init");
+//                        console.log(data.client_id);
+//                        // break;
+//                        // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+//                        _post('/push/push/bind', {
+//                            client_id: data.client_id,
+//                            room_id: room_id,
+//                            uid: uid
+//                        }, function(data) {
+////
+//                        });
+//                        break;
+//                    case 'message':
+//                        _post('/push/push/waitAll', {
+//                            room_id: room_id,
+//                            uid: uid
+//                        }, function(data) {
+//
+//                        });
+//
+//                        break;
+//                    case 'content':
+//                        console.log(data.content);
+//                        if(data.content.type==1){
+//                            if(data.content.count>=2){
+//                                location.href = baseUrl+"/pizza/views/personal/result.html?room_id="+room_id+"&uid="+uid;
+//                            }
+//                        }else{
+//                            if(data.content.count>=4){
+//                                location.href = baseUrl+"/pizza/views/team/team_result.html?room_id="+room_id+"&uid="+uid;
+//                            }
+//                        }
+//                        break;
+//                    case 'close':
+//                        console.log("非法接入client");
+//                        console.log(data.msg);
+//                        break;
+//                }
+//
+//            };
+            //时间倒计时
+            function resetTime(time) {
+                var timeess = null;
+                var t = time;
+                function countDown() {
+                    t--;
+            		console.log(t);
+                    if(t == 0) {
+//                        console.log('fdsfsdhjkhh');
+                        clearInterval(timeess);
+//                       _post('/push/push/isWait',{
+//							room_id: room_id
+//						},function(data){
+//
+//						})
+                    }
+                }
+                timeess = setInterval(countDown,1000);
+            }
+            resetTime(8);
+		</script>
+	</body>
+
+</html>

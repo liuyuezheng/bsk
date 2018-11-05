@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	background-image: url(../img/06_02.png);
+	background-size:cover;
+}
+.logo{
+	box-sizing: border-box;
+	padding:0.32rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.img_logo{
+	 width: 2rem;
+	 height: 0.7rem;
+}
+.img_huodong{
+	width: 0.8rem;
+	height:0.8rem;
+}
+.main_logo{
+		text-align: center;
+}
+.main_img{
+	width: 7.87rem;
+	height: 4.72rem;
+}
+.person_match{
+	box-sizing: border-box;
+	height:4.16rem;
+	background: url('../img/01_09.png') no-repeat;
+	background-size: 100% 100%;
+    padding: 0.64rem 0.84rem;
+	display: flex;
+	align-items: center;
+}
+.touxiang_logo{
+	width:2.66rem;
+	height: 2.66rem;
+	margin-right: 0.48rem;
+}
+.ranking{ 
+	margin-top: 0.54rem;
+}
+.person_ranking{
+	font-size: 0.64rem;
+	flex: 1;
+	color: #9b4f1b;
+	font-weight:bold;
+	margin-bottom: 0.54rem;
+}
+.tiaozhan{
+	display: flex;
+	align-items: center;
+}
+.smile{
+	width: 1.06rem;
+	height: 1.06rem;
+}
+.challenge{
+	width: 2.4rem;
+	height: 0.67rem;
+	margin-left: 0.87rem;
+}
+.num{
+	font-size: 0.37rem;
+	color: #9B4F1B;
+}
+
+

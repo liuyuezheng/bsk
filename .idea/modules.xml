@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bsk.iml" filepath="$PROJECT_DIR$/.idea/bsk.iml" />
+      <module fileurl="file://F:/办公备份/大山早餐/tzdc/.idea/tzdc.iml" filepath="F:/办公备份/大山早餐/tzdc/.idea/tzdc.iml" />
+      <module fileurl="file://D:/Documents/GitHub/xhgj/.idea/xhgj.iml" filepath="D:/Documents/GitHub/xhgj/.idea/xhgj.iml" />
+    </modules>
+  </component>
+</project>

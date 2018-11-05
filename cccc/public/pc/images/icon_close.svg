@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(2.000000, 2.000000)" fill="#262626" fill-rule="nonzero">
+            <path d="M8.25,-2 C8.25,-2.41421356 8.58578644,-2.75 9,-2.75 C9.41421356,-2.75 9.75,-2.41421356 9.75,-2 L9.75,20 C9.75,20.4142136 9.41421356,20.75 9,20.75 C8.58578644,20.75 8.25,20.4142136 8.25,20 L8.25,-2 Z" id="Line" transform="translate(9.000000, 9.000000) rotate(-45.000000) translate(-9.000000, -9.000000) "></path>
+            <path d="M16.2478445,0.691495321 C16.5407377,0.398602102 17.0156115,0.398602102 17.3085047,0.691495321 C17.6013979,0.98438854 17.6013979,1.45926227 17.3085047,1.75215549 L1.75215549,17.3085047 C1.45926227,17.6013979 0.98438854,17.6013979 0.691495321,17.3085047 C0.398602102,17.0156115 0.398602102,16.5407377 0.691495321,16.2478445 L16.2478445,0.691495321 Z" id="Line"></path>
+        </g>
+    </g>
+</svg>

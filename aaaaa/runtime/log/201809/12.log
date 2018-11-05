@@ -1,0 +1,982 @@
+---------------------------------------------------------------
+[ 2018-09-12T17:31:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,417.06kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000001',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:32:33+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000002',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000003',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:46+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000004',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:46+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000005',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:47+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000006',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:47+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000007',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:47+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000008',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:48+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024001s][吞吐率：41.66req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000009',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:48+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024001s][吞吐率：41.66req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000a',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:48+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024001s][吞吐率：41.66req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000b',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:49+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.022002s][吞吐率：45.45req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000c',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:49+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000d',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.031001s][吞吐率：32.26req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000e',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000f',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000010',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000011',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000012',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:51+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000013',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:33:51+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,417.09kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000014',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:40:51+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,453.35kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '30',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000015',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: uid[D:\Documents\GitHub\xhgj\application\push\controller\Push.php:28]
+---------------------------------------------------------------
+[ 2018-09-12T17:49:26+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,417.47kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000016',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:49:27+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.022002s][吞吐率：45.45req/s] [内存消耗：1,417.45kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000017',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:49:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,417.45kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000018',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:49:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,417.45kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000019',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:50:29+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,418.06kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001a',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:50:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,418.06kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001b',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:56:58+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：1,418.01kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001c',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:58:38+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,425.51kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001d',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T17:59:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,425.51kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001e',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T18:04:26+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,425.51kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001f',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File

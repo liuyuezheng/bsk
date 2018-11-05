@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	background-image: url(../img/06_02.png);
+	background-size:cover;
+	box-sizing: border-box;
+	padding: 0.32rem;
+}
+.logo{
+	width: 2.54rem;
+	height: 0.72rem;
+}
+.matchhing{
+	text-align: center;
+}
+.matchhing img{
+	width: 5.1rem;
+	height:1.16rem;
+	margin-top: 0.51rem;
+}
+.pipei{
+	box-sizing: border-box;
+	padding: 0 1.45rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top:1.08rem;
+	
+}
+.house_people{
+	width:1.78rem;
+	height:1.78rem;
+	border-radius: 50%;
+	border:0.05rem solid #FFFFFF;
+}
+.add{
+	width: 0.75rem;
+	height: 0.75rem;
+}
+.wait_people{
+	width:2.2rem;
+	height: 2.2rem;
+}
+.name{
+	box-sizing: border-box;
+	padding: 0 1.45rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.2rem;
+	margin-top: 0.14rem;
+}
+.fangzu{
+	width:1.78rem;
+}
+.wait{
+	width:2.2rem;
+}
+.vs{
+	margin: 1rem auto;
+	text-align: center;
+}
+.vs img{
+	width: 1.75rem;
+	height: 1.07rem;
+	
+}
+.lll{
+	text-align: center;
+	margin-top: 1rem;
+}
+.lll img{
+	width: 5.57rem;
+	height: 2.37rem;
+}

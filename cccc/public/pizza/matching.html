@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜�?披萨保卫�?/title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/matching.css">
+	</head>
+
+	<body>
+		<img src="img/01_03.png" class="logo" />
+		<div class="matchhing"><img src="img/pipei.png" /></div>
+		<div class="vs">
+			<div class="white">
+				<img src="img/touxiang111.jpg" />
+			</div>
+			<img src="img/12.png" / class="vs_logo">
+			<img src="img/touxiang.png" class="wait_people" />
+		</div>
+		<div class="hhh">
+			<div class="my_name">�?</div>
+			<div class="duishou">
+				<div class="wait_name">等待对手</div>
+				<div class="invatition" onclick="share()">发起邀�?/div>
+			</div>
+		</div>
+
+		<div class="zhezhao">
+			<img src="img/share.png" class="share" />
+		</div>
+
+		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/store.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/headerhttp.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".zhezhao").click(function() {
+				$(".zhezhao").css('display', "none")
+			});
+			//获取http连接路径的房间ID信息
+			function getRoomId(name) {
+				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) {
+					return unescape(r[2]);
+				}
+				return null;
+			} 
+			var room_id = getRoomId("room_id");
+			//console.log(room_id)
+			store.set('roomids',room_id);
+			//邀请好�?
+			function share() {				
+				$(".zhezhao").css('display', "block");
+			};
+			  ws = new WebSocket("ws://47.96.8.108:7272");
+    // 服务端主动推送消息时会触发这里的onmessage
+    ws.onmessage = function(e){
+        console.log("onmessage_begin");
+        // json数据转换成js对象
+        var data = JSON.parse(e.data);
+        var type = data.type || '';
+        switch (type){
+            case 'ping':
+                ws.send('{"type":"pong"}');
+                console.log("onmessage_ping");
+                console.log(data.msg);
+                break;
+            // Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+            case 'init':
+                console.log("onmessage_init");
+                console.log(data.client_id);
+                // break;
+                // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                $.ajax( {
+                    url: 'http://bsk.mumarenkj.com/push/push/answerEnd',
+                    type: 'post',
+                    dataType: 'json',
+                    data: {client_id: data.client_id,room_id:room_id,uid:4},
+                    // headers: { token: '2b20ec82deeda9095c192a5f98c15122' },
+                    success: function(data){
+                        console.log(data);
+                    }
+                });
+                break;
+            case 'close':
+                console.log("非法接入client");
+                console.log(data.msg);
+                break;
+        }
+
+    };
+			//			接口请求�?获取token
+//			$.ajax({
+//				type: "get",
+//				url: _http + "/push/push/bind",
+//				dataType: 'json',
+//				data: {
+//					room_id:room_id,
+//					uid:1
+//				},
+//				success: function(data) {
+//			       console.log(data)
+//				},
+//				error: function(data) {
+//					return false
+//				}
+//			});
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,1103 @@
+---------------------------------------------------------------
+[ 2018-09-06T08:57:10+08:00 ] 127.0.0.1 GET /api/token/logos?name=18844445566
+[ info ] 127.0.0.1/api/token/logos?name=18844445566 [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：1,973.64kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'logos',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/logos' => '',
+  'name' => '18844445566',
+)
+[ info ] [ RUN ] app\api\controller\Token->logos[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `account_number` = '18844445566' [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:13+08:00 ] 127.0.0.1 OPTIONS /api/token/tokenuser?name=18844445566&password=111111
+[ info ] 127.0.0.1/api/token/tokenuser?name=18844445566&password=111111 [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：2,065.52kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '18844445566',
+  'password' => '111111',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '18844445566'  AND `password` = '96e79218965eb72c92a549dd5a330112'  AND `type` IN (1,2) LIMIT 1 [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:13+08:00 ] 127.0.0.1 GET /api/token/tokenuser?name=18844445566&password=111111
+[ info ] 127.0.0.1/api/token/tokenuser?name=18844445566&password=111111 [运行时间：0.100005s][吞吐率：10.00req/s] [内存消耗：2,063.98kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'token' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '18844445566',
+  'password' => '111111',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '18844445566'  AND `password` = '96e79218965eb72c92a549dd5a330112'  AND `type` IN (1,2) LIMIT 1 [ RunTime:0.016001s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:14+08:00 ] 127.0.0.1 GET /admin/system_overview/projectSingle
+[ info ] 127.0.0.1/admin/system_overview/projectSingle [运行时间：0.100005s][吞吐率：10.00req/s] [内存消耗：2,008.27kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system_overview',
+    2 => 'projectSingle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system_overview/projectSingle' => '',
+)
+[ info ] [ RUN ] app\admin\controller\SystemOverview->projectSingle[ D:\Documents\GitHub\xhgj\application\admin\controller\SystemOverview.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.019001s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:15+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,210.86kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:15+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：2,083.03kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:28+08:00 ] 127.0.0.1 OPTIONS /api/account/management?page=1&size=5
+[ info ] 127.0.0.1/api/account/management?page=1&size=5 [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,214.38kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'account',
+    2 => 'management',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/account/management' => '',
+  'page' => '1',
+  'size' => '5',
+)
+[ info ] [ RUN ] app\api\controller\Account->management[ D:\Documents\GitHub\xhgj\application\api\controller\Account.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:28+08:00 ] 127.0.0.1 OPTIONS /api/statistical/devices
+[ info ] 127.0.0.1/api/statistical/devices [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,199.71kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'statistical',
+    2 => 'devices',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/statistical/devices' => '',
+)
+[ info ] [ RUN ] app\api\controller\Statistical->devices[ D:\Documents\GitHub\xhgj\application\api\controller\Statistical.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:52+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,210.86kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:52+08:00 ] 127.0.0.1 GET /admin/system_overview/projectSingle
+[ info ] 127.0.0.1/admin/system_overview/projectSingle [运行时间：0.140008s][吞吐率：7.14req/s] [内存消耗：2,008.32kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system_overview',
+    2 => 'projectSingle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system_overview/projectSingle' => '',
+)
+[ info ] [ RUN ] app\admin\controller\SystemOverview->projectSingle[ D:\Documents\GitHub\xhgj\application\admin\controller\SystemOverview.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.019001s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:57:53+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：2,083.09kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:03+08:00 ] 127.0.0.1 GET /api/token/logos?name=18844445566
+[ info ] 127.0.0.1/api/token/logos?name=18844445566 [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,973.55kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'logos',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/logos' => '',
+  'name' => '18844445566',
+)
+[ info ] [ RUN ] app\api\controller\Token->logos[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `account_number` = '18844445566' [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:11+08:00 ] 127.0.0.1 OPTIONS /api/token/tokenuser?name=18844445566&password=111111
+[ info ] 127.0.0.1/api/token/tokenuser?name=18844445566&password=111111 [运行时间：0.791045s][吞吐率：1.26req/s] [内存消耗：2,065.66kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'access-control-request-headers' => 'token',
+  'access-control-request-method' => 'GET',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '18844445566',
+  'password' => '111111',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.495028s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.131008s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '18844445566'  AND `password` = '96e79218965eb72c92a549dd5a330112'  AND `type` IN (1,2) LIMIT 1 [ RunTime:0.116006s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:11+08:00 ] 127.0.0.1 GET /api/token/tokenuser?name=18844445566&password=111111
+[ info ] 127.0.0.1/api/token/tokenuser?name=18844445566&password=111111 [运行时间：0.282016s][吞吐率：3.55req/s] [内存消耗：2,064.11kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'token' => '',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '18844445566',
+  'password' => '111111',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115007s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '18844445566'  AND `password` = '96e79218965eb72c92a549dd5a330112'  AND `type` IN (1,2) LIMIT 1 [ RunTime:0.070004s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:11+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,210.86kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:12+08:00 ] 127.0.0.1 GET /admin/system_overview/projectSingle
+[ info ] 127.0.0.1/admin/system_overview/projectSingle [运行时间：0.394023s][吞吐率：2.54req/s] [内存消耗：2,008.32kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system_overview',
+    2 => 'projectSingle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system_overview/projectSingle' => '',
+)
+[ info ] [ RUN ] app\admin\controller\SystemOverview->projectSingle[ D:\Documents\GitHub\xhgj\application\admin\controller\SystemOverview.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133008s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.100005s ]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:12+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：2,083.09kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:27+08:00 ] 127.0.0.1 OPTIONS /api/account/management?page=1&size=5
+[ info ] 127.0.0.1/api/account/management?page=1&size=5 [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,214.58kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'account',
+    2 => 'management',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'access-control-request-headers' => 'token',
+  'access-control-request-method' => 'GET',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/account/management' => '',
+  'page' => '1',
+  'size' => '5',
+)
+[ info ] [ RUN ] app\api\controller\Account->management[ D:\Documents\GitHub\xhgj\application\api\controller\Account.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T08:58:27+08:00 ] 127.0.0.1 OPTIONS /api/statistical/devices
+[ info ] 127.0.0.1/api/statistical/devices [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,199.94kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'statistical',
+    2 => 'devices',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'access-control-request-headers' => 'token',
+  'access-control-request-method' => 'GET',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/statistical/devices' => '',
+)
+[ info ] [ RUN ] app\api\controller\Statistical->devices[ D:\Documents\GitHub\xhgj\application\api\controller\Statistical.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:30+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,210.80kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:30+08:00 ] 127.0.0.1 GET /admin/system_overview/projectSingle
+[ info ] 127.0.0.1/admin/system_overview/projectSingle [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,008.40kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system_overview',
+    2 => 'projectSingle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system_overview/projectSingle' => '',
+)
+[ info ] [ RUN ] app\admin\controller\SystemOverview->projectSingle[ D:\Documents\GitHub\xhgj\application\admin\controller\SystemOverview.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:30+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：2,083.03kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:31+08:00 ] 127.0.0.1 GET /admin/system_overview/projectSingle
+[ info ] 127.0.0.1/admin/system_overview/projectSingle [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：2,008.27kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system_overview',
+    2 => 'projectSingle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system_overview/projectSingle' => '',
+)
+[ info ] [ RUN ] app\admin\controller\SystemOverview->projectSingle[ D:\Documents\GitHub\xhgj\application\admin\controller\SystemOverview.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.011000s ]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:31+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,210.86kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:31+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：2,083.09kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:32+08:00 ] 127.0.0.1 OPTIONS /api/account/management?page=1&size=5
+[ info ] 127.0.0.1/api/account/management?page=1&size=5 [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,214.38kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'account',
+    2 => 'management',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/account/management' => '',
+  'page' => '1',
+  'size' => '5',
+)
+[ info ] [ RUN ] app\api\controller\Account->management[ D:\Documents\GitHub\xhgj\application\api\controller\Account.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:32+08:00 ] 127.0.0.1 OPTIONS /api/datum/device
+[ info ] 127.0.0.1/api/datum/device [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,988.78kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'datum',
+    2 => 'device',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/datum/device' => '',
+)
+[ info ] [ RUN ] app\api\controller\Datum->device[ D:\Documents\GitHub\xhgj\application\api\controller\Datum.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.008001s ]
+---------------------------------------------------------------
+[ 2018-09-06T09:16:32+08:00 ] 127.0.0.1 GET /api/datum/device
+[ info ] 127.0.0.1/api/datum/device [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,987.36kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'datum',
+    2 => 'device',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'token' => 'b3ed9577a955d5b03461269c76267013',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/datum/device' => '',
+)
+[ info ] [ RUN ] app\api\controller\Datum->device[ D:\Documents\GitHub\xhgj\application\api\controller\Datum.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-09-06T09:17:14+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,211.15kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:17:14+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：2,083.34kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:17:14+08:00 ] 127.0.0.1 GET /admin/system_overview/projectSingle
+[ info ] 127.0.0.1/admin/system_overview/projectSingle [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,008.55kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system_overview',
+    2 => 'projectSingle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/system_overview/projectSingle' => '',
+)
+[ info ] [ RUN ] app\admin\controller\SystemOverview->projectSingle[ D:\Documents\GitHub\xhgj\application\admin\controller\SystemOverview.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.013000s ]
+---------------------------------------------------------------
+[ 2018-09-06T09:17:41+08:00 ] 127.0.0.1 OPTIONS /api/account/management?page=1&size=5
+[ info ] 127.0.0.1/api/account/management?page=1&size=5 [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：1,214.38kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'account',
+    2 => 'management',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/account/management' => '',
+  'page' => '1',
+  'size' => '5',
+)
+[ info ] [ RUN ] app\api\controller\Account->management[ D:\Documents\GitHub\xhgj\application\api\controller\Account.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:17:41+08:00 ] 127.0.0.1 OPTIONS /api/statistical/devices
+[ info ] 127.0.0.1/api/statistical/devices [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,199.71kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'statistical',
+    2 => 'devices',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'accept, token',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/statistical/devices' => '',
+)
+[ info ] [ RUN ] app\api\controller\Statistical->devices[ D:\Documents\GitHub\xhgj\application\api\controller\Statistical.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]
+---------------------------------------------------------------
+[ 2018-09-06T09:30:39+08:00 ] 127.0.0.1 GET /api/statistical/devices
+[ info ] 127.0.0.1/api/statistical/devices [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,199.98kb] [文件加载：44]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'statistical',
+    2 => 'devices',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671,1536110798,1536124562,1536129686',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/api/statistical/devices' => '',
+)
+[ info ] [ RUN ] app\api\controller\Statistical->devices[ D:\Documents\GitHub\xhgj\application\api\controller\Statistical.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [0][D:\Documents\GitHub\xhgj\application\api\service\Token.php:36]

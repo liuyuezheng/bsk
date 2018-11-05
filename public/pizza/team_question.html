@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/team_question.css">
+		<style type="text/css">
+			a{
+				transform: translateX(100%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">
+				<img src="img/logo.png"/>
+			</div>
+			<div class="competition">
+			 	<img src="img/competiton.png"/ class="vie">
+			 	<div class="left">
+				  <img src="img/touxiang111.jpg" class="left_photo"/>
+				  <img src="img/touxiang111.jpg" class="left1_photo"/>
+				  
+				  <div class="time">
+					  <p class="my">我方队</p>
+					  <p class="shijian">30分</p>
+				  </div>
+				</div>
+				<div class="middle">03:51</div>
+				 <div class="right">
+					 <div class="time1"> 
+					  <p class="my">对方队</p>
+					  <p class="shijian">30分</p>
+					 </div>
+				  <img src="img/touxiang111.jpg" class="right_photo"/>
+				    <img src="img/touxiang111.jpg" class="right1_photo"/>
+				</div>
+			</div>
+			<div class="index-num">【<span id="curr">1</span>/<span id="total"></span>】</div>
+		</div>
+		<div class="question-wapper">
+			<div class="question-list">
+				
+			</div>
+			
+		</div>
+		<script src="js/zepto.js"></script>
+		<script type="text/javascript">
+			//虚拟数据
+			var data=[
+				{
+					title:'is ok1?',
+					options:[
+						{
+							text:"正确的"
+						},
+						{
+							text:"错误的1"
+						},
+						{
+							text:"错误的2"
+						},
+						{
+							text:"错误的3"
+						}
+					],
+					rightIndex:0
+				},
+				{
+					title:'is ok2?',
+					options:[
+						{
+							text:"正确的"
+						},
+						{
+							text:"错误的1"
+						},
+						{
+							text:"错误的2"
+						},
+						{
+							text:"错误的3"
+						}
+					],
+					rightIndex:0
+				},
+				{
+					title:'is ok3?',
+					options:[
+						{
+							text:"正确的"
+						},
+						{
+							text:"错误的1"
+						},
+						{
+							text:"错误的2"
+						},
+						{
+							text:"错误的3"
+						}
+					],
+					rightIndex:0
+				}
+			]
+			var html="";
+			data.forEach(function(item,index){
+				html+='<div class="question-item" data-index="'+index+'">';
+				html+='<div class="question-title">'+item.title+'</div>';
+					item.options.forEach(function(val,valIndex){
+						html+='<div class="question-val" data-index="'+valIndex+'">'+val.text+'</div>';
+					})
+				html+='</div>';
+			});
+			$(".question-list").html(html);
+			$("#total").html(data.length);
+			$('.question-item').on("tap",".question-val",function(){
+				var pindex=$(this).parent().data("index");
+				var index=$(this).data("index");
+				$(this).parent().find(".question-val").removeClass("rightVal");
+				$(this).parent().find(".error").removeClass("error");
+				if(data[pindex].rightIndex==index){
+					$(this).addClass("rightVal");
+				}else{
+					$(this).addClass("error");
+				}
+				if(pindex+1 != data.length){
+					$("#curr").html(pindex+2);
+					$('.question-list').animate({left : "-"+(pindex+1)*100+"%" },1000,'swing');
+				}else{
+					window.location.href = 'team_success.html';
+				}
+			})
+		</script>
+	</body>
+</html>

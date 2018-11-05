@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/team_fail.css">
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="status-box">
+				<div class="logo">
+				  <img src="img/logo.png"/>	
+				</div>
+				<div class="challenge_success">
+					<img src="img/13.png"/>
+					<div class="pisa">已扣除两个披萨</div>
+				</div>
+				<div class="who_success">
+					 	<div class="loser">
+				  	 	<img src="img/touxiang111.jpg"class="loser_touxiang"/>
+				  	 	<img src="img/touxiang111.jpg" class="loser_touxiang2"/>
+				  	</div>
+		
+				  	<img src="img/12.png" class="vs"/ >
+				 		  	<div class="winner">
+					  	<img src="img/touxiang111.jpg" class="winner_touxiang"/>
+					  	<img src="img/touxiang111.jpg" class="winner_touxiang2"/>
+					  	<img src="img/team_winner.png" class="win_logo"/>
+				  	</div>
+				</div>
+				<div class="fenshu">
+					<div class="winner_fenshu">50分</div>
+				  	<div class="loser_fenshu">50分</div>
+				</div>
+			  <div class="paiwei" id="next">
+			  	<div>我的排位情况</div>
+			  	<img src="img/888.png"/>
+			  </div>
+			  <div class="choose">
+			  	<img src="img/555.png"/>
+			  	<img src="img/666.png"/>
+			  </div>
+			</div>
+			<div class="duanwei-box">
+				<div class="logo">
+					<img src="img/logo.png" alt="" />
+				</div>
+				<div class="tiaozhan" id="prev">
+					<img src="img/Artboard@2x.png" alt="" />
+					<div>我的挑战结果</div>
+				</div>
+				<div class="duanwei">
+					<img src="img/14.png" class="wodeduanwei"/>
+				</div>
+				<div class="duanwei_logo">
+					<img src="img/15.png" />
+				</div>
+				<div class="rank">青铜</div>
+				<div class="kkkk">
+					<div class="pizza">
+						<img src="img/pizza.png"/>
+						<span>25</span>
+					</div>
+				</div>
+				<div class="choose">
+					<img src="img/555.png"/>
+					<img src="img/666.png"/>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.js"></script>
+		<script>
+			$('#next').on('tap',function(){
+				$('.warpper').animate({top: "-100%"}, 1000, 'swing');	
+			})
+			$('#prev').on('tap',function(){
+				$('.warpper').animate({top: "0"}, 1000, 'swing');	
+			})
+		</script>	
+	</body>
+</html>

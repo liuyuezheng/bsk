@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+	</head>
+
+	<body>
+		<div class="logo">
+			<img src="../images/logo1.png" class="img_logo" alt="" />
+			<img src="../images/01_05.png" class="img_huodong" alt="" />
+		</div>
+		<div class="main_logo">
+			<img src="../images/0222_02.png" class="main_img" alt="">
+		</div>
+		<div class="person_match" onclick="onenav(1)">
+			<img src="../images/touxiang1.png" class="touxiang_logo" alt="">
+			<div class="ranking">
+				<div class="person_ranking">个人排位赛</div>
+				<div class="tiaozhan">
+					<img src="../images/222.png" class="smile" alt="">
+					<div class="num" id="personal_num">50</div><text>人</text>
+					<img src="../images/333.png" class="challenge" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="person_match" onclick="onenav(2)">
+			<img src="../images/touxiang1.png" class="touxiang_logo" alt="">
+			<div class="ranking">
+				<div class="person_ranking">团队排位赛</div>
+				<div class="tiaozhan">
+					<img src="../images/222.png" class="smile" alt="">
+					<div class="num" id="team_num">50</div><text>人</text>
+					<img src="../images/333.png" class="challenge" alt="">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/zepto.js"></script>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//获取http连接路径的uid
+		var uid = chuanzhi().uid;
+		console.log(uid);
+
+		function onenav(e) {
+			var uid = chuanzhi().uid; //用户id;
+			//存储uid;
+			sessionStorage.setItem('uid',chuanzhi().uid);
+			//去挑战
+			_post('/push/push/challenge', {
+				type: e,
+				uid: uid
+			}, function(data) {
+				console.log(data);
+				//存储room_id;
+//				sessionStorage.setItem('room_id', data.room_id);
+				if(e == 1) {
+					//个人
+					location.href = baseUrl+'/pizza/views/personal/matching.html?room_id='+data.room_id;
+				} else {
+					//团队
+					location.href = baseUrl+'/pizza/views/team/team_match.html?room_id='+data.room_id;
+				}
+			})
+		};
+
+        _post('/push/push/onlineAnswer', {
+        }, function(data) {
+            console.log(data);
+            console.log(data.nums)
+            $("#personal_num").text(data.num);
+            $("#team_num").text(data.nums);
+
+        });
+	</script>
+
+</html>

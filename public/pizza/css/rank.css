@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	background-image: url(../img/06_02.png);
+	background-size:cover;
+	padding: 0.32rem;
+}
+.logo img{
+	width: 2.18rem;
+	height:0.72rem;
+
+}
+.tiaozhan{
+	color: #FFFFFF;
+	font-size: 0.35rem;
+	text-align: center;	
+}
+.tiaozhan img{
+	width: 0.54rem;
+	height: 0.64rem;
+}
+.duanwei{
+	text-align: center;
+}
+.wodeduanwei{
+	width: 4.55rem;
+	height:1.45rem;
+	margin-top: 0.67rem;
+}
+.duanwei_logo{
+	text-align: center;
+}
+.duanwei_logo img{
+	width: 3.54rem;
+	height: 4.97rem;
+}
+
+.rank{
+	color: #FFFFFF;
+	font-size:0.48rem;
+	display: block;
+    text-align: center;
+}
+.pizza{
+	background: #FFFFFF;
+	font-size: 0.37rem;
+	box-sizing: border-box;
+	border-radius:0.7rem;
+	display: inline;
+    padding: 0.16rem 0.43rem;
+}
+.pizza img{
+	width: 0.54rem;
+	height: 0.48rem;
+}
+.kkkk{
+	text-align: center;
+	margin-top: 0.43rem;
+}
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom:0.86rem;
+    left: 1.35rem;
+}
+.choose img{
+	width:3.6rem;
+	height:1.45rem;
+}
+

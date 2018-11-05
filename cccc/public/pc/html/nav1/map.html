@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css" />
+		<style type="text/css">
+			body {
+				height: 100%;
+			}
+			
+			.layui-tab {
+				margin: 0;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial
+			}
+			
+			.layui-this a {
+				font-size: 16px !important;
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0 30px
+			}
+			
+			.content {
+				width: 100%;
+				height: 88%;
+				padding-top: 1.5%;
+			}
+			
+			.content_map {
+				width: 76%;
+				height: 100%;
+				float: left;
+			}
+			
+			.content_tit {
+				width: 24%;
+				height: 100%;
+				background-color: #fff;
+				float: left;
+			}
+			
+			body,
+			html,
+			#allmap {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+			
+			#l-map {
+				height: 100%;
+				width: 78%;
+				float: left;
+				border-right: 2px solid #bcbcbc;
+			}
+			
+			#r-result {
+				height: 100%;
+				width: 20%;
+				float: left;
+			}
+			
+			.layui-tab-title li {
+				width: 50%;
+				padding: 0;
+				line-height: 50px;
+			}
+			
+			.layui-tab-brief>.layui-tab-title .layui-this {
+				color: #333;
+			}
+			
+			.layui-tab-title {
+				height: 50px;
+			}
+			
+			.layui-tab-brief>.layui-tab-more li.layui-this:after,
+			.layui-tab-brief>.layui-tab-title .layui-this:after {
+				border-bottom: 6px solid #F9CC74;
+			}
+			
+			.layui-tab-title .layui-this:after {
+				width: 14%;
+				left: 43%;
+				height: 51px;
+			}
+			
+			.layui-row div {
+				text-align: center;
+				color: #BBBBBB;
+				line-height: 50px;
+				cursor: pointer;
+			}
+			
+			.layui-yichang div {
+				color: #FF4E48;
+			}
+			
+			.layui-tab-content {
+				padding: 0;
+			}
+			
+			.layui-row:hover {
+				background-color: #F8F8F8;
+			}
+			.nav_content{
+				height: 600px;
+				overflow-y: scroll;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item layui-this">
+				<a href="map.html">项目分布</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="construction.html">项目建设</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="versions.html">版本信息</a>
+			</li>
+		</ul>
+		<!--内容-->
+		<div class="content">
+			<div class="content_map">
+				<div id="allmap"></div>
+			</div>
+			<div class="content_tit">
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					<ul class="layui-tab-title">
+						<li class="layui-this">项目列表 </li>
+						<li>报警列表</li>
+					</ul>
+					<div class="layui-tab-content">
+						<div class="layui-tab-item layui-show">
+							<div class="layui-row" style="background-color: #F8F8F8;">
+								<div class="layui-col-md4">
+									项目名称
+								</div>
+								<div class="layui-col-md4">
+									站点个数
+								</div>
+								<div class="layui-col-md4">
+									最后安装日期
+								</div>
+							</div>
+							<div class="nav_content" id="device_count">
+								<div :class="classnowes(value.status)" v-for="value in devicege" v-on:click="idclick(value.id)">
+									<div class="layui-col-md4" v-text="value.project_name"></div>
+									<div class="layui-col-md4" v-text="value.device_count"></div>
+									<div class="layui-col-md4" v-text="intime(value.build_start_time)"></div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-tab-item">
+							<div class="layui-row" style="background-color: #F8F8F8;">
+								<div class="layui-col-xs6">
+									项目名称
+								</div>
+								<div class="layui-col-xs6">
+									站点异常个数
+								</div>
+							</div>
+							<div class="nav_content" id="contenttwo">
+								<div class="layui-row layui-yichang" v-for="cones in contenttwo_this" v-on:click="idclick(cones.id)">
+									<div class="layui-col-xs6" v-text="cones.project_name"></div>
+									<div class="layui-col-xs6" v-text="cones.device_exception_count"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vBB1ZQinKmcGYUkas2GGXmHeCtsQMCw7"></script>
+	<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		layui.use('element', function() {
+			var element = layui.element;
+			//…
+		});
+		// 百度地图API功能
+		var map = new BMap.Map("allmap");
+		map.enableScrollWheelZoom(true);
+		//请求ajax		
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/projectList",
+			dataType: 'json',
+			success: function(data) {			
+				var app = new Vue({
+					el: '#device_count',
+					data: {
+						devicege: data.data
+					},
+					methods: {
+						classnowes: function(e) {
+							if(e === 0) {
+								return 'layui-row';
+							} else if(e === 1) {
+								return 'layui-row layui-yichang';
+							}
+						},
+						idclick:function(id){
+							store.set('project_id',id);
+							window.location.href = 'Projectsmap.html';
+						},
+						intime:function(_time){
+						  return new Date(parseInt(_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+						}
+					}
+				});
+				//默认第一个点为显示点
+				var point = new BMap.Point(data.data[0].longitude, data.data[0].latitude);
+				map.centerAndZoom(point, 12);
+				var json_data = [];
+				for(var i = 0; i < data.data.length; i++) {
+					var json_name = [];
+					json_name.push(data.data[i].longitude);
+					json_name.push(data.data[i].latitude);
+					json_name.push(data.data[i].project_name);
+					json_name.push(data.data[i].status);
+					json_name.push(data.data[i].id);
+					json_data.push(json_name);
+				};
+				//地图显示
+				xianmap(json_data);
+			}
+		});
+		//报警列表
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/alarmList",
+			dataType: 'json',
+			success: function(data) {
+				var content = new Vue({
+					el: '#contenttwo',
+					data: {
+						contenttwo_this: data.data
+					},
+					methods: {
+						idclick:function(id){
+							store.set('project_id',id);
+							window.location.href = 'Projectsmap.html';
+						}
+					}
+				});
+			}
+		});
+		//绘制地图点位
+		var xianmap = function(json_data) {
+			var pointArray = new Array();
+			var marxian = [];
+			for(var i = 0; i < json_data.length; i++) {
+				var marker = new BMap.Point(json_data[i][0], json_data[i][1]); // 创建点			
+				marxian.push(marker);
+				var maptext = json_data[i][2]; //内容
+				var status = json_data[i][3];//状态
+				var con_id = json_data[i][4];//项目id
+				addMarker(marker, maptext, status,con_id);
+			}
+			//链接路线
+			var polyline = new BMap.Polyline(marxian, {
+				strokeColor: "#00a0ea",
+				strokeWeight: 2,
+				strokeOpacity: 0.5
+			}); //创建折线
+			map.addOverlay(polyline); //增加折线
+			//绘制点位
+			// 编写自定义函数,创建标注
+			function addMarker(pointes, maptext, status,con_id) {
+				//新图标
+				if(status == 0) {
+					//正常
+					var myIcon = new BMap.Icon("../../images/icon_zhengchang.png", new BMap.Size(30, 30));
+				} else {
+					//异常
+					var myIcon = new BMap.Icon("../../images/icon_gongnengguz.png", new BMap.Size(30, 30));
+				};
+				var marker123 = new BMap.Marker(pointes, {
+					icon: myIcon
+				});
+				map.addOverlay(marker123); //增加点
+				//移入事件
+				marker123.addEventListener("mouseover", function(e) {
+					var label = new BMap.Label(maptext, {
+						offset: new BMap.Size(-30, -24)
+					}); //标注对象
+					label.setStyle({
+						color: "#fff",
+						backgroundColor: 'rgba(0,0,0,0.8)',
+						fontSize: "12px",
+						padding: "8px",
+						border: 'none'
+					});
+					marker123.setLabel(label);
+					//var p = e.target;
+					//alert("marker的位置是" + p.getPosition().lng + "," + p.getPosition().lat);
+				});
+				//移出事件
+				marker123.addEventListener("mouseout", function(e) {
+					var label = this.getLabel()
+					label.setContent(""); //设置标签内容为空
+					label.setStyle({
+						borderWidth: "0px",
+						padding: '0'
+					}); //设置标签边框宽度为0
+				});
+				//点击事件
+				marker123.addEventListener("click", function(e) {
+					store.set('project_id',con_id);
+					window.location.href = 'Projectsmap.html';
+				});
+			};
+		}
+	</script>
+
+</html>

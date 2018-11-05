@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/team_match.css">
+	</head>
+
+	<body>
+		<img src="../../images/logo.png" class="logo" />
+		<div class="matchhing"><img src="../../images/pipei.png" /></div>
+		<div class="pipei">
+			<img src="../../images/touxiang111.jpg" id="headImg" class="house_people" />
+			<img src="../../images/add1.png" class="add" />
+			<img src="../../images/touxiang.png" id="headImg2" class="wait_people" />
+		</div>
+		<div class="name">
+			<div class="fangzu">我</div>
+			<div class="wait" id="name2">等待队友</div>
+		</div>
+		<div class="vs">
+			<img src="../../images/12.png" />
+		</div>
+		<div class="pipei">
+			<img src="../../images/touxiang.png" id="headImg3" class="wait_people" />
+			<img src="../../images/add1.png" class="add" />
+			<img src="../../images/touxiang.png" id="headImg4" class="wait_people" />
+		</div>
+		<div class="name">
+			<div class="fangzu" id="name3">等待队友</div>
+			<div class="wait" id="name4">等待队友</div>
+		</div>
+		<div class="lll">
+			<div class="invite" onclick="share()">发起邀请</div>
+		</div>
+		<div class="zhezhao">
+			<img src="../../images/share.png" class="share" />
+		</div>
+		<script src="../../js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+            //获取uid
+            var uid_1=sessionStorage.getItem('uid');
+
+            //获取room_id
+            var room_id = chuanzhi().room_id;
+            sessionStorage.getItem('room_id')
+
+            if(uid_1==null){
+//                console.log(111);
+                window.location.href="http://bsk.mumarenkj.com/push/push/weixin?room_id="+room_id+"&type=2";
+            }
+            else {
+                if (sessionStorage.getItem('uid')) {
+                    var uid = sessionStorage.getItem('uid');
+                } else {
+                    var uid = chuanzhi().uid;
+                }
+                sessionStorage.setItem('uid_y',uid);
+                ws = new WebSocket("ws://bsk.mumarenkj.com:7272");
+                // 服务端主动推送消息时会触发这里的onmessage
+                ws.onmessage = function(e) {
+                    console.log("onmessage_begin");
+                    // json数据转换成js对象
+                    var data = JSON.parse(e.data);
+                    var type = data.type || '';
+                    switch(type) {
+                        case 'ping':
+                            ws.send('{"type":"pong"}');
+                            console.log("onmessage_ping");
+                            console.log(data.msg);
+                            break;
+                        // Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+                        case 'init':
+                            console.log("onmessage_init");
+                            console.log(data.client_id);
+                            // break;
+                            // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                            _post('/push/push/bind', {
+                                client_id: data.client_id,
+                                room_id: room_id,
+                                uid: uid
+                            }, function(data) {
+                                //头像
+                                $('#headImg').prop('src', data.users[0].staff[0].headimgurl).css({
+                                    "width": "1.78rem",
+                                    "height": "1.78rem",
+                                    "border-radius": " 50%",
+                                    "border": "0.05rem solid #FFFFFF"
+                                });
+
+                            })
+                            break;
+                        case 'message':
+                            if(data.content==0){
+                                location.href=baseUrl+"/pizza/views/index.html";
+                            }
+                            else{
+                                if(data.content.users[0].staff.length > 1) {
+                                    $('#headImg2').prop('src', data.content.users[0].staff[1].headimgurl).css({
+                                        "width": "1.78rem",
+                                        "height": "1.78rem",
+                                        "border-radius": " 50%",
+                                        "border": "0.05rem solid #FFFFFF"
+                                    });
+                                    $('#name2').text(data.content.users[0].staff[1].staff_name)
+                                }
+                                if(data.content.users[1].staff.length == 1) {
+                                    $('#headImg3').prop('src', data.content.users[1].staff[0].headimgurl).css({
+                                        "width": "1.78rem",
+                                        "height": "1.78rem",
+                                        "border-radius": " 50%",
+                                        "border": "0.05rem solid #FFFFFF"
+                                    });
+                                    $('#name3').text(data.content.users[1].staff[0].staff_name)
+                                }
+                                if(data.content.users[1].staff.length > 1) {
+                                    $('#headImg4').prop('src', data.content.users[1].staff[1].headimgurl).css({
+                                        "width": "1.78rem",
+                                        "height": "1.78rem",
+                                        "border-radius": " 50%",
+                                        "border": "0.05rem solid #FFFFFF"
+                                    });
+                                    $('#name4').text(data.content.users[1].staff[1].staff_name)
+                                }
+                                //判断人数
+                                if(data.content.users.length == 2 && data.content.users[1].length == 2) {
+                                    location.href = baseUrl+"/pizza/views/team/team_matchdsuccess.html?homeId=" + data.content.home_id;
+                                }
+                            }
+                            break;
+                        case 'close':
+                            console.log("非法接入client");
+                            console.log(data.msg);
+                            break;
+                    }
+
+                };
+            }
+            //时间倒计时
+            function resetTime(time) {
+                var timeess = null;
+                var t = time;
+                function countDown() {
+                    t--;
+//            		console.log(t);
+                    if(t == 0) {
+//                        console.log('fdsfsdhjkhh');
+                        clearInterval(timeess);
+                        //            			_post('/push/push/delRooms',{
+//							room_id: room_id,
+//						},function(data){
+//
+//						})
+                    }
+                }
+                timeess = setInterval(countDown,1000);
+            }
+            resetTime(180);
+			$(".zhezhao").click(function() {
+				$(".zhezhao").css('display', "none")
+			});
+//			var room_id = sessionStorage.getItem('room_id');
+//			var uid = sessionStorage.getItem('uid');
+			//邀请好友
+			function share() {
+				$(".zhezhao").css('display', "block");
+			};
+
+//			_post('/push/push/share_wx', {}, function(data) {
+//				console.log(data);
+				// wx.config({
+				// 	debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+				// 	appId: data.appId, // 必填，公众号的唯一标识
+				// 	timestamp: data.timestamp,// 必填，生成签名的时间戳
+				// 	nonceStr:  data.nonceStr,  // 必填，生成签名的随机串
+				// 	signature: data.signature, // 必填，签名，见附录1
+				// 	jsApiList: ['onMenuShareAppMessage','onMenuShareTimeline'] // 所有要调用的 API 都要加到这个列表中
+				// });
+				// wx.ready(function () {
+				// 	wx.onMenuShareAppMessage({ //分享给朋友
+				// 		title: '分享你的专属二维码', // 分享标题,可在控制器端传递
+				// 		desc: '分享你的专属二维码,让朋友成为你的粉丝或好友，领取奖励!',//分享的描述，可在控制器端传递                 
+				// 		link: "http://zgxc.sharexwd.top/phone/login/tj?uid="+uid, // 分享链接，可在控制器端传递 
+				// 		imgUrl: '{$info.headpic}', // 分享图标 ，可在控制器端传递
+				// 		success: function() { 
+				// 		//用户确认分享后执行的回调函数 
+				// 		window.location.href = "{:url('Tasks/qrcodem')}";
+				// 		}, 
+				// 		cancel: function() { 
+				// 		// 用户取消分享后执行的回调函数 
+				// 		window.location.href = "{:url('Tasks/qrcodem')}";
+				// 		}
+				// 	});
+				// 	wx.onMenuShareTimeline({ //分享到朋友圈
+				// 		title: '分享你的专属二维码', // 分享标题,可在控制器端传递
+				// 		desc: '分享你的专属二维码,让朋友成为你的粉丝或好友，领取奖励!',//分享的描述，可在控制器端传递                 
+				// 		link: "http://zgxc.sharexwd.top/phone/login/tj?uid="+uid, // 分享链接，可在控制器端传递 
+				// 		imgUrl: '{$info.headpic}', // 分享图标 ，可在控制器端传递
+				// 		success: function() { 
+				// 		//用户确认分享后执行的回调函数 
+				// 		window.location.href = "{:url('Tasks/qrcodem')}";
+				// 		}, 
+				// 		cancel: function() { 
+				// 		// 用户取消分享后执行的回调函数 
+				// 		window.location.href = "{:url('Tasks/qrcodem')}";
+				// 		} 
+				// 	});
+				// });
+
+//			})
+		</script>
+	</body>
+
+</html>

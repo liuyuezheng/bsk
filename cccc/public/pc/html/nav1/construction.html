@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>项目建设</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../../lib/layui/layui.js"></script>
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			.layui-nav {
+				width: 100%;
+				background-color: #262626 !important;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial
+			}
+			
+			.layui-this a {
+				font-size: 16px !important;
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0 30px
+			}
+			/*列表*/
+			
+			.form-content {
+				background: #FFFFFF;
+				text-align: center;
+			}
+			
+			.layui-table thead tr {
+				background: #FFFFFF;
+			}
+			
+			.layui-table th {
+				line-height: 53px;
+				text-align: center;
+				font-size: 14px;
+				color: #333333;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-table td {
+				line-height: 49px;
+				font-size: 12px;
+				color: #666666;
+				border: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			/*分页*/
+			
+			.page {
+				position: absolute;
+				bottom: 9px;
+				text-align: center;
+			}
+			
+			.page a {
+				min-width: 10px;
+				height: 24px;
+				line-height: 24px;
+				margin-right: 10px;
+				font-size: 12px;
+				color: #333333;
+				border: 1px solid #D9D9D9;
+				padding: 0 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr {
+				margin-right: 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr .layui-laypage-em {
+				color: #F9CC74;
+				background: #262626;
+				padding: 0;
+				top: 0;
+				left: 0;
+			}
+			
+			.page span {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-laypage span {
+				height: 24px;
+				line-height: 24px;
+			}
+			
+			.layui-laypage .layui-laypage-spr {
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="map.html">项目分布</a>
+			</li>
+			<li class="layui-nav-item layui-this">
+				<a href="construction.html">项目建设</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="versions.html">版本信息</a>
+			</li>
+		</ul>
+		<!-- 列表 -->
+		<div class="form-content">
+			<table class="layui-table">
+				<thead>
+					<tr>
+						<th>项目名称</th>
+						<th>施工起始日期</th>
+						<th>最后维护日期</th>
+						<th>现场施工人员</th>
+					</tr>
+				</thead>
+				<tbody id="contentthis"></tbody>
+			</table>
+			<!-- 分页 -->
+			<div class="page pagination_position" id="pageid">
+				<div>
+					<a class="num" href="">1</a>
+					<span class="current">2</span>
+					<a class="num" href="">3</a>
+					<a class="num" href="">4</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var count;
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/projectConstruction",
+			dataType: 'json',
+			data: {
+				page: 1,
+				size: 10
+			},
+			success: function(data) {
+				layui.use('laypage', function() {
+					var laypage = layui.laypage;
+					//执行一个laypage实例
+					laypage.render({
+						elem: 'pageid',
+						count: data.data.total, //数据总数，从服务端得到
+						limit: 10,
+						prev: '<上一页',
+						next: '下一页>',
+						first: '首页',
+						last: '尾页',
+						jump: function(obj, first) {
+							//obj包含了当前分页的所有参数，比如：
+							//console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+							//console.log(obj.limit); //得到每页显示的条数	
+							$.ajax({
+								type: "GET",
+								url: _http + "/admin/system_overview/projectConstruction",
+								dataType: 'json',
+								data: {
+									page: obj.curr,
+									size: obj.limit
+								},
+								success: function(data) {
+									$('#contentthis').find().remove();//清楚数据
+									var _data= data.data.data;
+									var _html='';
+									for (var i=0;i<_data.length;i++) {
+										var intime = new Date(parseInt(_data[i].build_start_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+										var ontime = new Date(parseInt(_data[i].maintain_last_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' '); 
+										_html += "<tr><td>"+_data[i].project_name+"</td><td>"+intime+"</td><td>"+ontime+"</td><td>"+_data[i].worker+"</td></tr>";
+									};
+									$('#contentthis').html(_html);
+								}
+							});
+							//首次不执行
+							if(!first) {
+								//do something
+							}
+						}
+					});
+				});
+			}
+		});
+	</script>
+
+</html>

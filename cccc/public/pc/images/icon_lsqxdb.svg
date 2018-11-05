@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_lsqxdb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_lsqxdb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Mask" fill="#262626" cx="8" cy="8" r="8"></circle>
+            <path d="M3.65918797,10.2912643 C3.47919358,10.5006841 3.16351105,10.524538 2.9540913,10.3445436 C2.74467155,10.1645493 2.72081758,9.84886672 2.90081197,9.63944697 L5.28336566,6.86739501 C5.4547955,6.66793993 5.75143729,6.63538772 5.96204142,6.79292002 L8.87003599,8.96810563 L11.8991018,5.40609176 C12.0779914,5.19572749 12.393544,5.17021223 12.6039082,5.34910182 C12.8142725,5.52799141 12.8397878,5.84354401 12.6608982,6.05390828 L9.32755918,9.97373063 C9.15652446,10.174858 8.85858959,10.2083459 8.64717322,10.050206 L5.73719994,7.87354034 L3.65918797,10.2912643 Z" id="Path-2" fill="#F9CC74" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

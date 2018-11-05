@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/matching.css">
+	</head>
+
+	<body>
+		<img src="../../images/01_03.png" class="logo" />
+		<div class="matchhing"><img src="../../images/pipei.png" /></div>
+		<div class="vs">
+			<div class="white">
+				<img src="../../images/touxiang111.jpg" id="headImg"/>
+			</div>
+			<img src="../../images/12.png"  class="vs_logo" />
+			<img src="../../images/touxiang.png" class="wait_people" />
+		</div>
+		<div class="hhh">
+			<div class="my_name">我 </div>
+			<div class="duishou">
+				<div class="wait_name">等待对手</div>
+				<div class="invatition" onclick="share()">发起邀请</div>
+			</div>
+		</div>
+		<div class="zhezhao">
+			<img src="../../images/share.png" class="share" />
+		</div>
+
+		<script src="../../js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			//获取uid
+            var uid_1=sessionStorage.getItem('uid');
+
+            //获取room_id
+            var room_id = chuanzhi().room_id;
+            sessionStorage.getItem('room_id')
+
+//            var uid_1 = chuanzhi().uid;
+////            console.log(uid);
+
+			//			判断uid是否存在
+if(uid_1==null){
+    wxLogin();
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    function wxLogin() {
+        alert(11);
+        var appId = 'wxbd25e61a0ca3f524';
+        var oauth_url = 'http://bsk.mumarenkj.com/push/push/openid';
+        var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + appId + "&redirect_uri=" + location.href.split('#')[0] + "&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
+        var code = getUrlParam("code");
+        if (!code) {
+            window.location = url;
+        } else {
+            $.ajax({
+                type: 'GET',
+                url: oauth_url,
+                dataType: 'json',
+                data: {
+                    code: code
+                },
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (error) {
+                    throw new Error(error)
+                }
+            })
+        }
+    }
+			}
+			else{
+             if(sessionStorage.getItem('uid')){
+                 var uid=sessionStorage.getItem('uid');
+
+			 }else{
+                 var uid = chuanzhi().uid;
+			 }
+    var uid=sessionStorage.setItem('uid_y',uid);
+    ws = new WebSocket("ws://bsk.mumarenkj.com:7272");
+    // 服务端主动推送消息时会触发这里的onmessage
+    ws.onmessage = function(e) {
+        console.log("onmessage_begin");
+        // json数据转换成js对象
+        var data = JSON.parse(e.data);
+        var type = data.type || '';
+        switch(type) {
+            case 'ping':
+                ws.send('{"type":"pong"}');
+                console.log("onmessage_ping");
+                console.log(data.msg);
+                break;
+            // Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+            case 'init':
+                console.log("onmessage_init");
+                console.log(data.client_id);
+                // break;
+                // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                _post('/push/push/bind',{
+                    client_id: data.client_id,
+                    room_id: room_id,
+                    uid: uid
+                },function(data){
+
+                })
+                break;
+            case 'message':
+                console.log(data.content)
+                if(data.content==0){
+//                    location.href=baseUrl+"/pizza/views/index.html?uid="+uid_1;
+                }
+                else{
+                    //头像
+                    $('#headImg').prop('src',data.content.users[0].staff[0].headimgurl);
+                    //判断人数
+                    if(data.content.users.length==2){
+                        location.href=baseUrl+"/pizza/views/personal/match_success.html?homeId="+data.content.home_id;
+                    }
+                }
+                break;
+            case 'close':
+                console.log("非法接入client");
+                console.log(data.msg);
+                break;
+        }
+
+    };
+}
+
+			//时间倒计时
+            function resetTime(time) {
+            	var timeess = null;
+            	var t = time;
+            	function countDown() {
+            		t--;
+//            		console.log(t);
+                    if(t == 0) {
+//                        console.log('fdsfsdhjkhh');
+                        clearInterval(timeess);
+                        //            			_post('/push/push/delRooms',{
+//							room_id: room_id,
+//						},function(data){
+//
+//						})
+                    }
+            	}
+                timeess = setInterval(countDown,1000);
+            }
+            resetTime(60);
+
+						$(".zhezhao").click(function() {
+				$(".zhezhao").css('display', "none")
+			});
+//			var room_id = sessionStorage.getItem('room_id');
+			var uid = sessionStorage.getItem('uid');
+			//邀请好友
+			function share() {
+				$(".zhezhao").css('display', "block");
+			};
+
+			//用户分享
+//			_post('/push/push/share_wx',{},function(data){
+//				console.log(data);
+//				 wx.config({
+//				 	debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+//				 	appId: data.data.appId, // 必填，公众号的唯一标识
+//				 	timestamp: data.data.timestamp,// 必填，生成签名的时间戳
+//				 	nonceStr:  data.data.nonceStr,  // 必填，生成签名的随机串
+//				 	signature: data.data.signature, // 必填，签名，见附录1
+//				 	jsApiList: ['onMenuShareAppMessage','onMenuShareTimeline'] // 所有要调用的 API 都要加到这个列表中
+//				 });
+//				 wx.ready(function () {
+//				 	wx.onMenuShareAppMessage({ //分享给朋友
+//				 		title: '披萨英雄联盟', // 分享标题,可在控制器端传递
+//				 		desc: '披萨英雄联盟，等你来挑战！',//分享的描述，可在控制器端传递                 
+//				 		link: "http://bsk.mumarenkj.com/pizza/matching.html?room_id="+room_id, // 分享链接，可在控制器端传递 
+//				 		imgUrl: '{$info.headpic}', // 分享图标 ，可在控制器端传递
+//				 		success: function() { 
+//				 		//用户确认分享后执行的回调函数 
+//				 		window.location.href = "http://bsk.mumarenkj.com/pizza/matching.html";
+//				 		}, 
+//				 		cancel: function() { 
+//				 		// 用户取消分享后执行的回调函数 
+//				 		window.location.href = "http://bsk.mumarenkj.com/pizza/matching.html";
+//				 		}
+//				 	});
+//				 	wx.onMenuShareTimeline({ //分享到朋友圈
+//				 		title: '披萨英雄联盟', // 分享标题,可在控制器端传递
+//				 		desc: '披萨英雄联盟，等你来挑战！',//分享的描述，可在控制器端传递                 
+//				 		link: "http://bsk.mumarenkj.com/pizza/matching.html?room_id="+room_id, // 分享链接，可在控制器端传递 
+//				 		imgUrl: '{$info.headpic}', // 分享图标 ，可在控制器端传递
+//				 		success: function() { 
+//				 		//用户确认分享后执行的回调函数 
+//				 		window.location.href = "http://bsk.mumarenkj.com/pizza/matching.html";
+//				 		}, 
+//				 		cancel: function() { 
+//				 		// 用户取消分享后执行的回调函数 
+//				 		window.location.href = "http://bsk.mumarenkj.com/pizza/matching.html";
+//				 		} 
+//				 	});
+//				 });
+
+
+//			})
+		</script>
+	</body>
+
+</html>

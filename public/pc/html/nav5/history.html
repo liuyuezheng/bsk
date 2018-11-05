@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>巡检记录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css" />
+		<style type="text/css">
+			body {
+				height: 100%;
+			}
+			
+			.layui-tab {
+				margin: 0;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0;
+				font-size: 14px;
+			}
+			
+			.layui-nav-item span {
+				padding: 0 20px;
+			}
+			
+			.content {
+				width: 100%;
+				height: 89%;
+			}
+			
+			.layui-card-header img {
+				padding-left: 12px;
+				width: 22px;
+				height: 22px;
+			}
+			
+			.layui-card-body {
+				height: 80px;
+			}
+			
+			.layui-card-body img {
+				width: 22px;
+				height: 22px;
+				float: left;
+			}
+			
+			.content-til {
+				float: left;
+				margin-left: 12px;
+			}
+			
+			.content-til li {
+				color: #999;
+			}
+			
+			.content-til li:first-child {
+				color: #333;
+			}
+			
+			.content-til span {
+				color: #F9CC74;
+			}
+			
+			.layui-card-body-k {
+				float: left;
+				margin-right: 80px;
+			}
+			
+			.layui-card-top {
+				width: 100%;
+				height: 60px;
+				background: #FFFFFF;
+				padding: 10px 15px;
+				line-height: 40px;
+				margin-bottom: 20px;
+			}
+			
+			.layui-card-top img {
+				margin-right: 15px;
+				width: 16px;
+				height: 16px;
+			}
+			.layui-input{
+				height: 40px;
+			}
+			.layui-inline {
+				float: left;
+				margin-left: 30px;
+				position: relative;
+				/*width: 200px;*/
+        height: 40px;
+        float: left;
+        margin: 10px 15px;
+			}
+			.layui-inline img{
+				position: absolute;
+				right: 4px;
+				top:12px;
+				width: 14px;
+				height: 14px;
+			}
+			.layui-inline input{
+				background-color: #f5f5f5;
+			}
+			/*筛选*/
+      .layui-input-block {
+        width: 200px;
+        height: 40px;
+        float: left;
+        margin: 10px 15px;
+      }
+      .layui-input-block select {
+        width: 100%;
+        height: 100%;
+        background-color: #f5f5f5;
+      }
+      .layui-btn {
+        height: 40px;
+        line-height: 40px;
+        background-color: #F9CC74;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #333333;
+      }
+      .layui_btn_serach {
+        height: 40px !important;
+        line-height: 40px !important;
+        background-color: #F9CC74 !important;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        color: #333333 !important;
+        padding: 0 15px !important;
+      }
+      .move_top2 {
+      	margin-top: 8px;
+      }
+      .layui-input-block_addproject {
+        float: right;
+        margin: 10px 15px;
+        margin-right: -32px;
+      }
+      .layui-btn_add_project {
+        height: 32px !important;
+        line-height: 32px !important;
+        background: #262626 !important;
+        border: 0 solid #262626;
+        border-radius: 100px;
+        font-size: 14px !important;
+        color: #F9CC74 !important;
+      }
+      /*内容*/
+      .history_content {
+      	margin-bottom: 20px;
+      }
+      .history_content_box {
+      	width: 850px;
+      	padding: 20px 30px;
+      	min-height: 1px;
+      	margin-top: 10px;
+      	background: #FFFFFF;
+        position: relative;
+      }
+      .history_content_box h4 {
+      	letter-spacing: .5px;
+      	width: 500px;
+      }
+      .history_content_box span {
+      	font-size: 12px;
+				color: #BBBBBB;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+      }
+      .history_img_box {
+      	width: 100%;
+      }
+      .history_img_box img {
+      	width: 113px;
+      	height: 113px;
+      	margin-right: 4px;
+      	margin-top: 10px;
+      }
+      /*上传记录*/
+      .layui-layer-title {
+        background: #FFFFFF;
+        box-shadow: 0 1px 0 0 #EBEBEB;
+        font-size: 18px;
+        color: #333333;
+      }
+      .model_content {
+        width: 454px;
+        min-height: 222px;
+        padding: 10px 12px;
+        margin: 20px 30px;
+        margin-top: 88px;
+        border: 1px solid #DDDDDD;
+      }
+      .layui-textarea {
+        width: 100%;
+        height: 70%;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #666666;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+      .layui-btn {
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+        color: #FFFFFF;
+        background: #666666;
+        padding: 0 8px;
+        margin-right: 10px;
+      }
+      .upload_img_hint {
+        display: inline-block;
+        width: 100%;
+        line-height: 50px;
+        font-size: 14px;
+        color: #BBBBBB;
+      }
+      .upload_img_size {
+        width: 66px;
+        height: 66px;
+        background: #CCCCCC;
+        margin-top: 10px;
+        margin-right: 6px;
+      }
+      .layui-layer-page .layui-layer-btn {
+        text-align: left;
+        padding: 0 !important;
+      }
+      .layui-layer-btn .layui-layer-btn0 {
+        width: 136px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        background: #F9CC74 !important;
+        border-radius: 4px;
+        border-color: transparent !important;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        color: #333333 !important;
+        font-size: 14px;
+      }
+      .layui-layer-resize {
+      }
+      .layui-input-block_provice {
+        width: 480px;
+        height: 48px;
+        line-height: 48px;
+        margin: 20px 30px;
+        margin-top: -68px;
+        background: #FFFFFF;
+      }
+      .layui-input-block_provice .layui-form-select .layui-input {
+        height: 48px;
+      }
+      .layui-input-block {
+        margin-left: 30px;
+      }
+      /*分页*/
+      .page {
+        /*position: fixed;*/
+        /*bottom: 9px;*/
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .page a {
+        min-width: 10px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 10px;
+        font-size: 12px;
+        color: #333333;
+        border: 1px solid #D9D9D9;
+        padding: 0 10px;
+      }
+      .page span {
+        text-align: center;
+      }
+      .layui-laypage .layui-laypage-curr {
+        margin-right: 10px;
+      }
+      .layui-laypage .layui-laypage-curr .layui-laypage-em {
+        color: #F9CC74;
+        background: #262626;
+        padding: 0;
+        top: 0;
+        left: 0;
+      }
+      .page span {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .layui-laypage span {
+        height: 24px;
+        line-height: 24px;
+      }
+      .layui-laypage .layui-laypage-spr {
+        margin-right: 10px;
+      }
+      #contentthis {
+        min-height: 500px;
+      }
+		</style>
+	</head>
+
+	<body>
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a>巡检记录</a>
+			</li>
+		</ul>
+		<!-- 查询 -->
+		<div class="layui-card-top">
+      <form method="post" class="layui-form">
+  			<div class="layui-input-block move_top2">
+          <select name="city" lay-verify="required" lay-filter="selectproject" class="way_limit_set_select">
+            <option value="0" selected disabled>选择项目</option>
+          </select>
+        </div>
+      </form>
+			<div class="layui-inline">
+				<img src="../../images/icon_dx.svg"/>
+				<input type="text" class="layui-input" id="date" placeholder="年-月-日">
+        <!-- <div class="layui-form">
+          <div class="layui-form-item">
+            <div class="layui-input-inline">
+              <input type="text" class="layui-input" id="test10" placeholder=" - ">
+            </div>
+          </div>
+        </div> -->
+			</div>
+      <div class="layui-inline">
+        <img src="../../images/icon_dx.svg"/>
+        <input type="text" class="layui-input" id="date2" placeholder="年-月-日">           
+      </div>
+			<div class="layui-input-block btn_search_history">
+        <button class="layui-btn layui_btn_serach" lay-submit lay-filter="*">查询</button>
+      </div>
+      <!-- <div class="layui-input-block layui-input-block_addproject">
+        <button class="layui-btn layui-btn_add_project" lay-submit lay-filter="*">上传记录</button>
+      </div> -->
+		</div>
+		<!-- 内容 -->
+		<div class="history_content" id="contentthis">
+			<!-- <div class="history_content_box">
+				<h4>巡检记录分为记录查询和新建记录子目录,进入后可以按日期的形式进行筛选查看,日期是在进行编辑完成后自动保存的</h4><span>17:35</span>
+				<div class="history_img_box">
+					<img src="http://t10.baidu.com/it/u=123308412,2828093194&fm=58" alt="">
+					<img src="http://t10.baidu.com/it/u=123308412,2828093194&fm=58" alt="">
+				</div>
+			</div> -->
+		</div>
+    <!-- 分页 -->
+    <div class="page pagination_position" id="pageid">
+      <div>
+        <!-- <a class="num" href="">1</a> -->
+        <!-- <span class="current">2</span> -->
+        <!-- <a class="num" href="">3</a> -->
+        <!-- <a class="num" href="">4</a> -->
+      </div>
+    </div>
+		<div id="model">
+      <form method="post" class="layui-form">
+        <div class="layui-input-block layui-input-block_provice">
+          <select name="city" lay-filter="selectproject2" lay-verify="required" class="way_limit_set_select2">
+            <option value="0" selected disabled>选择项目</option>
+          </select>
+        </div>
+        <div class="model_content">
+          <textarea name="" required lay-verify="required" placeholder="在此处填写您对项目内容进行巡检后处理的数据记录..." class="layui-textarea"></textarea>
+          <div>
+            <span class="upload_img_hint"><button type="button" class="layui-btn" id="uploadimg">上传图片</button>格式为jpg或png,每个站点上限为10张</span>
+            <div class="add_upload_img_box">
+              <!-- <img class="upload_img_size" src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+	</body>
+	<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/xadmin.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+    layui.use('form', function() {
+      var form = layui.form;
+      // 请求项目列表(列表查询及上传日志)
+      $.ajax({
+        type: "GET",
+        url: _http + "/admin/statistical_analysis/getProjectList",
+        dataType: 'json',
+        data: {},
+        success: function(data) {
+          var tempoption = "";
+          $.each(data.data,function(index,item){
+            tempoption += "<option value='"+item.id+"' project-id='"+item.id+"'>"+item.project_name+"</option>";
+          });
+          $(".way_limit_set_select").append(tempoption);    // 列表查询-选择项目
+          $(".way_limit_set_select2").append(tempoption);   // 上传日志-选择项目
+          console.log("请求项目列表success",data)
+          form.render();
+        }
+      });
+      // 列表查询-选择项目
+      form.on('select(selectproject)', function(data){
+        projectid = data.value;
+        console.log(projectid)
+      });
+      // 上传日志-选择项目
+      form.on('select(selectproject2)', function(data){
+        projectid = data.value;
+        console.log(projectid)
+      })
+    });
+		//时间选择
+		layui.use('laydate', function() {
+			var laydate = layui.laydate;
+			//执行一个laydate实例
+			laydate.render({
+				elem: '#date', //指定元素
+        done: function(value, date, endDate){
+          currentdate = value;
+          console.log(currentdate)
+        }
+			});
+      laydate.render({
+        elem: '#date2', //指定元素
+        done: function(value, date, endDate){
+          currentdate2 = value;
+          console.log(currentdate2)
+        }
+      });
+		});
+		// 上传记录
+    layui.use('upload', function(){
+      var upload = layui.upload;
+      $('#model').hide();
+      // 上传记录
+      $(".layui-input-block_addproject").click(function(){
+        $('#model').show();
+        layer.open({
+          type: 1,
+          title: '上传记录',
+          content: $('#model'),
+          // area: ['540px','564px'],
+          area: ['540px', (window.innerHeight*0.8)+'px'],
+          btn: ['确认上传'],
+          yes: function(index,layero){
+            console.log("project_id",projectid,",content:",$(".layui-textarea").text())
+            // $.ajax({
+            //   type: "GET",
+            //   url: _http + "/admin/",
+            //   dataType: 'json',
+            //   data: {
+            //     project_id: projectid,
+            //     content: $(".layui-textarea").text()
+            //   },
+            //   success: function(data) {
+            //     console.log("上传记录success",data)
+            //     // form.render();
+            //   }
+            // });
+            window.location.reload();
+          },
+          cancel: function(){
+            $('#model').hide();
+            window.location.reload();
+          }
+        });
+      });
+      // 上传图片
+      var uploadInst = upload.render({
+        elem: '#uploadimg',
+        url: _http + '/admin/upload/upload',
+        multiple: true,   //允许多图片上传,默认不允许
+        number: 10,   //上传图片个数,默认一张
+        before: function(obj){
+          //预读本地文件示例，不支持ie8
+          obj.preview(function(index, file, result){
+            // $('.upload_img_size').attr('src', result); //图片链接（base64）
+            console.log("index:",index,",file-name:",file.name,",file-size:",file.size,",result:",result)
+            if($('.add_upload_img_box').children('img').length < 10){
+              $('.add_upload_img_box').append("<img class='upload_img_size' src='"+result+"' alt=''>");
+            };
+          });
+        },
+        done: function(res){
+          //上传成功
+          console.log("上传成功:",res)
+        },
+        error: function(err){
+          console.log("上传失败:",err)
+        }
+      });
+    });
+    // 分页
+    var count;
+    $.ajax({
+      type: "GET",
+      url: _http + "/admin/inspection_record/lists",
+      dataType: 'json',
+      data: {
+        page: 1,
+        size: 4
+      },
+      success: function(data) {
+        layui.use('laypage', function() {
+          var laypage = layui.laypage;
+          //执行一个laypage实例
+          laypage.render({
+            elem: 'pageid',
+            count: data.data.total, //数据总数，从服务端得到
+            limit: 4,
+            prev: '<上一页',
+            next: '下一页>',
+            first: '首页',
+            last: '尾页',
+            jump: function(obj, first) {
+              //obj包含了当前分页的所有参数，比如：
+              //console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+              //console.log(obj.limit); //得到每页显示的条数 
+              $.ajax({
+                type: "GET",
+                url: _http + "/admin/inspection_record/lists",
+                dataType: 'json',
+                data: {
+                  page: obj.curr,
+                  size: obj.limit
+                },
+                success: function(data) {
+                  $('#contentthis').find().remove();//清楚数据
+                  var _data= data.data.data;
+                  var _html='';
+                  var _station = '';
+                  for (var i=0;i<_data.length;i++) {
+                    var create_time = new Date(parseInt(_data[i].create_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+                    $.each(_data[i].img,function(index,item){
+                      _station += "<img src='"+item+"' alt=''>";
+                    })
+                    // var ontime = new Date(parseInt(_data[i].maintain_last_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' '); 
+                    _html += "<div class='history_content_box'><h4>"+_data[i].content+"</h4><span>"+create_time+"</span><div class='history_img_box'>"+_station+"</div></div>";
+                  };
+                  $('#contentthis').html(_html);
+                }
+              });
+              //首次不执行
+              if(!first) {
+                //do something
+              }
+            }
+          });
+        });
+      }
+    });
+    // 点击查询记录
+    var projectid = "";
+    var currentdate = "";
+    var currentdate2 = "";
+    $(".btn_search_history").click(function(){
+      console.log(projectid)
+      console.log(currentdate + " - " + currentdate2)
+      $('#contentthis').html("");//清楚数据
+      $.ajax({
+        type: "GET",
+        url: _http + "/admin/inspection_record/lists",
+        dataType: 'json',
+        data: {
+          project_id: projectid,
+          date: currentdate + " - " + currentdate2,
+          page: 1,
+          size: 4
+        },
+        success: function(data) {
+          layui.use('laypage', function() {
+            var laypage = layui.laypage;
+            //执行一个laypage实例
+            laypage.render({
+              elem: 'pageid',
+              count: data.data.total, //数据总数，从服务端得到
+              limit: 4,
+              prev: '<上一页',
+              next: '下一页>',
+              first: '首页',
+              last: '尾页',
+              jump: function(obj, first) {
+                //obj包含了当前分页的所有参数，比如：
+                //console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+                //console.log(obj.limit); //得到每页显示的条数 
+                $.ajax({
+                  type: "GET",
+                  url: _http + "/admin/inspection_record/lists",
+                  dataType: 'json',
+                  data: {
+                    project_id: projectid,
+                    date: currentdate + " - " + currentdate2,
+                    page: obj.curr,
+                    size: obj.limit
+                  },
+                  success: function(data) {
+                    $('#contentthis').find().remove();//清楚数据
+                    var _data= data.data.data;
+                    var _html='';
+                    var _station = '';
+                    for (var i=0;i<_data.length;i++) {
+                      var create_time = new Date(parseInt(_data[i].create_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+                      $.each(_data[i].img,function(index,item){
+                        _station += "<img src='"+item+"' alt=''>";
+                      })
+                      // var ontime = new Date(parseInt(_data[i].maintain_last_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' '); 
+                      _html += "<div class='history_content_box'><h4>"+_data[i].content+"</h4><span>"+create_time+"</span><div class='history_img_box'>"+_station+"</div></div>";
+                    };
+                    $('#contentthis').html(_html);
+                  }
+                });
+                //首次不执行
+                if(!first) {
+                  //do something
+                }
+              }
+            });
+          });
+        }
+      });
+    })
+	</script>
+
+</html>

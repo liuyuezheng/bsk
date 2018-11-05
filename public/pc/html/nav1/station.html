@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>站点</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css" />
+		<style type="text/css">
+			body {
+				height: 100%;
+			}
+			
+			.layui-tab {
+				margin: 0;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0;
+				font-size: 14px;
+			}
+			
+			.layui-nav-item span {
+				padding: 0 20px;
+			}
+			
+			.content {
+				width: 100%;
+				height: 89%;
+			}
+			
+			.layui-card-header {
+				line-height: 64px;
+				margin-left: 15px;
+				margin-bottom: 10px;
+				font-size: 18px;
+				color: #333333;
+				border: 0;
+			}
+			
+			.layui-card {
+				height: 108px;
+			}
+			
+			.layui-card-body {
+				/*height: 80px;*/
+			}
+			
+			.layui-card-body img {
+				width: 22px;
+				height: 22px;
+				float: left;
+			}
+			
+			.content-til {
+				float: left;
+				margin-left: 12px;
+				font-size: 14px;
+				color: #999999;
+			}
+			
+			.layui-card-body-k {
+				float: left;
+				margin-left: 15px;
+				margin-right: 76px;
+			}
+			
+			.layui-card-top {
+				width: 100%;
+				padding: 10px 15px;
+				line-height: 40px;
+			}
+			
+			.layui-card-top img {
+				margin-right: 15px;
+				width: 16px;
+				height: 16px;
+			}
+			
+			.layui-inline {
+				float: right;
+				margin-right: 30px;
+				position: relative;
+			}
+			
+			.layui-inline img {
+				position: absolute;
+				right: 4px;
+				top: 12px;
+				width: 14px;
+				height: 14px;
+			}
+			
+			.layui-inline input {
+				background-color: #f5f5f5;
+			}
+			/*曲线*/
+			
+			.station_way_quxian_box {
+				width: 104%;
+				float: left;
+			}
+			
+			.station_way_box {
+				width: 272px;
+				height: 300px;
+				padding: 0 30px;
+				margin: 0 20px 20px 0;
+				background: #FFFFFF;
+				box-shadow: 0 8px 20px -6px #DDDDDD;
+				float: left;
+			}
+			
+			.station_way_box_name {
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				font-size: 14px;
+				color: #333333;
+				border-bottom: 1px solid #DDDDDD;
+			}
+			
+			.station_way_box_name img {
+				float: right;
+				margin-top: 15px;
+			}
+			
+			.station_way_item {
+				margin-top: 16px;
+				font-size: 10px;
+				color: #999999;
+			}
+			
+			.station_way_item span {
+				display: inline-block;
+				width: 66%;
+			}
+			
+			.station_way_item img {
+				float: right;
+			}
+			
+			.margin_top10 {
+				margin-top: -15px;
+			}
+			
+			.margin_top15 {
+				margin-top: -22px;
+			}
+			
+			.color_yellow {
+				color: #F9CC74;
+			}
+			
+			.color_red {
+				color: #FF4E48;
+			}
+			
+			.station_way_into {
+				width: 106px;
+				height: 32px;
+				line-height: 32px;
+				margin: 20px auto 0;
+				background: #262626;
+				border-radius: 100px;
+				font-size: 14px;
+				color: #F9CC74;
+				cursor: pointer;
+			}
+			
+			.station_way_into_hed {
+				display: none;
+			}
+			
+			.station_way_into img {
+				margin-left: 12px;
+			}
+			/*日志*/
+			
+			.station_way_bottom {
+				width: 100%;
+				margin-top: 30px;
+				float: left;
+			}
+			
+			.station_way_log {
+				width: 60%;
+				height: 202px;
+				background: #FFFFFF;
+				margin-right: 2%;
+				float: left;
+			}
+			
+			.station_way_top {
+				margin: 0 30px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 16px;
+				color: #333333;
+			}
+			
+			.station_way_top img {
+				margin-right: 15px;
+			}
+			
+			.station_way_top span {
+				float: right;
+				font-size: 12px;
+				color: #999999;
+				cursor: pointer;
+			}
+			
+			.station_way_p {
+				width: 95%;
+				margin: 20px 30px;
+				line-height: 22px;
+				height: auto;
+				word-wrap: break-word;
+				word-break: break-all;
+				overflow: hidden;
+			}
+			
+			.station_log_author {
+				margin: 0 30px;
+				font-size: 12px;
+				color: #333333;
+				line-height: 54px;
+			}
+			
+			.station_log_author img {
+				margin-right: 10px;
+			}
+			
+			.station_log_author span {
+				float: right;
+				font-size: 12px;
+				color: #999999;
+			}
+			/*站点基本信息*/
+			
+			.station_base_info {
+				width: 20%;
+				float: left;
+				background: #FFFFFF;
+				margin-right: 2%;
+			}
+			
+			.station_way_item {
+				margin: 0 30px;
+				line-height: 29px;
+				font-size: 14px;
+				color: #666666;
+			}
+			
+			.station_way_item span {
+				font-size: 14px;
+				color: #151515;
+			}
+			/*管理人员信息*/
+			
+			.station_user_info {
+				width: 15%;
+				float: left;
+				background: #FFFFFF;
+			}
+			
+			i {
+				font-style: initial;
+			}
+			
+			.station_way_item_a {
+				font-size: 10px !important;
+				color: #999 !important;
+			}
+			.spbut{
+				width: 84px;
+				height: 32px;
+				text-align: center;
+				line-height: 32px;
+				background-color: #fff;
+				color: #333;
+				float: right;
+				margin-top: 14px;
+				border-radius: 32px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="Projectsmap.html">项目首页<span>>></span></a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="" class="nameid"></a>
+			</li>
+			<li class="spbut">视频</li>
+		</ul>
+		<!--内容-->
+		<div class="layui-card" id="thisheader">
+			<div class="layui-card-header" v-text="thisheader.device_name"></div>
+			<div class="layui-card-body">
+				<div class="layui-card-body-k">
+					<img src="../../images/icon_tongxunliant.svg" />
+					<ul class="content-til">
+						<li>状态：<span v-text="thecontent(thisheader.status)"></span></li>
+					</ul>
+				</div>
+				<div class="layui-card-body-k">
+					<img src="../../images/icon_dianya.svg" />
+					<ul class="content-til">
+						<li>电压：<span v-text="thisheader.voltage"></span>V</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="station_way_quxian_box" id="thischannelList">
+			<div class="station_way_box" v-for="val in thischannelList">
+				<div class="station_way_box_name">
+					<span v-text="val.name"></span>
+					<img v-bind:src="thisstatus(val.status)" />
+				</div>
+				<div class="station_way_item">
+					<span>当前值: <a class="color_yellow" v-text="categorystate(val.value,val.category.type)"></a></span>
+					<span class="station_way_item_a">限值范围: <i v-text="val.min_range"></i>~<i v-text="val.max_range"></i></span>
+					<img class="margin_top10" v-bind:src="mudstate(val.min_range,val.max_range,val.value,val.category.type)" />
+				</div>
+				<div class="station_way_item">
+					<span>数据变率: <a class="color_red" v-text="categorystate(val.change_value,val.category.type)"></a></span>
+					<span class="station_way_item_a">正常变化范围: <i v-text="val.change_range_min"></i>~<i v-text="val.change_range_max"></i></span>
+					<span class="station_way_item_a">统计时间: <i v-text="val.count_time"></i>秒/次</span>
+					<img class="margin_top15" v-bind:src="mudstate(val.change_range_min,val.change_range_max,val.change_value,val.category.type)" />
+				</div>
+				<div class="station_way_item">
+					<span><i v-text="switchingstate(val.category.type,val.value,val.switch_alarm)"></i></span>
+					<img v-if="val.category.type != 0" v-bind:src="anniustate(val.value,val.switch_alarm)" />
+				</div>
+				<div class="station_way_into" v-if="val.category.type == 0" v-on:click="pageinto(val.id)">
+					<img src="../../images/icon_lsqx.svg" />
+					<span>历史曲线</span>
+				</div>
+			</div>
+		</div>
+		<div class="station_way_bottom">
+			<div class="station_way_log" id="thissiteLog">
+				<div class="station_way_top">
+					<img src="../../images/icon_rizhi.svg" alt="">日志
+					<span onclick="pagelogs()">全部<i v-text="thissiteLog.length" class="contetntext"></i>篇 ></span>
+				</div>
+				<div class="station_way_p" v-text="thissiteLog[0].log_info"></div>
+				<div class="station_log_author">
+					<img src="../../images/icon_jlry.svg" alt=""><i v-text="thissiteLog[0].project_admin.name"></i>
+					<span v-text="intime(thissiteLog[0].time)"></span>
+				</div>
+			</div>
+			<div class="station_base_info" id="siteInfo">
+				<div class="station_way_top">
+					<img src="../../images/icon_rizhi.svg" alt="">站点基本信息
+				</div>
+				<div class="station_way_item">设备供电方式: <span v-text="siteInfo.electric_type"></span></div>
+				<div class="station_way_item">设备通讯协议: <span v-text="siteInfostate(siteInfo.protocol)"></span></div>
+				<div class="station_way_item">单元标识符: <span v-text="siteInfo.mark">1</span></div>
+				<div class="station_way_item">设备监测环境: <i style="color: #333333;" v-text="siteInfo.environment"></i></div>
+			</div>
+			<div class="station_user_info" id="siteAdmin">
+				<div class="station_way_top">
+					<img src="../../images/icon_glry.svg" alt="">管理人员信息
+				</div>
+				<div class="station_way_item">姓名: <span v-text="siteAdmin.accendant_name"></span></div>
+				<div class="station_way_item">部门: <span v-text="siteAdmin.accendant_department"></span></div>
+				<div class="station_way_item">邮箱: <span v-text="siteAdmin.accendant_email"></span></div>
+				<div class="station_way_item">电话: <span v-text="siteAdmin.accendant_mobile"></span></div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/xadmin.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//时间选择
+		layui.use('laydate', function() {
+			var laydate = layui.laydate;
+			//执行一个laydate实例
+			laydate.render({
+				elem: '#test1' //指定元素
+			});
+		});
+		//站点号
+		var device_id = store.get('device_id');
+		//基本信息数据渲染
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/siteInfo",
+			dataType: 'json',
+			haeder: {
+				token: _token
+			},
+			data: {
+				device_id: device_id
+			},
+			success: function(data) {
+				//console.log(data)
+				$('.nameid').text(data.data.device_name);
+				var _header = new Vue({
+					el: '#thisheader',
+					data: {
+						thisheader: data.data
+					},
+					methods: {
+						thecontent: function(_id) {
+							if(_id == 0) {
+								return '通讯连通'
+							} else if(_id == 1) {
+								return '数据异常'
+							} else if(_id == 2) {
+								return '通讯失败'
+							}
+						}
+					}
+				});
+				var _content = new Vue({
+					el: '#siteInfo',
+					data: {
+						siteInfo: data.data
+					},
+					methods: {
+						siteInfostate: function(id) {
+							if(id == 0) {
+								return '长链接'
+							} else {
+								return '短链接'
+							}
+						}
+					}
+				});
+				//管理员信息
+				var siteAdmin = new Vue({
+					el: '#siteAdmin',
+					data: {
+						siteAdmin: data.data
+					}
+				});
+			}
+		});
+		//通道
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/channelList",
+			dataType: 'json',
+			data: {
+				device_id: device_id
+			},
+			success: function(data) {
+				//console.log(data);
+				var _header = new Vue({
+					el: '#thischannelList',
+					data: {
+						thischannelList: data.data
+					},
+					methods: {
+						thisstatus: function(_id) {
+							if(_id == 0) {
+								return '../../images/icon_txlt.svg'
+							} else {
+								return '../../images/icon_txsb.svg'
+							};
+						},
+						mudstate: function(min, max, e, s) {
+							if(s == 0) {
+								if(min > e) {
+									return '../../images/icon_cuowu.svg'
+								} else if(max < e) {
+									return '../../images/icon_cuowu.svg'
+								} else {
+									return '../../images/icon_zhengc.svg'
+								}
+							} else {
+								return ''
+							}
+
+						},
+						categorystate: function(e, s) {
+							//模拟量开关量判断
+							if(s == 1) {
+								return '-'
+							} else {
+								return e
+							}
+						},
+						switchingstate: function(e, a, b) {
+							//判断开关量状态
+							if(e == 0) {
+								return '-'
+							} else {
+								if(a != b) {
+									return '开关量:正常'
+								} else {
+									return '开关量:异常'
+								}
+							}
+						},
+						anniustate: function(a, b) {
+							//判断开关量状态icon
+							if(a != b) {
+								return '../../images/icon_zhengc.svg'
+							} else {
+								return '../../images/icon_cuowu.svg'
+							}
+						},
+						pageinto: function(e) {
+							//历史曲线
+							store.set('dra_id', e);
+							window.location.href = 'quxian.html';
+						}
+					}
+				});
+			}
+		});
+		//日志
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/siteLog",
+			dataType: 'json',
+			data: {
+				device_id: device_id
+			},
+			success: function(data) {
+				console.log(data);
+				if(data.data == '') {
+					$('.contetntext').html(0);
+					return false
+				};
+				var siteLog = new Vue({
+					el: '#thissiteLog',
+					data: {
+						thissiteLog: data.data
+					},
+					methods: {
+						intime: function(_time) {
+							return new Date(parseInt(_time) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+						}
+					}
+				});
+			}
+		});
+
+		function pagelogs() {
+			//日志
+			var conname = $('.nameid').html();
+			store.set('conname', conname);
+			window.location.href = 'logs.html';
+		}
+		
+		//视频地址
+		$('.spbut').on('click',function(){
+			window.location.href= 'player/index.html';
+		})
+	</script>
+
+</html>

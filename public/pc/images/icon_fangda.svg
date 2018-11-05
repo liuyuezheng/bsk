@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_fangda</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_fangda" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12-Copy">
+            <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="0" width="36" height="36" rx="4"></rect>
+            <path d="M9,18.75 C8.58578644,18.75 8.25,18.4142136 8.25,18 C8.25,17.5857864 8.58578644,17.25 9,17.25 L27,17.25 C27.4142136,17.25 27.75,17.5857864 27.75,18 C27.75,18.4142136 27.4142136,18.75 27,18.75 L9,18.75 Z" id="Line" fill="#262626" fill-rule="nonzero"></path>
+            <path d="M17.25,9 C17.25,8.58578644 17.5857864,8.25 18,8.25 C18.4142136,8.25 18.75,8.58578644 18.75,9 L18.75,27 C18.75,27.4142136 18.4142136,27.75 18,27.75 C17.5857864,27.75 17.25,27.4142136 17.25,27 L17.25,9 Z" id="Line" fill="#262626" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

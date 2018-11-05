@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+
+}
+body{
+	background-image: url(../img/06_02.png);
+	background-size:cover;
+	box-sizing: border-box;
+    padding: 0.37rem;
+
+}
+.logo{
+	text-align: center;
+	
+}
+.logo img{
+	width:2.05rem;
+	height:0.7rem;
+}
+
+.vie{
+	width:100%;
+	height: 1.78rem;
+
+}
+.competition{
+ position: relative;
+}
+.left{
+	display: flex;
+	position: absolute;
+	left: 0.27rem;
+	top: 0.27rem;
+	margin-right: 0.27rem;
+}
+.left_photo{
+	width: 1.08rem;
+	height:1.08rem;
+	border-radius: 50%;
+	margin-right: 0.18rem;
+}
+.middle{
+	font-size: 0.64rem;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	position: absolute;
+    top: 15px;
+    left: 42%;
+}
+.right{
+	display: flex;
+    position: absolute;
+	right: 0.27rem;
+	top: 0.27rem;
+}
+.right_photo{
+	width: 1.08rem;
+	height: 1.08rem;
+	border-radius: 50%;
+	margin-left: 0.18rem;
+}
+.my{
+	font-size:0.37rem;
+	color: #999999;
+}
+.shijian{
+	font-size: 0.37rem;
+	color: #954a09;
+	margin-top: 0.13rem;
+}

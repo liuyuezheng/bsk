@@ -1,0 +1,232 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+	min-height: 500px;
+}
+body{
+	background-image: url(../img/06_02.png);
+	background-size:cover;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+.warpper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.status-box{
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+    padding: 0.37rem;
+}
+.duanwei-box{
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+    padding: 0.37rem;
+}
+.logo img{
+	width: 2.18rem;
+	height:0.72rem;
+}
+.challenge_success{
+	text-align: center;
+}
+.challenge_success img{
+	width: 8.67rem;
+	height:3.94rem;
+}
+.pisa{
+	color: #FFFFFF;
+	font-size: 0.45rem;
+}
+.who_success{
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1.13rem;
+	padding: 0 0.34rem;
+}
+.winner{
+	position: relative;
+	display: flex;
+}
+.winner_touxiang{
+	width:2.02rem;
+	height: 2.02rem;
+	border-radius: 50%;
+	border: 0.05rem #ffd43d solid;
+	z-index: 999;
+
+}
+.winner_touxiang2{
+	width:2.02rem;
+	height: 2.02rem;
+	border-radius: 50%;
+	border: 0.05rem #ffd43d solid;
+	position: absolute;
+    left: 0.97rem;
+
+}
+.win_logo{
+	width: 2.28rem;
+    height: 1.35rem;
+    position: absolute;
+    left: 0.27rem;
+    top:-0.47rem;
+    z-index: 9999;
+
+}
+.loser{
+position: relative;
+display: flex;
+
+}
+.loser_touxiang{
+	width: 1.62rem;
+	height: 1.62rem;
+	border-radius: 50%;
+
+	
+}
+.loser_touxiang2{
+	width: 1.62rem;
+	height: 1.62rem;
+	border-radius: 50%;
+    position: absolute;
+    right: 0.5rem;
+}
+.vs{
+	width: 1.62rem;
+	height: 0.91rem;
+}
+.fenshu{
+	position: relative;
+}
+.winner_fenshu{
+	color: #FFFFFF;
+	font-size: 0.48rem;
+	font-weight: bold;
+	position: absolute;
+	left: 1.28rem;
+	top: 0.18rem;
+}
+.loser_fenshu{
+	color: #FFFFFF;
+	font-size: 0.48rem;
+	font-weight: bold;
+	position: absolute;
+	right: 0.93rem;
+    top: 0.18rem;
+}
+.time{
+	position: relative;
+}
+.winner_time{
+	color:#ff8b00;
+	font-size: 0.37rem;
+	background: #FFFFFF;
+	border-radius: 0.7rem;
+    box-sizing: border-box;
+    padding: 0.08rem 0.54rem;
+    position: absolute;
+    top: 10.29rem;
+    left: 1.97rem;
+}
+.loser_time{
+	color:#ff8b00;
+	font-size: 0.37rem;
+	background: #FFFFFF;
+	border-radius: 0.7rem;
+    box-sizing: border-box;
+    padding: 3px 20px;
+    position: absolute;
+    top: 10.29rem;
+    right: 1.67rem;
+}
+.paiwei{
+	text-align: center;
+	color: #FFFFFF;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    bottom: 2.56rem;
+    left: 50%;
+    margin-left:-50px;
+   
+}
+.paiwei img{
+	width: 0.43rem;
+	height: 0.56rem;
+	margin-top: 0.13rem;
+}
+.choose{
+	box-sizing: border-box;
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	bottom: 0.54rem;
+	width: 100%;
+}
+.choose img{
+	width: 3.81rem;
+	height: 1.51rem;
+}
+.tiaozhan{
+	color: #FFFFFF;
+	font-size: 0.35rem;
+	text-align: center;	
+}
+.tiaozhan img{
+	width: 0.54rem;
+	height: 0.64rem;
+}
+.duanwei{
+	text-align: center;
+}
+.wodeduanwei{
+	width: 4.55rem;
+	height:1.45rem;
+	margin-top: 0.67rem;
+}
+.duanwei_logo{
+	text-align: center;
+}
+.duanwei_logo img{
+	width: 3.54rem;
+	height: 4.97rem;
+}
+
+.rank{
+	color: #FFFFFF;
+	font-size:0.48rem;
+	display: block;
+    text-align: center;
+}
+.pizza{
+	background: #FFFFFF;
+	font-size: 0.37rem;
+	box-sizing: border-box;
+	border-radius:0.7rem;
+	display: inline;
+    padding: 0.16rem 0.43rem;
+}
+.pizza img{
+	width: 0.54rem;
+	height: 0.48rem;
+}
+.kkkk{
+	text-align: center;
+	margin-top: 0.43rem;
+}

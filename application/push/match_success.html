@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/match_success.css">
+		<style>
+			.waitting {
+				margin-top: 4.86rem;
+				color: #fff;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="../../images/logo.png" class="logo" />
+		<div class="matchhing"><img src="../../images/pipeichengong.png" /></div>
+		<div class="vs">
+			<div class="white">
+				<img src="../../images/touxiang111.jpg" id="myImg" />
+			</div>
+			<img src="../../images/12.png" class="vs_logo" />
+			<div class="white">
+				<img src="../../images/touxiang111.jpg" id="enemyImg" />
+			</div>
+		</div>
+		<div class="my_name">我 </div>
+		<div class="wait_name" id="enemyName">对方</div>
+		<div class="start">
+			<div class="waitting">等待中..</div>
+			<img src="../../images/kaishiyouxi.png" style="display:none;" class="start_game" id="start_btn" />
+		</div>
+		<script src="../../js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+            var room_id = chuanzhi().room_id;
+//			var room_id = sessionStorage.getItem('room_id');
+			var uid = sessionStorage.getItem('uid_y');
+			var homeId = chuanzhi().homeId;
+			if(uid == homeId) {
+				$('.waitting').hide();
+				$('#start_btn').show();
+			}
+			_post('/push/push/listInfo', {
+				room_id: room_id,
+				uid: uid
+			}, function(data) {
+				console.log(data)
+				$('#myImg').prop('src', data[0].staff[0].headimgurl)
+				$('#enemyImg').prop('src', data[1].staff[0].headimgurl)
+				$('#enemyName').text(data[1].staff[0].staff_name)
+			});
+			ws = new WebSocket("ws://bsk.mumarenkj.com:7272");
+			// 服务端主动推送消息时会触发这里的onmessage
+			ws.onmessage = function(e) {
+				console.log("onmessage_begin");
+				// json数据转换成js对象
+				var data = JSON.parse(e.data);
+				var type = data.type || '';
+				switch(type) {
+					case 'ping':
+						ws.send('{"type":"pong"}');
+						console.log("onmessage_ping");
+						console.log(data.msg);
+						break;
+						// Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+					case 'init':
+                        console.log("onmessage_init");
+                        console.log(data.client_id);
+                        // break;
+                        // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                        _post('/push/push/bind',{
+                            client_id: data.client_id,
+                            room_id: room_id,
+                            uid: uid
+                        },function(data){
+
+                        })
+						break;
+					case 'message':
+						if(data.content == 1) {
+                            location.href = baseUrl+"/pizza/views/personal/question.html?room_id="+room_id+"&uid="+uid;
+						}else if(data.content == 2){
+
+					 	}
+						break;
+					case 'close':
+						console.log("非法接入client");
+						console.log(data.msg);
+						break;
+				}
+
+			};
+			//开始游戏
+			$(".start_game").click(function(){
+				//房主才能开始游戏
+				if(uid == homeId) {
+					_post('/push/push/startGame', {
+						room_id: room_id,
+						uid: uid
+					}, function(data) {
+
+//						location.href = baseUrl+"/pizza/views/personal/question.html";
+					})
+				} else {
+					alert('房主才能开始游戏');
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

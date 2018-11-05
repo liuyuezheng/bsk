@@ -1,0 +1,57 @@
+2018-09-29 15:19:39 pid:14194 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:20:14 pid:14194 Workerman[start.php] stopping ...
+2018-09-29 15:20:14 pid:14194 Workerman[start.php] has been stopped
+2018-09-29 15:29:20 pid:14878 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:29:21 pid:14886 Worker[14886] process terminated
+2018-09-29 15:29:21 pid:14878 worker[YourAppGateway:14886] exit with status 64000
+2018-09-29 15:29:21 pid:14884 Worker[14884] process terminated
+2018-09-29 15:29:21 pid:14883 Worker[14883] process terminated
+2018-09-29 15:29:21 pid:14885 Worker[14885] process terminated
+2018-09-29 15:29:21 pid:14878 worker[YourAppGateway:14883] exit with status 64000
+2018-09-29 15:29:21 pid:14878 worker[YourAppGateway:14884] exit with status 64000
+2018-09-29 15:29:21 pid:14878 worker[YourAppGateway:14885] exit with status 64000
+2018-09-29 15:29:22 pid:14889 Worker[14889] process terminated
+2018-09-29 15:29:22 pid:14878 worker[YourAppGateway:14889] exit with status 64000
+2018-09-29 15:29:22 pid:14890 Worker[14890] process terminated
+2018-09-29 15:29:22 pid:14891 Worker[14891] process terminated
+2018-09-29 15:29:22 pid:14878 worker[YourAppGateway:14890] exit with status 64000
+2018-09-29 15:29:22 pid:14878 worker[YourAppGateway:14891] exit with status 64000
+2018-09-29 15:29:22 pid:14892 Worker[14892] process terminated
+2018-09-29 15:29:22 pid:14878 worker[YourAppGateway:14892] exit with status 64000
+2018-09-29 15:30:04 pid:14967 Workerman[start.php] stop 
+2018-09-29 15:30:04 pid:14967 Workerman[start.php] is stopping ...
+2018-09-29 15:30:09 pid:14967 Workerman[start.php] stop fail
+2018-09-29 15:35:17 pid:15293 Workerman[start.php] stop 
+2018-09-29 15:35:17 pid:15293 Workerman[start.php] is stopping ...
+2018-09-29 15:35:22 pid:15293 Workerman[start.php] stop fail
+2018-09-29 15:35:25 pid:15310 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:35:25 pid:15310 Workerman[start.php] already running
+2018-09-29 15:36:46 pid:15495 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:36:47 pid:15500 Worker[15500] process terminated
+2018-09-29 15:36:47 pid:15502 Worker[15502] process terminated
+2018-09-29 15:36:47 pid:15503 Worker[15503] process terminated
+2018-09-29 15:36:47 pid:15495 worker[YourAppGateway:15500] exit with status 64000
+2018-09-29 15:36:47 pid:15495 worker[YourAppGateway:15502] exit with status 64000
+2018-09-29 15:36:47 pid:15501 Worker[15501] process terminated
+2018-09-29 15:36:47 pid:15495 worker[YourAppGateway:15503] exit with status 64000
+2018-09-29 15:36:47 pid:15495 worker[YourAppGateway:15501] exit with status 64000
+2018-09-29 15:36:48 pid:15508 Worker[15508] process terminated
+2018-09-29 15:36:48 pid:15507 Worker[15507] process terminated
+2018-09-29 15:36:48 pid:15509 Worker[15509] process terminated
+2018-09-29 15:36:48 pid:15506 Worker[15506] process terminated
+2018-09-29 15:36:48 pid:15495 worker[YourAppGateway:15507] exit with status 64000
+2018-09-29 15:36:48 pid:15495 worker[YourAppGateway:15508] exit with status 64000
+2018-09-29 15:36:48 pid:15495 worker[YourAppGateway:15509] exit with status 64000
+2018-09-29 15:36:48 pid:15495 worker[YourAppGateway:15506] exit with status 64000
+2018-09-29 15:37:45 pid:15582 Workerman[start.php] stop 
+2018-09-29 15:37:45 pid:15582 Workerman[start.php] is stopping ...
+2018-09-29 15:37:50 pid:15582 Workerman[start.php] stop fail
+2018-09-29 15:49:52 pid:16428 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:50:25 pid:16428 Workerman[start.php] stopping ...
+2018-09-29 15:50:25 pid:16428 Workerman[start.php] has been stopped
+2018-09-29 15:50:37 pid:16500 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:54:10 pid:16500 Workerman[start.php] stopping ...
+2018-09-29 15:54:10 pid:16500 Workerman[start.php] has been stopped
+2018-09-29 15:54:20 pid:16759 Workerman[start.php] start in DEBUG mode
+2018-09-29 15:57:11 pid:16759 Workerman[start.php] stopping ...
+2018-09-29 15:57:11 pid:16759 Workerman[start.php] has been stopped

@@ -1,0 +1,51 @@
+[ 2018-09-12T17:27:00+08:00 ][ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-12T17:27:00+08:00 ][ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ 2018-09-12T17:27:00+08:00 ][ info ] [ BIND ] 'push/Worker'
+[ 2018-09-12T17:27:00+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'Worker',
+    2 => NULL,
+  ),
+)
+[ 2018-09-12T17:27:00+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2018-09-12T17:27:00+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2018-09-12T17:29:17+08:00 ][ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-12T17:29:17+08:00 ][ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ 2018-09-12T17:29:17+08:00 ][ info ] [ BIND ] 'push/Worker'
+[ 2018-09-12T17:29:17+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'Worker',
+    2 => NULL,
+  ),
+)
+[ 2018-09-12T17:29:17+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2018-09-12T17:29:17+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2018-09-12T17:30:25+08:00 ][ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-12T17:30:25+08:00 ][ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ 2018-09-12T17:30:25+08:00 ][ info ] [ BIND ] 'push/push'
+[ 2018-09-12T17:30:25+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => NULL,
+  ),
+)
+[ 2018-09-12T17:30:25+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2018-09-12T17:30:25+08:00 ][ info ] [ PARAM ] array (
+)

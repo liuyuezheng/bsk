@@ -1,0 +1,939 @@
+---------------------------------------------------------------
+[ 2018-09-07T15:56:30+08:00 ] 127.0.0.1 POST /api/token/tokenuser?name=635766218@qq.com&password=111111
+[ info ] 127.0.0.1/api/token/tokenuser?name=635766218@qq.com&password=111111 [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：2,065.15kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------733638420756712979372274',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8ed74f871ced37796d00e8b1296fffe7',
+  'postman-token' => '94e3d894-a104-44f6-bf1e-1852b2d56c34',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '635766218@qq.com',
+  'password' => '111111',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '635766218@qq.com'  AND `password` = '96e79218965eb72c92a549dd5a330112'  AND `type` IN (1,2) LIMIT 1 [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-09-07T15:56:59+08:00 ] 127.0.0.1 POST /api/inspection/polling
+[ info ] 127.0.0.1/api/inspection/polling [运行时间：0.099006s][吞吐率：10.10req/s] [内存消耗：2,023.30kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'inspection',
+    2 => 'polling',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------126117235004846131077326',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => 'ef8235c6-7a9f-4b11-bdf6-73a9306cd4fd',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/inspection/polling' => '',
+)
+[ info ] [ RUN ] app\api\controller\Inspection->polling[ D:\Documents\GitHub\xhgj\application\api\controller\Inspection.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_inspect_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `project_inspect_log` WHERE  `project_admin_id` = 3 ORDER BY `create_time` DESC [ RunTime:0.008001s ]
+---------------------------------------------------------------
+[ 2018-09-07T15:57:45+08:00 ] 127.0.0.1 POST /api/inspection/polling
+[ info ] 127.0.0.1/api/inspection/polling [运行时间：0.114007s][吞吐率：8.77req/s] [内存消耗：2,020.40kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'inspection',
+    2 => 'polling',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------354394024786928465364079',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '530f0ce8-634d-4265-a1a8-b9bf7efe34f6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/inspection/polling' => '',
+)
+[ info ] [ RUN ] app\api\controller\Inspection->polling[ D:\Documents\GitHub\xhgj\application\api\controller\Inspection.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin_device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `l`.* FROM `project_admin_device` `p` INNER JOIN `device` `d` ON `d`.`device_id`=`p`.`device_id` INNER JOIN `project_inspect_log` `l` ON `l`.`project_admin_id`=`p`.`project_admin_id` WHERE  `d`.`project_id` = 18 ORDER BY `l`.`create_time` DESC [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-09-07T16:09:17+08:00 ] 127.0.0.1 POST /api/inspection/polling
+[ info ] 127.0.0.1/api/inspection/polling [运行时间：0.125007s][吞吐率：8.00req/s] [内存消耗：2,023.28kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'inspection',
+    2 => 'polling',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------002199021018890470311830',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '36c0f2eb-1801-433b-9310-e9f0670d9b1b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/inspection/polling' => '',
+)
+[ info ] [ RUN ] app\api\controller\Inspection->polling[ D:\Documents\GitHub\xhgj\application\api\controller\Inspection.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_inspect_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_inspect_log` WHERE  `project_admin_id` = 3 ORDER BY `create_time` DESC [ RunTime:0.021001s ]
+---------------------------------------------------------------
+[ 2018-09-07T16:23:28+08:00 ] 127.0.0.1 POST /api/test/devs
+[ info ] 127.0.0.1/api/test/devs [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：1,111.76kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'devs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------954515268098596510150084',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '7bf62bf6-4f43-4e4a-8a33-980cf708ffc0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/test/devs' => '',
+)
+[ info ] [ RUN ] app\api\controller\Test->devs[ D:\Documents\GitHub\xhgj\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\api\controller\Project_admin' not found[D:\Documents\GitHub\xhgj\application\api\controller\Test.php:19]
+---------------------------------------------------------------
+[ 2018-09-07T16:23:47+08:00 ] 127.0.0.1 POST /api/test/devs
+[ info ] 127.0.0.1/api/test/devs [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：1,982.59kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'devs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------709084111202307583399981',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => 'a4e475ee-bf1e-47d4-af44-796791f52c08',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/test/devs' => '',
+)
+[ info ] [ RUN ] app\api\controller\Test->devs[ D:\Documents\GitHub\xhgj\application\api\controller\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.012000s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:49:42+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：2,153.94kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------809736797368701662489775',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '011f7e93-a12b-49d5-85f7-0f6759affdbb',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 18 ORDER BY `build_start_time` DESC [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:10+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------862871305250213652453319',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => 'e5afc766-f2db-4860-85fc-ed912779ad66',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.013000s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:12+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------699648409263858637799538',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '702ac5c4-2e6e-4b44-b131-804b2d11dfd7',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:25+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------043959395282267509414288',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '6a5f548f-7caa-4c29-aed3-3f60a8cde141',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:36+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.155009s][吞吐率：6.45req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------787911820115860088113532',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '15191cae-70b5-406b-9770-7c42014e11c4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:37+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.092005s][吞吐率：10.87req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------251683654026738773186080',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '00e7281e-0f65-4d25-b910-3a745e966c99',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.010001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:38+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.152009s][吞吐率：6.58req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------937335316958289362817283',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => 'ed998988-14f1-4e82-8f3b-e62dc60b1317',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:51:54+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：2,077.48kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------715247812023593636006614',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '6d85e5af-dc81-465f-84bd-6db9b4f391e6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.008001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:54:07+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.125007s][吞吐率：8.00req/s] [内存消耗：2,078.12kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------403987721156890674218634',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '5bab8a9c-37df-4ae6-9e74-5401bd2ab4af',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 ORDER BY `build_start_time` DESC [ RunTime:0.017001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:54:47+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,077.34kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------154605552993992088374966',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '87f0546e-789d-438c-877a-7be08234ec07',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 [ RunTime:0.010001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:54:56+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.111006s][吞吐率：9.01req/s] [内存消耗：2,076.70kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------165461170243430292270530',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '800bc0c5-8c24-4e73-80b7-3d1b2de0d547',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` WHERE  `id` = 1 [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:55:10+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.308018s][吞吐率：3.25req/s] [内存消耗：2,181.77kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------890915070404760605227438',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '45673c48-daf6-4afc-b284-14b194a43876',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 3 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 6 [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 10 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 11 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 12 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 20 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 24 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 25 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 26 [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:56:00+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.302018s][吞吐率：3.31req/s] [内存消耗：2,180.73kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------024689978235403057813122',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '13bb1e96-7988-4487-a671-3ec05be02b89',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 3 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 6 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 10 [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 11 [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 12 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 20 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 24 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 25 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 26 [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:56:33+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.300017s][吞吐率：3.33req/s] [内存消耗：2,181.26kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------356505869870600049522496',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '60fb5f1d-7b9f-4c96-b06f-a249d7297eb6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 3 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 6 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 10 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 11 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 12 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 20 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 24 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 25 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 26 [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:57:21+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.207012s][吞吐率：4.83req/s] [内存消耗：2,180.73kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------093044526255203274179993',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => 'e7e6567c-5b0e-45cb-991b-48a6bdff92c0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 3 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 6 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 10 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 11 [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 12 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 20 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 24 [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 25 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 26 [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-09-07T17:58:15+08:00 ] 127.0.0.1 POST /api/project/promessage
+[ info ] 127.0.0.1/api/project/promessage [运行时间：0.237014s][吞吐率：4.22req/s] [内存消耗：2,181.21kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'promessage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------215950067490029099523847',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => 'ba918815-cda2-4b99-bfcc-6f330eb85cda',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/promessage' => '',
+)
+[ info ] [ RUN ] app\api\controller\Project->promessage[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `projects` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `projects` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 3 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 6 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 10 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 11 [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 12 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 20 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 24 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 25 [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `project_id` = 26 [ RunTime:0.019001s ]
+---------------------------------------------------------------
+[ 2018-09-07T18:12:38+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.022002s][吞吐率：45.45req/s] [内存消耗：1,095.24kb] [文件加载：39]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536110798,1536124562,1536129686,1536198249',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:D:\Documents\GitHub\xhgj\public/../application/index\view\index\index.html[D:\Documents\GitHub\xhgj\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-09-07T18:12:40+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,095.24kb] [文件加载：39]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536110798,1536124562,1536129686,1536198249',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:D:\Documents\GitHub\xhgj\public/../application/index\view\index\index.html[D:\Documents\GitHub\xhgj\thinkphp\library\think\view\driver\Think.php:82]

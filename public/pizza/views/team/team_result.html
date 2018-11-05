@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/team_result.css">
+		    <style>
+        #fail .loser_fenshu{
+			color: #FFFFFF;
+		    font-size: 0.48rem;
+		    font-weight: bold;
+		    position: absolute;
+		    left: 1.28rem;
+		    top: 0.18rem;
+		    right:initial;
+		}
+		#fail .winner_fenshu{
+			color: #FFFFFF;
+		    font-size: 0.48rem;
+		    font-weight: bold;
+		    position: absolute;
+		    right: 1.4rem;
+		    top: 0.18rem;
+		    left: initial;
+		}
+		#fail .who_success{
+			margin-top: 1.13rem;
+			padding: 0 1.4rem;
+		}
+        </style>
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="status-box">
+				<div class="logo">
+				  <img src="../../images/logo.png"/>	
+				</div>
+				  <div id="win" style="display:none">
+                    <div class="challenge_success">
+                        <img src="../../images/444.png"/>
+                        <div class="pisa">恭喜获得1份披萨</div>
+                    </div>
+                    <div class="who_success" >
+                       <div class="winner">
+						  	<img src="../../images/touxiang111.jpg" class="winner_touxiang headImg"/>
+						  	<img src="../../images/touxiang111.jpg" class="winner_touxiang2 headImg2"/>
+						  	<img src="../../images/team_winner.png" class="win_logo"/>
+					  	</div>
+					  	<img src="../../images/12.png" class="vs"/ >
+					  	<div class="loser">
+					  	 	<img src="../../images/touxiang111.jpg"class="loser_touxiang headImg3"/>
+					  	 	<img src="../../images/touxiang111.jpg" class="loser_touxiang2 headImg4"/>
+					  	</div>
+                    </div>
+                    <div class="fenshu">
+                        <div class="winner_fenshu"><span class="myScore"></span>分</div>
+                        <div class="loser_fenshu"><span class="enemyScore"></span>分</div>
+                    </div>
+					  <div id="time">
+						  <div class="winner_time myTime"></div>
+						  <div class="loser_time enemyTime"></div>
+					  </div>
+                </div>
+				<div id="fail" style="display:none">
+                    <div class="challenge_success">
+                        <img src="../../images/13.png"/>
+                        <div class="pisa">已扣除2个披萨</div>
+                    </div>
+                    <div class="who_success">
+					 	<div class="loser">
+					  	 	<img src="../../images/touxiang111.jpg"class="loser_touxiang headImg"/>
+					  	 	<img src="../../images/touxiang111.jpg" class="loser_touxiang2 headImg2"/>
+					  </div>
+					  	<img src="../../images/12.png" class="vs"/ >
+					 	<div class="winner">
+						  	<img src="../../images/touxiang111.jpg" class="winner_touxiang headImg3"/>
+						  	<img src="../../images/touxiang111.jpg" class="winner_touxiang2 headImg4"/>
+						  	<img src="../../images/team_winner.png" class="win_logo"/>
+					  	</div>
+					</div>
+                    <div class="fenshu">
+                        <div class="winner_fenshu"><span class="enemyScore"></span>分</div>
+                        <div class="loser_fenshu"><span class="myScore"></span>分</div>
+                    </div>
+					<div id="time">
+						<div class="winner_time myTime"></div>
+						<div class="loser_time enemyTime"></div>
+					</div>
+               
+                </div>
+		
+			  <div class="paiwei" id="next">
+			  	<div>我的排位情况</div>
+			  	<img src="../../images/888.png"/>
+			  </div>
+			  <div class="choose">
+			  	<img src="../../images/555.png" class="again"/>
+			  	<img src="../../images/666.png" class="other"/>
+			  </div>
+			</div>
+			<div class="duanwei-box">
+				<div class="logo">
+					<img src="../../images/logo.png" alt="" />
+				</div>
+				<div class="tiaozhan" id="prev">
+					<img src="../../images/Artboard@2x.png" alt="" />
+					<div>我的挑战结果</div>
+				</div>
+				<div class="duanwei">
+					<img src="../../images/14.png" id="rankImg" class="wodeduanwei" />
+				</div>
+				<div class="duanwei_logo">
+					<img src="../../images/15.png" />
+				</div>
+				<div class="rank" id="rankName">青铜</div>
+				<div class="kkkk">
+					<div class="pizza">
+						<img src="../../images/pizza.png" />
+						<span id="count">25</span>
+					</div>
+				</div>
+				<div class="choose">
+					<img src="../../images/555.png"  class="again"/>
+					<img src="../../images/666.png"  class="other"/>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/zepto.js"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            var room_id = chuanzhi().room_id;
+            var uid = chuanzhi().uid;
+			$('#next').on('tap', function() {
+				$('.warpper').animate({
+					top: "-100%"
+				}, 1000, 'swing');
+			})
+			$('#prev').on('tap', function() {
+				$('.warpper').animate({
+					top: "0"
+				}, 1000, 'swing');
+			})
+//			var room_id = sessionStorage.getItem('room_id');
+//			var uid = sessionStorage.getItem('uid');
+			_post('/push/push/answerEnd', {
+				room_id: room_id,
+				uid: uid
+			}, function(data) {
+				if(data.users[0].p_status == 1) {
+					$('#win').show()
+				} else {
+					$('#fail').show()
+				}
+				$('.headImg').prop('src', data.users[0].staff[0].headimgurl);
+				$('.headImg2').prop('src', data.users[0].staff[1].headimgurl);
+				$('.headImg3').prop('src', data.users[1].staff[0].headimgurl);
+				$('.headImg4').prop('src', data.users[1].staff[1].headimgurl);
+				$('.integral').text(data.users[0].point);
+				$('.myScore').text(data.users[0].point);
+				$('.enemyScore').text(data.users[1].point);
+                $('.myTime').text(data.users[0].pktime+"s");
+                $('.enemyTime').text(data.users[1].pktime+"s");
+			})
+			_post('/push/push/danWei', {
+				room_id: room_id,
+				uid: uid
+			}, function(data) {
+				var arr = data.dan;
+                $('#count').text(data.pizza_num);
+                for(var i = 0, length = arr.length; i < length; i++) {
+                    if(data.pizza_num >= arr[i].min_count && data.pizza_num <= arr[i].max_count) {
+                        console.log(arr[i].dan_name);
+                        $('.duanwei_logo').prop('src', arr[i].img);
+                        $('#rankName').text(arr[i].dan_name);
+//                        $('.myTime').text(data.users[0].pktime+"s");
+//                        $('.enemyTime').text(data.users[1].pktime+"s");
+                        break;
+					}
+				}
+			})
+					$(".again").click(function(){
+				  location.href = baseUrl+"/pizza/views/index.html?uid="+uid;
+				});
+					$(".other").click(function(){
+				  location.href = "http://yunying.greencampus.cc/Activity/Pizza/index/act_id/1/origin/pizza/is_visit/1";
+				});
+		</script>
+	</body>
+</html>

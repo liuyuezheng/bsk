@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>咸亨国际</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/font.css">
+		<link rel="stylesheet" href="./css/xadmin.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="./lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./js/xadmin.js"></script>
+		<style type="text/css">
+			.login {
+				margin: 120px auto 0 auto;
+				background-color: initial !important;
+				min-width: 455px;
+			}
+			
+			.login-logo {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			
+			.login-logo p {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 100;
+			}
+			
+			.login-logo p:first-child {
+				font-size: 36px;
+				font-weight: bold;
+			}
+			
+			.layui-form {
+				width: 375px;
+				height: 423px;
+				background-color: #fff;
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			
+			.login input[type=text],
+			.login input[type=file],
+			.login input[type=password],
+			.login input[type=email],
+			select {
+				width: 315px;
+				height: 60px;
+				margin: 0 auto;
+				border: none;
+				border-bottom: 1px #DDDDDD solid;
+				padding-left: 80px;
+				outline: none;
+				background-color: #ffffff !important;
+				border-radius: 0;
+			}
+			
+			.login input[type=text] {
+				margin-top: 60px;
+			}
+			
+			.login input[type=submit] {
+				width: 161px !important;
+				height: 44px;
+				margin-left: 107px;
+				background: #262626;
+				box-shadow: 0 10px 14px -6px #999999;
+				color: #F9CC74;
+				font-size: 14px;
+				margin-top: 50px;
+				border-radius: 4px;
+			}
+			
+			.login_name {
+				position: relative;
+			}
+			
+			.login_name img {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				top: 18px;
+				left: 60px;
+			}
+		</style>
+	</head>
+
+	<body class="login-bg">
+		<div class="login layui-anim layui-anim-up" id="login">
+			<div class="login-logo">
+				<p>{{message}}</p>
+				<p>the slogan</p>
+			</div>
+			<form method="post" class="layui-form">
+				<div class="login_name">
+					<img src="images/icon_zh.svg" />
+					<input name="username" placeholder="用户名" type="text" lay-verify="required" class="layui-input">
+				</div>
+				<div class="login_name">
+					<img src="images/icon_mm.svg" />
+					<input name="password" lay-verify="required" placeholder="密码" type="password" class="layui-input">
+				</div>
+				<hr class="hr15">
+				<input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+				<hr class="hr20">
+				<hr class="hr20">
+				<hr class="hr15">
+				<img src="images/11111.png" />
+			</form>
+		</div>
+	</body>
+	<script src="js/vue.js"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function() {
+			layui.use('form', function() {
+				var form = layui.form;
+				//监听提交
+				form.on('submit(login)', function(_data) {
+					// alert(888)
+					$.ajax({
+						type: "POST",
+						url: _http + "/admin/token/getToken",
+						dataType: 'json',
+						data: {
+							username: _data.field.username,
+							password: _data.field.password
+						},
+						success: function(data) {
+							store.set('token',data.data.token);
+							location.href = 'index.html';
+						},
+						error: function(data) {	
+							layer.msg('账号或者密码错误', function() {});
+						}
+					});
+					return false;
+				});
+			});
+		});
+		//数据渲染
+		var app = new Vue({
+			el: '#login',
+			data: {
+				message: '咸亨国际'
+			}
+		});
+	</script>
+
+</html>

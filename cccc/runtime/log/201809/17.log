@@ -1,0 +1,561 @@
+---------------------------------------------------------------
+[ 2018-09-17T10:44:00+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room=2
+[ info ] 127.0.0.1/push/push/answerEnd?room=2 [运行时间：0.092006s][吞吐率：10.87req/s] [内存消耗：2,200.15kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '086e5752280fbe663dfd3bd4fe4d9df8',
+  'postman-token' => 'c813402c-8aec-49de-a5d4-a279cc08ad8c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room' => '2',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` IS NULL [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-09-17T10:44:11+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room=1
+[ info ] 127.0.0.1/push/push/answerEnd?room=1 [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：2,199.89kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '709b23c5-5e2b-4197-9c30-73d39d7ca620',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-17T10:44:34+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room_id=1
+[ info ] 127.0.0.1/push/push/answerEnd?room_id=1 [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,201.89kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '88cc9567-408f-4929-b82a-b9efc3b93f97',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room_id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T10:46:24+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room_id=1
+[ info ] 127.0.0.1/push/push/answerEnd?room_id=1 [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,201.89kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '465632ea-ddd1-48cf-be60-4241caebfff8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room_id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T11:11:45+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room_id=1
+[ info ] 127.0.0.1/push/push/answerEnd?room_id=1 [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：2,303.46kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '9e8c3ff3-1cb1-4539-a623-7689e0257b37',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room_id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `count`=3,`points`=10  WHERE  `user_id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `count`=0  WHERE  `user_id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-17T11:34:46+08:00 ] 127.0.0.1 GET /push/push/chooseList?num=5
+[ info ] 127.0.0.1/push/push/chooseList?num=5 [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：2,296.05kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'chooseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => 'ac44b4eb-80a6-442d-a0b7-c4b6dee67395',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/chooseList' => '',
+  'num' => '5',
+)
+[ info ] [ RUN ] app\push\controller\push->chooseList[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `topic` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT MAX(topic_id) AS tp_max FROM `topic` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `topic` WHERE  `topic_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `answer` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `answer` WHERE  `topic_id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `topic` WHERE  `topic_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `answer` WHERE  `topic_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `topic` WHERE  `topic_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `answer` WHERE  `topic_id` = 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `topic` WHERE  `topic_id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `answer` WHERE  `topic_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `topic` WHERE  `topic_id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `answer` WHERE  `topic_id` = 6 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T14:59:37+08:00 ] 127.0.0.1 GET /push/push/challenge
+[ info ] 127.0.0.1/push/push/challenge [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：2,201.14kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'challenge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '9ec023d2-a705-4e79-a5fa-508c06effcbc',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/challenge' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->challenge[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] INSERT INTO `room` (`time` , `count` , `type`) VALUES (1537167577 , 2 , 1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T15:07:28+08:00 ] 127.0.0.1 GET /push/push/answerQuestions?answer_id=1&room_id=1&topic_id=2
+[ info ] 127.0.0.1/push/push/answerQuestions?answer_id=1&room_id=1&topic_id=2 [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,243.70kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerQuestions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '258d02f8-1b42-4b4e-94e2-fa5bb0cb8c25',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerQuestions' => '',
+  'answer_id' => '1',
+  'room_id' => '1',
+  'topic_id' => '2',
+)
+[ info ] [ RUN ] app\push\controller\push->answerQuestions[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 1  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `relation` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `relation` WHERE  `room_id` = 1  AND `topic_id` = 2  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T16:08:27+08:00 ] 127.0.0.1 GET /push/push/answerQuestions?answer_id=1&room_id=1&topic_id=2&type=1
+[ info ] 127.0.0.1/push/push/answerQuestions?answer_id=1&room_id=1&topic_id=2&type=1 [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,245.98kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerQuestions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '590cd38c-9ac3-4155-a615-3b9e8b0a192f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerQuestions' => '',
+  'answer_id' => '1',
+  'room_id' => '1',
+  'topic_id' => '2',
+  'type' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerQuestions[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 1  AND `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `relation` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `relation` WHERE  `room_id` = 1  AND `topic_id` = 2  AND `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-09-17T16:17:51+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room_id=1
+[ info ] 127.0.0.1/push/push/answerEnd?room_id=1 [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,314.48kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '0bf29bf2-41a0-4b50-8d8a-26b0c87a18de',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room_id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `points`  SET `p_status`=1  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `points`  SET `p_status`=0  WHERE  `id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `count`=4,`points`=20  WHERE  `user_id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `count`=0  WHERE  `user_id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-17T16:44:26+08:00 ] 127.0.0.1 GET /push/push/answerEnd?room_id=1
+[ info ] 127.0.0.1/push/push/answerEnd?room_id=1 [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：2,329.58kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'answerEnd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '9105d1d6-73e8-48e7-b0f6-bbc2b059ab83',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/answerEnd' => '',
+  'room_id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->answerEnd[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `points`  SET `p_status`=1  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `points`  SET `p_status`=0  WHERE  `id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `count`=5,`points`=30  WHERE  `user_id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `count`=0  WHERE  `user_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` `p` INNER JOIN `user` `u` ON `u`.`user_id`=`p`.`user_id` WHERE  `p`.`room_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T16:51:32+08:00 ] 127.0.0.1 GET /push/token/token?username=cccccc&id=3
+[ info ] 127.0.0.1/push/token/token?username=cccccc&id=3 [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,964.98kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => 'e6525790-af11-448a-a901-2b938ac7855e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'cccccc',
+  'id' => '3',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\xhgj\application\push\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'cccccc'  AND `user_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: id[D:\Documents\GitHub\xhgj\application\push\model\UserToken.php:58]
+---------------------------------------------------------------
+[ 2018-09-17T16:53:04+08:00 ] 127.0.0.1 GET /push/token/token?username=cccccc&id=3
+[ info ] 127.0.0.1/push/token/token?username=cccccc&id=3 [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：2,004.31kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '743f3d47-774d-41b6-9a67-2538b329b7b3',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'cccccc',
+  'id' => '3',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\xhgj\application\push\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'cccccc'  AND `user_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-17T16:54:29+08:00 ] 127.0.0.1 GET /push/push/challenge
+[ info ] 127.0.0.1/push/push/challenge [运行时间：0.097005s][吞吐率：10.31req/s] [内存消耗：2,360.05kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'challenge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '71c68cecc0b111b489d32399a4879f2b',
+  'postman-token' => 'cdbc7873-3c10-4005-b37d-0cdc182783d6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/challenge' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->challenge[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `room` (`time` , `count` , `type`) VALUES (1537174469 , 2 , 1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `points` (`room_id` , `user_id` , `time`) VALUES (3 , 3 , 1537174469) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-17T17:02:02+08:00 ] 127.0.0.1 GET /push/push/challenge
+[ info ] 127.0.0.1/push/push/challenge [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：2,360.45kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'challenge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '71c68cecc0b111b489d32399a4879f2b',
+  'postman-token' => 'ada85b67-7097-4e6e-b9d5-3ea02af3b47e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/challenge' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->challenge[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `room` (`time` , `count` , `type`) VALUES (1537174922 , 2 , 1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `points` (`room_id` , `user_id` , `time`) VALUES (4 , 3 , 1537174922) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 3 LIMIT 1 [ RunTime:0.000000s ]

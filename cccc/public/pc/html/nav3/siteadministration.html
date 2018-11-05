@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>站点管理</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			.layui-tab {
+				margin: 0;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial;
+			}
+			
+			.layui-this a {
+				font-size: 16px !important;
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0 30px;
+			}
+			/*列表*/
+			
+			.form-content {
+				background: #FFFFFF;
+				text-align: center;
+			}
+			
+			.layui-table thead tr {
+				background: #FFFFFF;
+			}
+			
+			.layui-table th {
+				line-height: 53px;
+				text-align: center;
+				font-size: 14px;
+				color: #333333;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-table td {
+				line-height: 35px;
+				font-size: 12px;
+				color: #666666;
+				border: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.logos_size {
+				width: 48px;
+				height: 48px;
+			}
+			
+			.project_options {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				font-size: 12px;
+				color: #333333;
+			}
+			
+			tbody tr td span {
+				display: inline-block;
+				width: 100%;
+			}
+			/*分页*/
+			
+			.page {
+				position: absolute;
+				bottom: 9px;
+				text-align: center;
+			}
+			
+			.page a {
+				min-width: 10px;
+				height: 24px;
+				line-height: 24px;
+				margin-right: 10px;
+				font-size: 12px;
+				color: #333333;
+				border: 1px solid #D9D9D9;
+				padding: 0 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr {
+				margin-right: 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr .layui-laypage-em {
+				color: #F9CC74;
+				background: #262626;
+				padding: 0;
+				top: 0;
+				left: 0;
+			}
+			
+			.page span {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-laypage span {
+				height: 24px;
+				line-height: 24px;
+			}
+			
+			.layui-laypage .layui-laypage-spr {
+				margin-right: 10px;
+			}
+			/*筛选*/
+			
+			.layui-card_shaixuan {
+				width: 100%;
+				height: 60px;
+			}
+			
+			.layui-input-block_input {
+				width: 600px;
+				height: 40px;
+				float: left;
+				margin: 10px 15px;
+				/*border: 1px solid #DDDDDD;*/
+				border-radius: 2px;
+				display: flex;
+				flex-direction: row;
+			}
+			
+			.layui-input-block_addproject {
+				float: right;
+				margin: 10px 15px;
+				margin-right: 32px;
+			}
+			
+			.layui-input {
+				width: 600px;
+				height: 48px;
+				background: #F5F5F5;
+			}
+			
+			.layui-input_height40 {
+				height: 40px;
+			}
+			
+			.layui-btn_add_project {
+				width: 84px;
+				height: 32px !important;
+				line-height: 32px !important;
+				background: #262626 !important;
+				border: 0 solid #262626;
+				border-radius: 100px;
+				font-size: 14px !important;
+				color: #F9CC74 !important;
+			}
+			/*报警设置*/
+			
+			.layui-layer-title {
+				height: 49px !important;
+				line-height: 49px !important;
+				background: #FFFFFF !important;
+				box-shadow: 0 1px 0 0 #EBEBEB !important;
+				font-size: 18px !important;
+				color: #333333 !important;
+			}
+			
+			.model_content {
+				padding: 0 12px;
+				margin: 20px 30px 0;
+			}
+			
+			.layui-input_jingdu {
+				width: 258px;
+				height: 44px;
+				line-height: 44px;
+				margin-right: 30px;
+				text-indent: 1em;
+				margin-bottom: 10px;
+				border: 1px solid #EBEBEB;
+			}
+			
+			.layui-input-block_jingdu {
+				width: 262px;
+				height: 46px !important;
+				line-height: 46px;
+				margin-left: -6px;
+			}
+			
+			.layui-input-block_jingdu div div .layui-input {
+				background: #FFFFFF;
+			}
+			
+			.layui-btn {
+				height: 26px;
+				line-height: 26px;
+				font-size: 14px;
+				color: #FFFFFF;
+				background: #666666;
+				padding: 0 8px;
+				margin-right: 10px;
+			}
+			
+			.model_upload_logo {
+				line-height: 37px;
+				font-size: 12px;
+				color: #999999;
+			}
+			
+			.model_content_box {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			
+			.model_layui-card {
+				/*width: 200px;*/
+			}
+			
+			.layui-input-block {
+				/*margin-left: -2px;*/
+			}
+			
+			.layui-form-select .layui-input {
+				width: 100%;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				/*height: 490px !important;*/
+			}
+			
+			.layui-layer-page .layui-layer-btn {
+				text-align: left;
+				padding: 0 !important;
+			}
+			
+			.layui-layer-btn .layui-layer-btn0 {
+				width: 136px;
+				height: 42px;
+				line-height: 42px;
+				text-align: center;
+				background: #F9CC74 !important;
+				border-radius: 4px;
+				border-color: transparent !important;
+				/*margin-left: 45px !important;*/
+				/*margin-bottom: 20px !important;*/
+				margin: 0 auto !important;
+				display: block;
+				position: relative;
+				/*top: -36px;*/
+				color: #333333 !important;
+				font-size: 14px;
+			}
+			
+			.layui-layer-setwin {
+				top: 0;
+			}
+			
+			.layui-layer-btn a {
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				overflow: visible !important;
+			}
+			/*通讯设置*/
+			
+			.model_content_msg {
+				padding: 0 12px;
+				margin: 20px 0 0 30px;
+			}
+			/*      input.model_msg_interval::after{
+        content: "秒";
+        font-size: 35px;
+      }*/
+			
+			.model_msg_interval {
+				position: absolute;
+				top: 50px;
+				right: 24px;
+				font-size: 14px;
+				color: #333333;
+			}
+			/*搜索按钮*/
+			
+			.set_site_img_search {
+				width: 22px;
+				height: 22px;
+				position: relative;
+				top: 9px;
+				left: -31px;
+				cursor: pointer;
+			}
+			
+			.buttomstate span {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="projectmanagement.html">项目管理</a>
+			</li>
+			<li class="layui-nav-item  layui-this">
+				<a href="siteadministration.html">站点管理</a>
+			</li>
+		</ul>
+		<!-- 筛选 -->
+		<div class="layui-card layui-card_shaixuan">
+			<div class="layui-input-block layui-input-block_input">
+				<input type="text" name="title" id="inputcon" required lay-verify="required" placeholder="搜索项目名称/关键词" autocomplete="off" class="layui-input layui-input_height40">
+				<img class="set_site_img_search" src="../../images/icon_sousuo.svg" alt="">
+			</div>
+			<div class="layui-input-block layui-input-block_addproject">
+				<button class="layui-btn layui-btn_add_project" lay-submit lay-filter="*">新增站点</button>
+			</div>
+		</div>
+		<!-- 列表 -->
+		<div class="form-content">
+			<table class="layui-table">
+				<thead>
+					<tr>
+						<th>站点编号</th>
+						<th>站点名称</th>
+						<th>所在省份</th>
+						<th>所属项目</th>
+						<th>站点基本信息</th>
+						<th>管理人员信息</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="deviceList">
+					<!--内容-->
+				</tbody>
+			</table>
+			<!-- 分页 -->
+			<div class="page pagination_position" id="pageid">
+				<!--分页-->
+			</div>
+		</div>
+		<div id="model">
+			<!--报警设置-->
+			<form method="post" class="layui-form">
+				<div class="model_content">
+					<div class="model_upload_logo">
+						超过通讯时间内没有数据返回,判断为通讯中断
+					</div>
+					<input type="text" id="bjtime" name="title" required lay-verify="required" placeholder="通讯时间" autocomplete="off" class="layui-input_jingdu">
+					<span class="model_msg_interval">秒</span>
+				</div>
+				<div class="model_content_box">
+					<div class="layui-card model_layui-card">
+						<div class="model_upload_logo">
+							站点通讯中断,通道读取失败报警可见权限
+						</div>
+						<!--选择框-->
+						<div class="layui-input-block layui-input-block_jingdu">
+							<select name="city" id="bjval" lay-verify="required">
+								<option value="0">普通</option>
+								<option value="1">仅网管可见</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="modelmsg">
+			<form method="post" class="layui-form">
+				<div class="model_content_msg">
+					<div class="model_upload_logo">
+						需在站点通讯正常的情况下才可以修改
+					</div>
+					<input type="text" id="txtime" name="title" required lay-verify="required" placeholder="通讯间隔" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" id="txip" name="title" required lay-verify="required" placeholder="IP地址" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" id="txcode" name="title" required lay-verify="required" placeholder="端口号" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" name="work_pattern" required lay-verify="required" placeholder="工作模式" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" name="function_switch" required lay-verify="required" placeholder="功能开关" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" name="reset_logo" required lay-verify="required" placeholder="复位标志" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" name="initial_channel" required lay-verify="required" placeholder="起始通道" autocomplete="off" class="layui-input_jingdu">
+					<input type="text" name="measurement_channel_number" required lay-verify="required" placeholder="测量通道数" autocomplete="off" class="layui-input_jingdu">
+				</div>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		layui.use('form', function() {
+			var form = layui.form;
+			//监听提交
+			form.on('submit(formDemo)', function(data) {
+				layer.msg(JSON.stringify(data.field));
+				return false;
+			});
+		});
+		var count,
+			keywords = '';
+		//搜索
+		$('.set_site_img_search').on('click', function() {
+			keywords = $('#inputcon').val();
+			pagehtml();
+		});
+		//页面数据渲染
+		function pagehtml() {
+			//console.log(JSON.stringify(e));
+			//console.log(keywords);
+			$.ajax({
+				type: "GET",
+				url: _http + "/admin/device_management/deviceList",
+				dataType: 'json',
+				data: {
+					page: 1,
+					size: 3,
+					keywords: keywords
+				},
+				success: function(data) {
+					layui.use('laypage', function() {
+						var laypage = layui.laypage;
+						//console.log(data.data.total);
+						count = data.data.total;
+						//执行一个laypage实例
+						laypage.render({
+							elem: 'pageid',
+							count: count, //数据总数，从服务端得到
+							limit: 3,
+							prev: '<上一页',
+							next: '下一页>',
+							first: '首页',
+							last: '尾页',
+							jump: function(obj, first) {
+								//obj包含了当前分页的所有参数，比如：
+								//console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+								//console.log(obj.limit); //得到每页显示的条数	
+								$.ajax({
+									type: "GET",
+									url: _http + "/admin/device_management/deviceList",
+									dataType: 'json',
+									data: {
+										page: obj.curr,
+										size: obj.limit,
+										keywords: keywords
+									},
+									success: function(data) {
+										console.log(data);
+										$('#deviceList').find().remove(); //清楚数据
+										var _data = data.data.data;
+										var _html = '';
+										for(var i = 0; i < _data.length; i++) {
+											var protocol;
+											if(_data[i].protocol == 0) {
+												protocol = '长连接';
+											} else {
+												protocol = '短链接';
+											};
+											//内容
+											_html += '<tr>' +
+												'<td>' + _data[i].device_id + '</td>' +
+												'<td>' + _data[i].device_name + '</td>' +
+												'<td>' + _data[i].province + '</td>' +
+												'<td>' + _data[i].project_name + '</td>' +
+												'<td>' +
+												'<span>设备供电方式: ' + _data[i].electric_type + '</span>' +
+												'<span>通讯协议: ' + protocol + '</span>' +
+//												'<span>站点编号: '+_data[i].device_id+'</span>' +
+												'<span>设备监测环境: ' + _data[i].environment + '</span>' +
+												'</td>' +
+												'<td>' +
+												'<span>姓名:' + _data[i].accendant_name + '</span>' +
+												'<span>部门:' + _data[i].accendant_department + '</span>' +
+												'<span>邮箱:' + _data[i].accendant_email + '</span>' +
+												'<span>电话:' + _data[i].accendant_mobile + '</span>' +
+												'</td>' +
+												'<td class="buttomstate" dataid=' + _data[i].device_id + '>' +
+												'<span class="exl">修改</span>' +
+												'<span class="way_set">通道设置</span>' +
+												'<span class="alarm_set">通讯报警设置</span>' +
+												'<span class="msg_set">硬件参数设置</span>' +
+												'<span class="rem" style="color: #FF4E48;">删除</span>' +
+												'</td>' +
+												'</tr>';
+										};
+										$('#deviceList').html(_html);
+									}
+								});
+								//首次不执行
+								if(!first) {
+									//do something
+								}
+							}
+						});
+					});
+				}
+			});
+		};
+		pagehtml();
+		//新
+		$('.layui-btn_add_project').click(function() {
+			window.location.href = 'newsite.html';
+		});
+		//修改
+		$('body').on('click', '.exl', function() {
+			var device_id = $(this).parents('.buttomstate').attr('dataid');
+			store.set('device_id', device_id);
+			window.location.href = 'exlsite.html';
+		});
+		//通道设置
+		$('body').on('click', '.way_set', function() {
+			var device_id = $(this).parents('.buttomstate').attr('dataid');
+			store.set('device_id', device_id);
+			window.location.href = 'wayset.html';
+		});
+		// 报警设置
+		layui.use('layer', function() {
+			var layer = layui.layer;
+			$('#model').hide();
+			// 上传日志
+			$("body").on('click', '.alarm_set', function() {
+				//id
+				var device_id = $(this).parents('.buttomstate').attr('dataid');
+				$('#model').show();
+				layer.open({
+					type: 1,
+					title: '通讯报警设置',
+					content: $('#model'),
+					area: ['354px', '324px'],
+					btn: ['确认设置'],
+					yes: function(index, layero) {
+						var bjtime = $('#bjtime').val();
+						var bjval = $('#bjval').val();
+						if(bjtime == '') {
+							alert('请输入时间');
+							return false
+						};
+						//内容上传
+						$.ajax({
+							type: "POST",
+							url: _http + "/admin/device_management/alarmSetting",
+							dataType: 'json',
+							data: {
+								device_id: device_id,
+								alarm_communication_time: bjtime,
+								alarm_type: bjval
+							},
+							success: function(data) {
+								if(data.code == 1) {
+									$('#model').hide();
+									window.location.reload();
+								} else {
+									alert(data.msg);
+								}
+							},
+							error: function(data) {
+								alert('请求失败');
+							}
+						});
+					},
+					cancel: function() {
+						$('#model').hide();
+						window.location.reload();
+					}
+				});
+			});
+		});
+		// 通讯设置
+		layui.use('layer', function() {
+			var layer = layui.layer;
+			$('#modelmsg').hide();
+			// 上传日志
+			$("body").on('click', '.msg_set', function() {
+				var device_id = $(this).parents('.buttomstate').attr('dataid');
+				$('#modelmsg').show();
+				layer.open({
+					type: 1,
+					title: '硬件参数设置',
+					content: $('#modelmsg'),
+					area: ['640px', '460px'],
+					btn: ['确认设置'],
+					yes: function(index, layero) {
+						var objname = new Object;
+						objname.device_id=device_id;
+						objname.communicationdistance = $('#txtime').val();
+						objname.ip = $('#txip').val();
+						objname.port_number = $('#txcode').val();
+						objname.work_pattern = $("input[name='work_pattern']").val();
+						objname.function_switch = $("input[name='function_switch']").val();
+						objname.reset_logo = $("input[name='reset_logo']").val();
+						objname.measurement_channel_number = $("input[name='measurement_channel_number']").val();
+						objname.initial_channel = $("input[name='initial_channel']").val();
+						//内容上传
+						$.ajax({
+							type: "POST",
+							url: _http + "/admin/device_management/communicationSetting",
+							dataType: 'json',
+							data: objname,
+							success: function(data) {
+								if(data.code == 1) {
+									$('#modelmsg').hide();
+									window.location.reload();
+								} else {
+									alert(data.msg);
+								}
+							},
+							error: function(data) {
+								alert('请求失败');
+							}
+						});
+					},
+					cancel: function() {
+						$('#modelmsg').hide();
+						window.location.reload();
+					}
+				});
+			});
+		});
+		//删除
+		$('body').on('click', '.rem', function() {
+			var device_id = $(this).parents('.buttomstate').attr('dataid');
+			//console.log(project_id);
+			layer.open({
+				content: '是否删除该站点',
+				btn: '确定',
+				btn1: function(index, layero) {
+					//按钮【按钮三】的回调
+					$.ajax({
+						type: "POST",
+						url: _http + "/admin/device_management/deleteDevice",
+						dataType: 'json',
+						data: {
+							device_id: device_id,
+						},
+						success: function(data) {
+							//console.log(data);
+							layer.close(index);
+							window.location.reload();
+						}
+					});
+					//return false 开启该代码可禁止点击该按钮关闭
+				},
+				cancel: function() {
+					//右上角关闭回调
+					//return false 开启该代码可禁止点击该按钮关闭
+				}
+			});
+		});
+		
+	</script>
+</html>

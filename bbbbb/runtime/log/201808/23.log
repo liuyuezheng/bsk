@@ -1,0 +1,2786 @@
+---------------------------------------------------------------
+[ 2018-08-23T09:51:50+08:00 ] 127.0.0.1 GET /api/base/index
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'xhroot'@'183.156.141.86' (using password: YES)
+---------------------------------------------------------------
+[ 2018-08-23T09:54:27+08:00 ] 127.0.0.1 GET /api/base/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=xw;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_data` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `project_data` (`device_id` , `title` , `cover` , `content`) VALUES (1 , 'eee' , 'www' , 'qqqqq') [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-08-23T10:24:53+08:00 ] 127.0.0.1 GET /admin/systemoverview/projectlist
+[ info ] 127.0.0.1/admin/systemoverview/projectlist [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：847.63kb] [文件加载：29]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'systemoverview',
+    2 => 'projectlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '1e97569a-abb7-47ed-8abb-fb75869d1757',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/admin/systemoverview/projectlist' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T10:25:27+08:00 ] 127.0.0.1 GET /admin/systemoverview/projectlist
+[ info ] 127.0.0.1/admin/systemoverview/projectlist [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：847.55kb] [文件加载：29]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'systemoverview',
+    2 => 'projectlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => 'fdd10336-1203-4962-b5f5-6d9db0441339',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/admin/systemoverview/projectlist' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T11:47:13+08:00 ] 127.0.0.1 GET /api/base/index
+[ info ] 127.0.0.1/api/base/index [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：1,683.41kb] [文件加载：41]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'base',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '2f823177-0cc7-4fbd-949a-78e65adeb81f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/base/index' => '',
+)
+[ info ] [ RUN ] app\api\controller\Base->index[ D:\Documents\GitHub\xhgj\application\api\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-08-23T11:49:39+08:00 ] 127.0.0.1 GET /api/token/getTokenBymobile
+[ info ] 127.0.0.1/api/token/getTokenBymobile [运行时间：0.074005s][吞吐率：13.51req/s] [内存消耗：1,502.95kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'getTokenBymobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => 'dada6891-80bf-4b0c-9f4c-7f9addaaae6a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/getTokenBymobile' => '',
+)
+[ info ] [ RUN ] app\api\controller\Token->getTokenByMobile[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = ''  AND `password` = '' LIMIT 1 [ RunTime:0.012000s ]
+[ error ] [1]Call to undefined function app\api\token\getRandChar()[D:\Documents\GitHub\xhgj\application\api\token\Token.php:21]
+---------------------------------------------------------------
+[ 2018-08-23T12:12:45+08:00 ] 127.0.0.1 POST /api/token/getTokenBymobile
+[ info ] 127.0.0.1/api/token/getTokenBymobile [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,469.14kb] [文件加载：36]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'getTokenBymobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------011696661381768814333800',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '9285dcd9-839f-4285-9ba9-d182d5c54b7c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/getTokenBymobile' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->getTokenByMobile[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T12:13:38+08:00 ] 127.0.0.1 POST /api/token/getTokenBymobile
+[ info ] 127.0.0.1/api/token/getTokenBymobile [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：1,541.95kb] [文件加载：40]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'getTokenBymobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------921690175258295314264790',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '2738172a-e97e-41a3-a895-13008faf7eb4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/getTokenBymobile' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->getTokenByMobile[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-08-23T13:20:25+08:00 ] 127.0.0.1 POST /api/token/getTokenBymobile
+[ info ] 127.0.0.1/api/token/getTokenBymobile [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：843.17kb] [文件加载：29]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'getTokenBymobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------136977961268312328058412',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '449d8356-8f71-4730-9571-a6b45479025b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/getTokenBymobile' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:20:29+08:00 ] 127.0.0.1 POST /api/token/getTokenBymobile
+[ info ] 127.0.0.1/api/token/getTokenBymobile [运行时间：0.013001s][吞吐率：76.92req/s] [内存消耗：843.21kb] [文件加载：29]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'getTokenBymobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------312002917983088530134119',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '73de52d4-4e76-4976-826e-cc82a516d6f8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/getTokenBymobile' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:20:48+08:00 ] 127.0.0.1 POST /api/token/tokenuser
+[ info ] 127.0.0.1/api/token/tokenuser [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,541.84kb] [文件加载：40]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------287948189949609741198399',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '36114f94-f7dc-46a6-bf6c-6eeffb8efa47',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-08-23T13:22:08+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,130.98kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------545942519267409269187789',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'ae9c1fa3-5527-4c7e-8ec3-7ff6a9c37c56',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:23:26+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：2,024.79kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------986962410445729983528708',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'b97aae91-f1bc-4898-8198-cfae9ae5e6d0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-08-23T13:23:44+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,023.87kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '65265b65-437d-4a1a-91b4-cf2b5e6ae8ea',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T13:25:07+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,129.87kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '83e5959a-37af-497c-8ba0-cd9bb70b4716',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:37+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '970c1557-9c1a-47d9-b6b3-50aec22efbfe',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:38+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'd8acd218-bdc0-45c8-a9fe-95a4ca72c8be',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:39+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'acaef53c-b658-4549-ad6f-f6daad2c173b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:39+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '4bc9302c-2359-4ca7-bd52-4ac84b63a657',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:39+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '057d6fda-fb11-4bb1-94c6-eaa65e5feb31',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:40+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'ad75ef42-42e5-4ecc-8e74-267d4cee1772',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:41+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '19bbcf32-582b-43d0-89d3-075d5f2be0ab',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:43+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'd3697e50-9ad3-47c0-ab6e-cbe5bbc1a3bd',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:43+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => '204f1c92-aa38-425c-8cd0-8fb3857cfd83',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:25:44+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：1,129.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'f6ff1685-dcff-47bb-a6ab-7d1e76d68e06',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:33:42+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,130.95kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------889333282820486808850180',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'e5cf0570-32d2-4737-bdc3-63b6208155fc',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:34:04+08:00 ] 127.0.0.1 POST /api/token/tokenuser
+[ info ] 127.0.0.1/api/token/tokenuser [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,542.13kb] [文件加载：40]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------232963571025931955140196',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '1b06c1f995df0bb82791e6894b978574',
+  'postman-token' => 'b8fe56ae-173d-4b0e-9e17-2dbdae9b9e32',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.011001s ]
+---------------------------------------------------------------
+[ 2018-08-23T13:35:19+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,129.98kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '33362790622ca5c255a74c6352969e68',
+  'postman-token' => '5b1e8187-f46e-4105-806b-6d754453225f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T13:35:52+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.063003s][吞吐率：15.87req/s] [内存消耗：2,024.24kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '33362790622ca5c255a74c6352969e68',
+  'postman-token' => '4af894e7-00b8-4e74-a061-738a8f6eb774',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:05:28+08:00 ] 127.0.0.1 POST /api/token/tokenuser
+[ info ] 127.0.0.1/api/token/tokenuser [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,469.81kb] [文件加载：36]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------178442143169656066433582',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '1b7fb651-291e-4eed-b963-b9cf6bc39da8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `account_number` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:06:37+08:00 ] 127.0.0.1 POST /api/token/tokenuser
+[ info ] 127.0.0.1/api/token/tokenuser [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,470.26kb] [文件加载：36]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------747352272674193891149175',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '3cf5c3dd-026a-4923-8a3a-638ae69e53aa',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `name` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:07:03+08:00 ] 127.0.0.1 POST /api/token/tokenuser
+[ info ] 127.0.0.1/api/token/tokenuser [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,541.02kb] [文件加载：39]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'token',
+    2 => 'tokenuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------049152570779382211001870',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '127e2703-2ca2-49fb-bd6c-8554d5844fea',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/token/tokenuser' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ RUN ] app\api\controller\Token->TokenUser[ D:\Documents\GitHub\xhgj\application\api\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `name` = '徐工'  AND `password` = '8017992598' LIMIT 1 [ RunTime:0.016000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:07:23+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：2,028.66kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '282',
+  'content-type' => 'multipart/form-data; boundary=--------------------------087873099305995069715190',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '51503254-c33f-4ed6-8efe-6e028abf9019',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+  'name' => '徐工',
+  'password' => '8017992598',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:10:57+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,973.25kb] [文件加载：46]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '64c8a8b1-8037-4158-b6ea-2c3ce0da4ef7',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-23T14:11:23+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,991.11kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'd3e9f4c4-73b3-4b8e-97bb-7b19423835b5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]method not exist:think\db\Query->get[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Query.php:96]
+---------------------------------------------------------------
+[ 2018-08-23T14:11:53+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：2,027.99kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'a93760ad-ae58-4da7-8dc4-aca0ac7c72b3',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:14:24+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.081004s][吞吐率：12.35req/s] [内存消耗：2,023.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '3421d4f4-88ac-4348-9f4d-0ddcf3bed0f1',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:19:27+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：2,034.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '01cf82a3-dd7c-4f9c-9c68-0c406c3987ef',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `device_id` = '0' [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:22:27+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.111007s][吞吐率：9.01req/s] [内存消耗：2,062.24kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'a98f6b82-282a-4594-bd9f-106b30bba333',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `device_id` = '0' [ RunTime:0.012000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:23:16+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,069.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '570271e9-11ba-4801-9f33-f9dd9a1d5d7e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `device_id` > '1' [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:27:35+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.135008s][吞吐率：7.41req/s] [内存消耗：2,082.08kb] [文件加载：52]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '85c9c048-4981-452f-9dd8-de42871597f2',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.019001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'maintain_last_time' in 'order clause'[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-23T14:28:06+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：2,082.08kb] [文件加载：52]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '53fb66de-09ee-48b0-967b-7b09cedcc8d7',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'maintain_last_time' in 'order clause'[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-23T14:28:34+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：2,082.30kb] [文件加载：52]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '84c009fd-ac60-4948-95b9-3332801ca6f5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.009000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'maintain_last_time' in 'order clause'[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-23T14:29:08+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.143008s][吞吐率：6.99req/s] [内存消耗：2,060.39kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '1c6a7ea8-b9ed-46bc-b08c-a2d546d561ef',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056003s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` WHERE  `project_id` = 0 ORDER BY `install_last_time` DESC [ RunTime:0.011001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:29:51+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：2,061.13kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '328ef6c4-cb61-4bdf-8d44-b1833d24556c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` ORDER BY `install_last_time` DESC [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:30:33+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.155009s][吞吐率：6.45req/s] [内存消耗：2,068.76kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '4b2c31d0-40a7-4fb8-a8c0-97fa1b085395',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` ORDER BY `install_last_time` DESC [ RunTime:0.019001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:32:24+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.107007s][吞吐率：9.35req/s] [内存消耗：2,028.04kb] [文件加载：48]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'c2c229ab-32a7-44d1-a847-fb8e6ad6aae4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` WHERE  `p_id` = 1 LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:33:31+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,016.09kb] [文件加载：47]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '7daf0dc4-5d30-45cf-bf4f-30e3f77f05da',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:34:33+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：2,082.08kb] [文件加载：52]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'd250f738-b18d-4650-a81f-e812c626b363',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.024001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'maintain_last_time' in 'order clause'[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-23T14:34:59+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.109007s][吞吐率：9.17req/s] [内存消耗：2,062.39kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '6cc356e6-ab3a-4b2a-b17f-c7ebadd667ec',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` WHERE  `project_id` = 1 ORDER BY `install_last_time` DESC [ RunTime:0.013000s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:38:01+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.096005s][吞吐率：10.42req/s] [内存消耗：2,061.84kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'a5647838-827f-4a17-9749-755ecf3f87eb',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` WHERE  `project_id` = 1 ORDER BY `install_last_time` DESC [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:38:08+08:00 ] 127.0.0.1 POST /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：2,062.39kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '63cf23bd-9b02-4d1e-8559-85a2a00c7abb',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` WHERE  `project_id` = 1 ORDER BY `install_last_time` DESC [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:38:13+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：2,061.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'dcce273f-bf5d-4a8d-89df-f14de38efd97',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` WHERE  `project_id` = 1 ORDER BY `install_last_time` DESC [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:50:08+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,081.12kb] [文件加载：50]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '38fdbd55-2ca3-4046-9f10-354c6274ad2d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008001s ]
+[ error ] [0]查询表达式错误:!=[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Builder.php:343]
+---------------------------------------------------------------
+[ 2018-08-23T14:53:02+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：2,064.25kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => '91df03e6-e69e-45d5-9ce5-1444c067966c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker` FROM `device` WHERE  `project_id` = 1  AND `status` <> 0 ORDER BY `install_last_time` DESC [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:53:59+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：2,064.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'e45b8c2a-a103-4fea-be4b-6d4cc738ff55',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`status`,`environment` FROM `device` WHERE  `project_id` = 1  AND `status` <> 0 ORDER BY `install_last_time` DESC [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2018-08-23T14:54:19+08:00 ] 127.0.0.1 GET /api/project/police
+[ info ] 127.0.0.1/api/project/police [运行时间：0.104006s][吞吐率：9.61req/s] [内存消耗：2,063.33kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'police',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'e07e6e4e-e58d-4c97-9dbe-977f205566aa',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/police' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->police[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`status` FROM `device` WHERE  `project_id` = 1  AND `status` <> 0 ORDER BY `install_last_time` DESC [ RunTime:0.014000s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:03:20+08:00 ] 127.0.0.1 GET /api/project/project
+[ info ] 127.0.0.1/api/project/project [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：2,065.09kb] [文件加载：49]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '746c491a6b95612ccdfbcfff6524f60b',
+  'postman-token' => 'd97b0972-ac79-4fe4-bf08-ab8cdcb93f6c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/project/project' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\api\controller\Project->project[ D:\Documents\GitHub\xhgj\application\api\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker`,`status` FROM `device` WHERE  `project_id` = 1 ORDER BY `install_last_time` DESC [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:31:17+08:00 ] 127.0.0.1 POST /api/project/details
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:32:15+08:00 ] 127.0.0.1 POST /api/project/details
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:33:15+08:00 ] 127.0.0.1 POST /api/project/details
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` IS NULL [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:36:44+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:36:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:53:26+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T15:56:32+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.009001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:57:27+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.010001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:57:28+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.010001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:57:29+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.007000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:57:29+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.007000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:10+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.012001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:11+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:12+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.015001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:13+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.009000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:14+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.010000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:15+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:30+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.012001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:31+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128007s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.010000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.014000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T15:58:53+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:00:20+08:00 ] 127.0.0.1 GET /api/project/project
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`device_id`,`install_last_time`,`maintain_last_worker`,`status` FROM `device` WHERE  `project_id` = 1 ORDER BY `install_last_time` DESC [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:00:56+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.015001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:02:04+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:02:46+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.014000s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:03:00+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:03:16+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.014000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:03:18+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.019001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:03:18+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.012000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:03:19+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:02+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)
+---------------------------------------------------------------
+[ 2018-08-23T16:20:36+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)
+---------------------------------------------------------------
+[ 2018-08-23T16:20:37+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)
+---------------------------------------------------------------
+[ 2018-08-23T16:20:37+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ error ] [4]语法错误: unexpected '=>' (T_DOUBLE_ARROW)
+---------------------------------------------------------------
+[ 2018-08-23T16:20:49+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:51+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.009001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.007001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:53+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.008001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:20:53+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.007001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:09+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:10+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.007001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:10+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.014001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:11+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.012000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:11+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.030002s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:11+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.012000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:12+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.008001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:12+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.015001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:13+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:13+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:14+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.013001s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:15+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `passageway` WHERE  `device_id` = '201806260001' [ RunTime:0.006000s ]
+[ error ] [8]未定义数组索引: device_name
+---------------------------------------------------------------
+[ 2018-08-23T16:21:37+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:26:42+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status` FROM `device` WHERE  `device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:27:46+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:46:05+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-08-23T16:51:39+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:00:02+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC LIMIT 1 [ RunTime:0.020001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:01:04+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.016001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:02:59+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:03:17+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:05:27+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042003s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.013001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:05:29+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.034002s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:05:30+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.015001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:05:31+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.008001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:05:50+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.007000s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:05:51+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.013001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:05:51+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.013001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:06:49+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009000s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:06:51+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.020001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:06:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.007000s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:06:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.008001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:07:15+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.010001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:07:16+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009000s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:07:16+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.008001s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:07:16+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.014000s ]
+[ error ] [2]array_merge(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:39+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.012001s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:41+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.014001s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:42+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009000s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:42+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.010001s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:51+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.015001s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:52+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.013001s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:53+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.008000s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:54+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009001s ]
+[ error ] [2]array_merge_recursive(): Argument #1 is not an array
+---------------------------------------------------------------
+[ 2018-08-23T17:10:59+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:11:00+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:13:00+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:13:28+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:14:00+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.014000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:14:57+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:16:56+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.010001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:17:45+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:19:16+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:19:18+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.014000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:19:25+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `device_name`,`status`,`name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value`,`electric_type`,`protocol`,`environment` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:44:06+08:00 ] 127.0.0.1 GET /api/project/log?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `log_info`,`time` FROM `device_log` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.010000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:49:00+08:00 ] 127.0.0.1 GET /api/project/log?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`log_info`,`time` FROM `device_log` INNER JOIN `project_admin` ON `project_admin`.`id`=`device_log`.`project_id` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:54:56+08:00 ] 127.0.0.1 GET /api/project/unit?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `electric_type`,`protocol`,`environment` FROM `device` WHERE  `project_id` = 1  AND `device_id` = '201806260001' [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.010000s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:55:44+08:00 ] 127.0.0.1 GET /api/project/unit?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `electric_type`,`protocol`,`environment` FROM `device` WHERE  `project_id` = 1  AND `device_id` = '201806260001' LIMIT 1 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-08-23T17:58:33+08:00 ] 127.0.0.1 GET /api/project/admins?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008001s ]
+---------------------------------------------------------------
+[ 2018-08-23T18:00:49+08:00 ] 127.0.0.1 GET /api/project/details?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `passageway` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `name`,`change_range_max`,`change_range_min`,`max_range`,`min_range`,`count_time`,`value`,`change_value` FROM `passageway` INNER JOIN `device` ON `device`.`device_id`=`passageway`.`device_id` WHERE  `passageway`.`device_id` = '201806260001' [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[ 2018-08-23T18:12:14+08:00 ] 127.0.0.1 GET /api/project/log?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `name`,`log_info`,`time` FROM `device_log` INNER JOIN `project_admin` ON `project_admin`.`id`=`device_log`.`project_id` WHERE  `project_id` = 2  AND `device_id` = '201806260001' ORDER BY `time` DESC [ RunTime:0.019001s ]
+---------------------------------------------------------------
+[ 2018-08-23T18:16:31+08:00 ] 127.0.0.1 GET /api/project/unit?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `electric_type`,`protocol`,`environment`,`status`,`device_name` FROM `device` WHERE  `project_id` = 1  AND `device_id` = '201806260001' LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[ 2018-08-23T18:20:15+08:00 ] 127.0.0.1 GET /api/project/unit?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `p_id` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `device` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `electric_type`,`protocol`,`environment`,`status`,`device_name` FROM `device` WHERE  `project_id` = 1  AND `device_id` = '201806260001' LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `read_device` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `mark` FROM `read_device` WHERE  `device_id` = '201806260001' LIMIT 1 [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-08-23T18:28:14+08:00 ] 127.0.0.1 GET /api/project/admins?device_id=201806260001
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `name`,`department`,`email`,`phone_number` FROM `project_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.013001s ]

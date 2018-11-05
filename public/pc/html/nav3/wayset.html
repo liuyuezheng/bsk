@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- <meta charset="utf-8|GB2312"> -->
+		<meta charset="UTF-8">
+		<title>通道设置</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			.layui-tab {
+				margin: 0;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial;
+			}
+			
+			.layui-this a {
+				font-size: 16px !important;
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0 30px;
+			}
+			/*列表*/
+			
+			.form-content {
+				background: #FFFFFF;
+				text-align: center;
+			}
+			
+			.layui-table thead tr {
+				background: #FFFFFF;
+			}
+			
+			.layui-table th {
+				line-height: 53px;
+				text-align: center;
+				font-size: 14px;
+				color: #333333;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-table td {
+				line-height: 35px;
+				font-size: 12px;
+				color: #666666;
+				border: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.logos_size {
+				width: 48px;
+				height: 48px;
+			}
+			
+			.project_options {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				font-size: 12px;
+				color: #333333;
+			}
+			
+			tbody tr td span {
+				display: inline-block;
+				width: 100%;
+			}
+			/*分页*/
+			
+			.page {
+				position: absolute;
+				bottom: 9px;
+				text-align: center;
+			}
+			
+			.page a {
+				min-width: 10px;
+				height: 24px;
+				line-height: 24px;
+				margin-right: 10px;
+				font-size: 12px;
+				color: #333333;
+				border: 1px solid #D9D9D9;
+				padding: 0 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr {
+				margin-right: 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr .layui-laypage-em {
+				color: #F9CC74;
+				background: #262626;
+				padding: 0;
+				top: 0;
+				left: 0;
+			}
+			
+			.page span {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-laypage span {
+				height: 24px;
+				line-height: 24px;
+			}
+			
+			.layui-laypage .layui-laypage-spr {
+				margin-right: 10px;
+			}
+			/*选择*/
+			
+			.layui-card_shaixuan {
+				width: 100%;
+				height: 60px;
+				background: #FFFFFF;
+			}
+			
+			.layui-input-block_input {
+				width: 50%;
+				height: 60px;
+				float: left;
+				margin-left: 30px;
+			}
+			
+			.way_set_site_name {
+				height: 60px;
+				line-height: 60px;
+			}
+			
+			.layui-input {
+				width: 600px;
+				height: 48px;
+				background: #F5F5F5;
+			}
+			
+			.layui-input-block_addproject {
+				float: right;
+				margin: 10px 15px 0 15px;
+				margin-right: 32px;
+			}
+			
+			.layui-btn_add_project {
+				width: 84px;
+				height: 32px !important;
+				line-height: 32px !important;
+				background: #262626 !important;
+				border: 0 solid #262626;
+				border-radius: 100px;
+				font-size: 14px !important;
+				color: #F9CC74 !important;
+			}
+			
+			.way_set_xuanzhe {
+				width: 100%;
+				height: 50px;
+				background: #FFFFFF;
+			}
+			
+			.top_class_way {
+				display: inline-block;
+				width: 141px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 14px;
+				color: #333333;
+				text-align: center;
+				white-space: nowrap;
+				text-indent: -1em;
+			}
+			
+			.way_set_selected_type {
+				display: inline-block;
+				width: 30px;
+				height: 44px;
+				line-height: 44px;
+				border-bottom: 6px solid #F9CC74;
+			}
+			/*报警设置*/
+			
+			.layui-layer-title {
+				height: 49px !important;
+				line-height: 49px !important;
+				background: #FFFFFF !important;
+				box-shadow: 0 1px 0 0 #EBEBEB !important;
+				font-size: 18px !important;
+				color: #333333 !important;
+			}
+			
+			.model_content {
+				padding: 0 12px;
+				margin: 20px 30px 0;
+			}
+			
+			.data_limit_input {
+				width: 198px;
+				height: 46px;
+				line-height: 46px;
+				text-indent: 1em;
+				margin-bottom: 10px;
+				border: 1px solid #EBEBEB;
+			}
+			
+			.limit_reduce_symbol {
+				width: 12px;
+				height: 2px;
+				margin: 22px 14px;
+				background: #333333;
+			}
+			
+			.layui-input_jingdu {
+				width: 264px;
+				height: 46px;
+				line-height: 46px;
+				margin-right: 30px;
+				text-indent: 1em;
+				margin-bottom: 10px;
+				border: 1px solid #EBEBEB;
+			}
+			
+			.way_limit_set_height {
+				width: 264px;
+				min-height: 46px;
+				line-height: 46px;
+				margin-right: 30px;
+				text-indent: 1em;
+				margin-bottom: 10px;
+				border: 1px solid #EBEBEB;
+			}
+			
+			.way_limit_set_choices {
+				width: 264px;
+				height: 48px;
+				line-height: 48px;
+				margin-right: 30px;
+				text-indent: 1em;
+				border: 0;
+				margin-left: 0;
+				background: #FFFFFF;
+			}
+			
+			.way_limit_set_choices div div .layui-input {
+				border-width: 0px;
+				background: #FFFFFF;
+			}
+			
+			.layui-input-block_jingdu {
+				width: 262px;
+				height: 46px !important;
+				line-height: 46px;
+				margin-left: -6px;
+			}
+			
+			.layui-input-block_jingdu div div .layui-input {
+				background: #FFFFFF;
+			}
+			
+			.layui-btn {
+				height: 26px;
+				line-height: 26px;
+				font-size: 14px;
+				color: #FFFFFF;
+				background: #666666;
+				padding: 0 8px;
+				margin-right: 10px;
+			}
+			
+			.model_upload_decribe {
+				height: 54px;
+				font-size: 12px;
+				color: #999999;
+			}
+			
+			.use_flex {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			
+			.model_content_box {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			
+			.model_layui-card {
+				/*width: 200px;*/
+			}
+			
+			.layui-input-block {
+				/*margin-left: -2px;*/
+			}
+			
+			.layui-form-select .layui-input {
+				width: 100%;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				/*height: 490px !important;*/
+			}
+			
+			.layui-layer-page .layui-layer-btn {
+				text-align: left;
+				padding: 0 !important;
+			}
+			
+			.layui-layer-btn .layui-layer-btn0 {
+				width: 136px;
+				height: 42px;
+				line-height: 42px;
+				text-align: center;
+				background: #F9CC74 !important;
+				border-radius: 4px;
+				border-color: transparent !important;
+				margin-left: 45px !important;
+				/*margin-bottom: 20px !important;*/
+				position: relative;
+				margin: 0 auto !important;
+				display: block;
+				/*top: -36px;*/
+				color: #333333 !important;
+				font-size: 14px;
+			}
+			
+			.layui-layer-setwin {
+				top: 0;
+			}
+			
+			.layui-layer-btn a {
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				overflow: visible !important;
+			}
+			
+			.way_limit_set_choices .layui-form-select dl dd.layui-this {
+				background: #FFFFFF;
+				color: #000;
+			}
+			
+			.way_limit_set_choices .layui-form-select dl dd:first-child {
+				background-color: #5FB878;
+				color: #fff;
+			}
+			
+			.add_way {
+				width: 100%;
+				min-height: 0px;
+				max-height: 92px;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			
+			.add_way li img {
+				width: 12px;
+				height: 12px;
+				margin-left: 22px;
+				margin-top: -2px;
+			}
+			
+			.set_arrow {
+				display: inline-block;
+				line-height: 60px;
+				position: relative;
+				top: 5px;
+			}
+			
+			.buttomname span {
+				cursor: pointer;
+			}
+			
+			.buttonstyle {
+				width: 84px;
+				height: 32px;
+				background-color: #262626 !important;
+				border-radius: 32px;
+				display: block;
+				text-align: center;
+				line-height: 32px;
+				float: right;
+				color: #F9CC74 !important;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="siteadministration.html" class="devicename"></a>
+			</li>
+			<span class="set_arrow">>></span>
+			<li class="layui-nav-item  layui-this">
+				<a href="">通道设置</a>
+			</li>
+		</ul>
+		<!-- 选择类型 -->
+		<div class="way_set_top">
+			<div class="layui-card_shaixuan">
+				<div class="layui-input-block layui-input-block_input">
+					<h3 class="way_set_site_name"></h3>
+				</div>
+				<div class="layui-input-block layui-input-block_addproject">
+					<a class="buttonstyle">刷新</a>
+					<button class="layui-btn layui-btn_add_project" lay-submit lay-filter="*">新增通道</button>
+				</div>
+			</div>
+		</div>
+		<!-- 列表 -->
+		<div class="form-content">
+			<!-- 普通类型列表 -->
+			<table class="layui-table table_common">
+				<thead>
+					<tr>
+						<th>通道编号</th>
+						<th>通道名称</th>
+						<th>通道类型</th>
+						<th>显示计算</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="passList">
+					<!--内容-->
+				</tbody>
+			</table>
+			<!-- 分页 -->
+			<div class="page pagination_position" id="pageid">
+				<div>
+					<a class="num" href="">1</a>
+					<span class="current">2</span>
+					<a class="num" href="">3</a>
+					<a class="num" href="">4</a>
+				</div>
+			</div>
+		</div>
+		<div id="model">
+			<form method="post" class="layui-form">
+				<div class="model_content">
+					<div class="model_upload_decribe">
+						请为A7BF812通道设置数据及变率限值, 达到限值报警<br> 可单独设置上限或者下限, 或者设置一个区间
+					</div>
+					<div class="use_flex">
+						<input type="text" name="min_range" required lay-verify="required" placeholder="数据上限" autocomplete="off" class="data_limit_input">
+						<span class="limit_reduce_symbol"></span>
+						<input type="text" name="max_range" required lay-verify="required" placeholder="数据下限" autocomplete="off" class="data_limit_input">
+					</div>
+					<div class="use_flex">
+						<input type="text" name="change_range_min" required lay-verify="required" placeholder="数据变率上限" autocomplete="off" class="data_limit_input">
+						<span class="limit_reduce_symbol"></span>
+						<input type="text" name="change_range_max" required lay-verify="required" placeholder="数据变率下限" autocomplete="off" class="data_limit_input">
+					</div>
+					<div class="use_flex">
+						<input type="text" name="alarm_limit_min" required lay-verify="required" placeholder="通道关联报警限值上限" autocomplete="off" class="data_limit_input">
+						<span class="limit_reduce_symbol"></span>
+						<input type="text" name="alarm_limit_max" required lay-verify="required" placeholder="通道关联报警限值下限" autocomplete="off" class="data_limit_input">
+					</div>
+					<!--多选择框-->
+					<div class="way_limit_set_height">
+						<div class="layui-input-block way_limit_set_choices layui-form" lay-filter="ways">
+							<select name="getPassagewayList" lay-filter="rep1" class="way_limit_set_select getPassagewayList">
+								<!--通道内容-->
+							</select>
+						</div>
+						<ul class="add_way" lay-verify="required">
+							<!-- <li>温度通道D  X</li> -->
+						</ul>
+					</div>
+					<div class="use_flex">
+						<input type="text" name="a" required lay-verify="required" placeholder="a" autocomplete="off" class="data_limit_input">
+						<span class="limit_reduce_symbol"></span>
+						<input type="text" name="b" required lay-verify="required" placeholder="b" autocomplete="off" class="data_limit_input">
+					</div>
+					<div class="use_flex">
+						<input type="text" name="mark" required lay-verify="required" placeholder="单元标识符" autocomplete="off" class="data_limit_input">
+						<input type="text" name="code" required lay-verify="required" placeholder="功能码" autocomplete="off" class="data_limit_input">
+					</div>
+					<div class="use_flex">
+						<input type="text" name="address_code" required lay-verify="required" placeholder="地址码" autocomplete="off" class="data_limit_input">
+						<input type="text" name="value" required lay-verify="required" placeholder="数值" autocomplete="off" class="data_limit_input">
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--开关量-->
+		<div id="modelk">
+			<form method="post" class="layui-form">
+				<div class="model_content">
+					<div class="use_flex">
+						<input type="text" name="mark1" required lay-verify="required" placeholder="单元标识符" autocomplete="off" class="data_limit_input">
+						<input type="text" name="code1" required lay-verify="required" placeholder="功能码" autocomplete="off" class="data_limit_input">
+					</div>
+					<div class="use_flex">
+						<input type="text" name="address_code1" required lay-verify="required" placeholder="地址码" autocomplete="off" class="data_limit_input">
+						<input type="text" name="value1" required lay-verify="required" placeholder="数值" autocomplete="off" class="data_limit_input">
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var device_id = store.get('device_id');
+		var glid;//关联通道id
+		//刷新页面
+		$('.buttonstyle').on('click', function() {
+			location.reload();
+		})
+		//分页
+		//页面数据渲染
+		function pagehtml() {
+			//console.log(JSON.stringify(e));
+			$.ajax({
+				type: "GET",
+				url: _http + "/admin/device_management/passList",
+				dataType: 'json',
+				data: {
+					page: 1,
+					size: 5,
+					device_id: device_id
+				},
+				success: function(data) {
+					$('.devicename,.way_set_site_name').html(data.data.device_name);
+					layui.use('laypage', function() {
+						var laypage = layui.laypage;
+						//console.log(data.data.total);
+						count = data.data.total;
+						//执行一个laypage实例
+						laypage.render({
+							elem: 'pageid',
+							count: count, //数据总数，从服务端得到
+							limit: 5,
+							prev: '<上一页',
+							next: '下一页>',
+							first: '首页',
+							last: '尾页',
+							jump: function(obj, first) {
+								//obj包含了当前分页的所有参数，比如：
+								//console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+								//console.log(obj.limit); //得到每页显示的条数	
+								$.ajax({
+									type: "GET",
+									url: _http + "/admin/device_management/passList",
+									dataType: 'json',
+									data: {
+										page: obj.curr,
+										size: obj.limit,
+										device_id: device_id
+									},
+									success: function(data) {
+										console.log(data);
+										$('#passList').find().remove(); //清楚数据
+										var _data = data.data.data;
+										var _html = '';
+										for(var i = 0; i < _data.length; i++) {
+											_html += '<tr>' +
+												'<td>' + _data[i].id + '</td>' +
+												'<td>' + _data[i].name + '</td>' +
+												'<td>' + _data[i].category.name + '</td>' +
+												'<td>y=' + _data[i].a + 'x+' + _data[i].b + '</td>' +
+												'<td class="buttomname" dataid =' + _data[i].id + ' datastate = ' + _data[i].category.type + '>' +
+												'<span class="exl">修改</span>' +
+												'<span class="limit_set">限值设置</span>' +
+												'<span class="rem" style="color: #FF4E48;">删除</span>' +
+												'</td>' +
+												'</tr>';
+										};
+										$('#passList').html(_html);
+									}
+								});
+								//首次不执行
+								if(!first) {
+									//do something
+								}
+							}
+						});
+					});
+				}
+			});
+		};
+		pagehtml();
+		//获取关联通道
+		function getCategoryxr() {
+			layui.use('form', function() {
+				var form = layui.form;
+				$.ajax({
+					type: "GET",
+					url: _http + "/admin/statistical_analysis/getPassagewayList",
+					dataType: 'json',
+					data:{
+						device_id:device_id
+					},
+					success: function(data) {
+						console.log(data);						
+						if(data == '') {
+							return false
+						};
+						glid = data.data[0].id;
+						var html = '';
+						for(var i = 0; i < data.data.length; i++) {
+							html += '<option value=' + data.data[i].id+'>' + data.data[i].name + '</option>';
+						};
+						$('.getPassagewayList').html(html);
+						form.render();
+					}
+				});
+			});
+		};
+		//选择关联通道id
+		layui.use('form', function() {
+			var form = layui.form;
+			form.on('select(rep1)', function(_data) {
+				glid = _data.value;
+			});
+			//项目列表							
+		});
+		//限值设置提提交
+		layui.use('layer', function() {
+			var layer = layui.layer;
+			// 限值设置
+			//模拟量
+			$("#model").hide();
+			$("#modelk").hide();
+			$("body").on('click', '.limit_set', function() {
+				var pass_id = $(this).parents('.buttomname').attr('dataid');
+				if($(this).parent('.buttomname').attr('datastate') == '0') {
+					getCategoryxr();
+					$("#model").show();
+					layer.open({
+						type: 1,
+						title: '限值设置',
+						content: $('#model'),
+						area: ['500px', '576px'],
+						btn: ['确认设置'],
+						yes: function(index, layero) {
+							var objxz = new Object;
+							objxz.pass_id = pass_id;
+							objxz.min_range =$("input[name='min_range']").val();
+							objxz.max_range =$("input[name='max_range']").val();
+							objxz.change_range_min =$("input[name='change_range_min']").val();
+							objxz.change_range_max =$("input[name='change_range_max']").val();
+							objxz.alarm_limit_min =$("input[name='alarm_limit_min']").val();
+							objxz.alarm_limit_max =$("input[name='alarm_limit_max']").val();
+							objxz.passageways =glid;
+							objxz.a =$("input[name='a']").val();
+							objxz.b =$("input[name='b']").val();
+							objxz.mark =$("input[name='mark']").val();
+							objxz.code =$("input[name='code']").val();
+							objxz.address_code =$("input[name='address_code']").val();
+							objxz.value =$("input[name='value']").val();
+							$.ajax({
+								type: "POST",
+								url: _http + "/admin/device_management/limitSetting",
+								dataType: 'json',
+								data: objxz,
+								success: function(data) {
+									window.location.reload();
+								}
+							});
+						},
+						cancel: function() {
+							$("#model").hide();
+							window.location.reload();
+						}
+					});
+				} else {
+					$("#modelk").show();
+					layer.open({
+						type: 1,
+						title: '限值设置',
+						content: $('#modelk'),
+						area: ['500px', '230px'],
+						btn: ['确认设置'],
+						yes: function(index, layero) {
+							var objxz = new Object;
+							objxz.pass_id = pass_id;
+							objxz.mark =$("input[name='mark1']").val();
+							objxz.code =$("input[name='code1']").val();
+							objxz.address_code =$("input[name='address_code1']").val();
+							objxz.value =$("input[name='value1']").val();
+							$.ajax({
+								type: "POST",
+								url: _http + "/admin/device_management/limitSetting",
+								dataType: 'json',
+								data: objxz,
+								success: function(data) {
+									window.location.reload();
+								}
+							});
+						},
+						cancel: function() {
+							$("#modelk").hide();
+							window.location.reload();
+						}
+					});
+				}
+
+			});
+		});
+		//开关量
+		//新添
+		$('.layui-btn_add_project').click(function() {
+			window.location.href = 'newway.html';
+		});
+		//修改
+		$('body').on('click', '.exl', function() {
+			var td_id = $(this).parents('.buttomname').attr('dataid');
+			var td_state = $(this).parents('.buttomname').attr('datastate');
+			store.set('td_id', td_id);
+			store.set('td_state', td_state);
+			window.location.href = 'exlway.html';
+		});
+		//删除
+		$('body').on('click', '.rem', function() {
+			var td_id = $(this).parents('.buttomname').attr('dataid');
+			console.log(td_id);
+			layer.open({
+				content: '是否删除该通道',
+				btn: '确定',
+				btn1: function(index, layero) {
+					//按钮【按钮三】的回调
+					$.ajax({
+						type: "POST",
+						url: _http + "/admin/device_management/deletePass",
+						dataType: 'json',
+						data: {
+							id: td_id,
+						},
+						success: function(data) {
+							//console.log(data);
+							layer.close(index);
+							window.location.reload();
+						}
+					});
+					//return false 开启该代码可禁止点击该按钮关闭
+				},
+				cancel: function() {
+					//右上角关闭回调
+					//return false 开启该代码可禁止点击该按钮关闭
+				}
+			});
+		});
+	</script>
+
+</html>

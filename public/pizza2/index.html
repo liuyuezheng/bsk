@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<div class="logo">
+			<img src="img/logo1.png" class="img_logo" alt=""/>
+			<img src="img/01_05.png" class="img_huodong" alt=""/>
+		</div>
+		<div class="main_logo">
+			<img src="img/0222_02.png" class="main_img" alt="">
+		</div>
+		<div class="person_match" onclick="onenav(1)">
+			<img src="img/touxiang1.png" class="touxiang_logo" alt="">
+			<div class="ranking">
+				<div class="person_ranking">个人排位赛</div>
+				<div class="tiaozhan">
+					<img src="img/222.png" class="smile" alt="">
+					<div class="num">50人</div>
+					<img src="img/333.png" class="challenge"alt="">
+				</div>
+			</div>
+		</div>
+		<div class="person_match" onclick="onenav(2)">
+			<img src="img/touxiang1.png" class="touxiang_logo" alt="">
+			<div class="ranking">
+				<div class="person_ranking">团队排位赛</div>
+				<div class="tiaozhan">
+					<img src="img/222.png" class="smile" alt="">
+					<div class="num">50人</div>
+					<img src="img/333.png" class="challenge"alt="">
+				</div>
+			</div>
+		</div>	
+	</body>
+	<script src="js/zepto.js"></script>
+	<script src="js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/headerhttp.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function onenav(e){
+				//接口请求，获取token
+				var uid = 1;//用户id
+				$.ajax({
+				type: "GET",
+				url:  _http+"/push/push/challenge",
+				dataType: 'json',
+//				headers:{
+//					token:uid
+//				},
+				data: {
+					type:e,
+					uid:1
+				},
+				success: function(data) {
+					console.log(data.data.room_id);
+					if (e==1) {
+						window.location.href = 'matching.html?room_id='+data.data.room_id;
+					} else{
+						window.location.href = 'team_match.html?room_id='+data.data.room_id;
+					} 
+				},
+				error: function(data) {
+					return false
+				}
+			});
+		};
+
+	</script>
+</html>

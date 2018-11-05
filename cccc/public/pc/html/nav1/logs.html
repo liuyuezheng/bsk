@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>日志</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			body::-webkit-scrollbar {
+				display: none;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial
+			}
+			
+			.layui-this a {
+				font-size: 16px !important;
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0 30px
+			}
+			/*日志顶部*/
+			
+			.logs_top {
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				background: #FFFFFF;
+				font-size: 16px;
+				color: #333333;
+				margin-bottom: 30px;
+			}
+			
+			.logs_top_img {
+				width: 16px;
+				height: 16px;
+				margin-left: 30px;
+				margin-right: 9px;
+			}
+			
+			.logs_count {
+				font-size: 12px;
+				color: #999999;
+				margin-left: 30px;
+			}
+			
+			.want_upload {
+				width: 84px;
+				height: 32px;
+				line-height: 32px;
+				text-align: center;
+				margin-top: 14px;
+				margin-right: 30px;
+				float: right;
+				font-size: 14px;
+				color: #F9CC74;
+				background: #262626;
+				border: 0 solid #262626;
+				border-radius: 100px;
+			}
+			/*上传图片*/
+			
+			.layui-layer-title {
+				background: #FFFFFF;
+				box-shadow: 0 1px 0 0 #EBEBEB;
+				font-size: 18px;
+				color: #333333;
+			}
+			
+			.model_content {
+				/*width: 480px;*/
+				width: 454px;
+				/*height: 320px;*/
+				padding: 10px 12px;
+				margin: 20px 30px;
+				border: 1px solid #DDDDDD;
+			}
+			
+			.layui-layer-page .layui-layer-content {
+				height: 383px !important;
+			}
+			
+			.layui-textarea {
+				width: 100%;
+				height: 70%;
+				border-radius: 2px;
+				font-size: 14px;
+				color: #666666;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+			}
+			
+			.layui-btn {
+				height: 26px;
+				line-height: 26px;
+				font-size: 14px;
+				color: #FFFFFF;
+				background: #666666;
+				padding: 0 8px;
+				margin-right: 10px;
+			}
+			
+			.upload_img_hint {
+				display: inline-block;
+				width: 100%;
+				line-height: 33px;
+				font-size: 14px;
+				color: #BBBBBB;
+			}
+			
+			.upload_img_size {
+				width: 66px;
+				height: 66px;
+				background: #CCCCCC;
+			}
+			
+			.layui-layer-page .layui-layer-btn {
+				text-align: left;
+				padding: 0 !important;
+			}
+			
+			.layui-layer-btn .layui-layer-btn0 {
+				width: 136px;
+				height: 42px;
+				line-height: 42px;
+				text-align: center;
+				background: #F9CC74 !important;
+				border-radius: 4px;
+				border-color: transparent !important;
+				margin-left: 15px;
+				color: #333333 !important;
+				font-size: 14px;
+			}
+			/*瀑布流*/
+			/*好多日志*/
+			
+			body {
+				background-color: #E8E8E8
+			}
+			
+			.demo {
+				position: relative;
+				opacity: 0;
+				transition: .2s ease;
+				margin-bottom: 60px;
+			}
+			
+			.grid {
+				position: relative;
+				/* fluffy */
+				margin: 0 auto;
+				width: 98%;
+				/* end fluffy */
+			}
+			
+			.grid-item {
+				position: absolute;
+				top: 0;
+				left: 0;
+				/* fluffy */
+				width: 260px;
+				/*height: 120px;*/
+				border-radius: 3px;
+				background-color: #fff;
+				/* end fluffy */
+				-webkit-transition: .3s ease-in-out;
+				-o-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
+			}
+			
+			.grid-item img {
+				width: 100%;
+			}
+			
+			.grid-item p {
+				padding: 0 5% 6px 5%;
+				color: #999999;
+			}
+			/* mq */
+			
+			@media (max-width: 600px) {
+				.grid-item {
+					width: 120px;
+					/*height: 80px;*/
+				}
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0;
+				font-size: 14px;
+			}
+			
+			.layui-nav-item span {
+				padding: 0 20px;
+			}
+			
+			i {
+				font-style: initial;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<!--导航-->
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="Projectsmap.html">项目首页<span>>></span></a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="station.html"><i class="headerzd"></i><span>>></span></a>
+			</li>
+			<li class="layui-nav-item layui-this">
+				<a href="">日志</a>
+			</li>
+		</ul>
+		<!-- 列表 -->
+		<div class="logs_box">
+			<div class="logs_top">
+				<img class="logs_top_img" src="" alt="">
+				<span>日志</span>
+				<span class="logs_count">全部<span>12</span>篇</span>
+				<span class="want_upload">我要上传</span>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="demo">
+			<div class="grid" id="siteLog">
+				<!--content-->
+				<div class="grid-item" v-for="val in siteLog">
+					<img v-if="val.img.length > 0" v-bind:src="val.img[0]" />
+					<p style="margin-top:6px;" v-text="val.log_info"></p>
+					<p style="color: #333;" v-text="val.project_admin.name"></p>
+					<p v-text="intime(val.time)"></p>
+				</div>
+
+			</div>
+		</div>
+		<!--弹窗-->
+		<div id="model" style="display: none;">
+			<form method="post" class="layui-form">
+				<div class="model_content">
+					<textarea name="" required lay-verify="required" placeholder="在此处填写您的故障处理,现场巡查的记录..." class="layui-textarea"></textarea>
+					<div>
+						<span class="upload_img_hint"><button type="button" class="layui-btn" id="uploadimg">上传图片</button>格式为jpg或png,每个站点上限为10张</span>
+						<div class="add_upload_img_box">
+							<!--<img class="upload_img_size" src="" alt="">-->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script src="../../js/minigrid.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../lib/layui/layui.js"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//瀑布流代码执行
+		var device_id = store.get('device_id');
+		var conname = store.get('conname');
+		$('.headerzd').html(conname);
+		//页面渲染
+		$.ajax({
+			type: "GET",
+			url: _http + "/admin/system_overview/siteLog",
+			dataType: 'json',
+			data: {
+				device_id: device_id
+			},
+			success: function(data) {
+				console.log(data);
+				console.log(data.data[0].img.length);
+				//内容数量
+				$('.logs_count').find('span').text(data.data.length);
+				//内容渲染
+				var siteLog = new Vue({
+					el: '#siteLog',
+					data: {
+						siteLog: data.data
+					},
+					methods: {
+						intime: function(_time) {
+							return new Date(parseInt(_time) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+						}
+					}
+				});
+				(function() {
+					minigrid('.grid', '.grid-item', 6, null,
+						function() {
+							var d = document.querySelector('.demo');
+							d.style.opacity = 1;
+						}
+					);
+					window.addEventListener('resize', function() {
+						minigrid('.grid', '.grid-item');
+					});
+				})();
+			}
+		});
+		var imges = [];
+		// 上传图片
+		layui.use(['layer', 'upload'], function() {
+			var upload = layui.upload;
+			$('#model').hide();
+			// 上传日志
+			$(".want_upload").click(function() {
+				$('#model').show();
+				layer.open({
+					type: 1,
+					title: '上传日志',
+					content: $('#model'),
+					area: ['540px', '496px'],
+					btn: ['确认上传'],
+					yes: function(index, layero) {
+						//上传图片
+						console.log($('.layui-textarea').val());
+						$.ajax({
+							type: "POST",
+							url: _http + "/admin/system_overview/addLog",
+							dataType: 'json',
+							headers: {
+								token: _token
+							},
+							data: {
+								device_id: device_id,
+								content: $('.layui-textarea').val(),
+								img: imges
+							},
+							success: function(data) {
+								window.location.reload();
+							},
+							error: function(e) {
+								console.log(e);
+							}
+						});
+					},
+					cancel: function() {
+						$('#model').hide();
+						window.location.reload();
+					}
+				});
+			});
+			// 上传图片
+			var uploadInst = upload.render({
+				elem: '#uploadimg',
+				url: _http + '/admin/upload/upload',
+				multiple: true, //允许多图片上传,默认不允许
+				number: 10, //上传图片个数,默认一张
+				before: function(obj) {
+					//预读本地文件示例，不支持ie8
+					obj.preview(function(index, file, result) {
+						// $('.upload_img_size').attr('src', result); //图片链接（base64）
+						console.log("index:", index, ",file-name:", file.name, ",file-size:", file.size, ",result:", result);
+						if($('.add_upload_img_box').children('img').length < 10) {
+							$('.add_upload_img_box').append("<img class='upload_img_size' src='" + result + "' alt=''>");
+						};
+					});
+				},
+				done: function(res) {
+					//上传成功
+					console.log("上传成功:", res);
+					imges.push(res.data.src);
+				},
+				error: function(err) {
+					console.log("上传失败:", err)
+				}
+			});
+		});
+	</script>
+
+</html>

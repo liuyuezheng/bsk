@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	background-image: url(../img/06_02.png);
+	background-size:cover;
+	box-sizing: border-box;
+	padding: 0.32rem;
+}
+.logo{
+	width: 2.54rem;
+	height: 0.72rem;
+}
+.matchhing{
+	text-align: center;
+}
+.matchhing img{
+	width: 5.1rem;
+	height:1.16rem;
+	margin-top: 0.75rem;
+}
+.vs{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 1.48rem;
+	margin-top: 2.45rem;
+}
+.white{
+	background: #ffffff;
+	width: 2.18rem;
+	height: 2.18rem;
+	border-radius: 50%;
+	position: relative;
+	
+}
+.white img{
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	left: 0.09rem;
+	top: 0.09rem;
+	border-radius: 50%;
+}
+.vs_logo{
+	width: 1.7rem;
+	height:1.13rem;
+}
+.wait_people{
+	width:2.32rem;
+	height:2.32rem;
+}
+.my_name{
+	position: absolute;
+    top: 8.24rem;
+    left: 90px;
+    color: #ffffff;	
+    font-size: 0.43rem;
+    font-weight: bold;
+    
+}
+.wait_name{
+	color: #ffffff;
+	top: 8.24rem;
+    right: 85px;
+	position: absolute;
+	font-size: 0.43rem;
+	font-weight: bold;
+}
+.invatition{
+	color:#ff8b00;
+	font-size: 0.32rem;
+	background: #FFFFFF;
+	padding: 0.2rem 0.41rem;
+	border-radius: 0.7rem;
+	position: absolute;
+	right: 80px;
+	top: 9rem;
+}
+.start{
+	text-align: center;
+}
+.start .start_game{
+   width: 6.97rem;	
+   height:2.45rem;
+   margin-top: 4.86rem;
+}

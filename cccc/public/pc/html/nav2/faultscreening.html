@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>故障筛查</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			.layui-tab {
+				margin: 0;
+			}
+			
+			.layui-nav {
+				background-color: #262626;
+			}
+			
+			.layui-nav .layui-this:after,
+			.layui-nav-bar,
+			.layui-nav-tree .layui-nav-itemed:after {
+				background-color: initial;
+			}
+			
+			.layui-this a {
+				font-size: 16px !important;
+			}
+			
+			.layui-nav .layui-nav-item a {
+				padding: 0 30px;
+			}
+			/*列表*/
+			
+			.form-content {
+				background: #FFFFFF;
+				text-align: center;
+			}
+			
+			.layui-table thead tr {
+				background: #FFFFFF;
+			}
+			
+			.layui-table th {
+				line-height: 53px;
+				text-align: center;
+				font-size: 14px;
+				color: #333333;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-table td {
+				line-height: 49px;
+				font-size: 12px;
+				color: #666666;
+				border: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			/*分页*/
+			
+			.page {
+				position: absolute;
+				bottom: 9px;
+				text-align: center;
+			}
+			
+			.page a {
+				min-width: 10px;
+				height: 24px;
+				line-height: 24px;
+				margin-right: 10px;
+				font-size: 12px;
+				color: #333333;
+				border: 1px solid #D9D9D9;
+				padding: 0 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr {
+				margin-right: 10px;
+			}
+			
+			.layui-laypage .layui-laypage-curr .layui-laypage-em {
+				color: #F9CC74;
+				background: #262626;
+				padding: 0;
+				top: 0;
+				left: 0;
+			}
+			
+			.page span {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			
+			.layui-laypage span {
+				height: 24px;
+				line-height: 24px;
+			}
+			
+			.layui-laypage .layui-laypage-spr {
+				margin-right: 10px;
+			}
+			/*筛选*/
+			
+			.layui-input-block {
+				width: 200px;
+				height: 40px;
+				float: left;
+				margin: 10px 15px;
+			}
+			
+			.layui-input-block select {
+				width: 100%;
+				height: 100%;
+				background-color: #f5f5f5;
+			}
+			
+			.layui-btn {
+				height: 40px;
+				line-height: 40px;
+				background-color: #F9CC74;
+				border-radius: 4px;
+				font-size: 14px;
+				color: #333333;
+			}
+			
+			.layui-card {
+				height: 60px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<!--导航-->
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item  layui-this">
+				<a href="faultscreening.html">故障筛查</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="Analysis.html">统计对比</a>
+			</li>
+		</ul>
+		<!-- 筛选 -->
+		<form class="layui-form" action="">
+			<div class="layui-card">
+				<!--选择框-->
+				<div class="layui-input-block">
+					<select name="city0" lay-verify="required">
+						<option value="0">全部 </option>
+						<option value="1">数据异常 </option>
+						<option value="2">通讯失败</option>
+					</select>
+				</div>
+				<div class="layui-input-block">
+					<select name="city1" lay-verify="required" lay-filter="rep1" class="getProjectList">
+						<!--项目-->
+					</select>
+				</div>
+				<div class="layui-input-block">
+					<select name="city2" lay-verify="required" lay-filter="rep2" class="getDeviceList">
+						<!--站点-->
+					</select>
+				</div>
+				<div class="layui-input-block">
+					<select name="city3" lay-verify="required" lay-filter="rep3" class="getPassagewayList">
+						<!--通道-->
+					</select>
+				</div>
+				<div class="layui-input-block">
+					<button class="layui-btn" lay-submit lay-filter="formDemo">筛查</button>
+				</div>
+			</div>
+		</form>
+		<!-- 列表 -->
+		<div class="form-content">
+			<table class="layui-table">
+				<thead>
+					<tr>
+						<th>通道</th>
+						<th>站点</th>
+						<th>所属项目</th>
+						<th>故障说明</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="contentthis">
+					<!--内容-->
+				</tbody>
+			</table>
+			<!-- 分页 -->
+			<div class="page pagination_position" id="pageid">
+				<div>
+					<a class="num" href="">1</a>
+					<span class="current">2</span>
+					<a class="num" href="">3</a>
+					<a class="num" href="">4</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
+	<script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var conttel = {
+			city0: '0',
+			city1: '0',
+			city2: '0',
+			city3: '0'
+		};
+		var count;
+		//监听事件
+		layui.use('form', function() {
+			var form = layui.form;
+			//项目列表
+			$.ajax({
+				type: "GET",
+				url: _http + "/admin/statistical_analysis/getProjectList",
+				dataType: 'json',
+				success: function(data) {
+					//console.log(data);
+					var html = '<option value="0">项目</option>';
+					for(var i = 0; i < data.data.length; i++) {
+						html += '<option value=' + data.data[i].id + '>' + data.data[i].project_name + '</option>'
+					}
+					$('.getProjectList').html(html);
+					form.render();
+				}
+			});
+			//监听提交
+			form.on('select(rep1)', function(data) {
+				$.ajax({
+					type: "GET",
+					url: _http + "/admin/statistical_analysis/getDeviceList",
+					dataType: 'json',
+					data: {
+						project_id: data.value
+					},
+					success: function(data) {
+						//console.log(data);
+						var html = '<option value="0">站点 </option>';
+						for(var i = 0; i < data.data.length; i++) {
+							html += '<option value=' + data.data[i].device_id + '>' + data.data[i].device_name + '</option>'
+						}
+						$('.getDeviceList').html(html);
+						form.render();
+					}
+				});
+				form.on('select(rep2)', function(data) {
+					$.ajax({
+						type: "GET",
+						url: _http + "/admin/statistical_analysis/getPassagewayList",
+						dataType: 'json',
+						data: {
+							project_id: data.value
+						},
+						success: function(data) {
+							//console.log(data);
+							var html = '<option value="0">通道</option>';
+							for(var i = 0; i < data.data.length; i++) {
+								html += '<option value=' + data.data[i].id + '>' + data.data[i].name + '</option>'
+							}
+							$('.getPassagewayList').html(html);
+							form.render();
+						}
+					});
+				});
+			});
+		});
+		//搜索
+		layui.use('form', function() {
+			var form = layui.form;
+			//监听提交
+			form.on('submit(formDemo)', function(data) {
+				conttel = data.field;
+				$.ajax({
+					type: "GET",
+					url: _http + "/admin/statistical_analysis/breakdown",
+					dataType: 'json',
+					data: {
+						page: 1,
+						size: 10,
+						type: conttel.city0,
+						project_id: conttel.city1,
+						device_id: conttel.city2,
+						dra_id: conttel.city3
+					},
+					success: function(data) {
+						//console.log(data);
+						count = data.data.total;
+						$('#contentthis').find().remove(); //清楚数据
+						var _data = data.data.data;
+						var _html = '';
+						for(var i = 0; i < _data.length; i++) {
+							var state;
+							if(_data[i].status == 0) {
+								state = '<td>正常</td> '
+							} else if(_data[i].status == 1) {
+								state = '<td style="color:#FF4E48;">数据异常</td>'
+							} else if(_data[i].status == 2) {
+								state = '<td style="color:#FFA80B;">通讯失败</td> '
+							}
+							_html += '<tr><td>' + _data[i].passageway_name + '</td><td>' + _data[i].device_name + '</td><td>' + _data[i].project_name + '</td>' + state + '<td>查看</td></tr>';
+						};
+						$('#contentthis').html(_html);
+					}
+				});
+
+				return false;
+			});
+		});
+
+		//内容渲染
+		function pagehtml(e) {
+			//console.log(JSON.stringify(e));
+			$.ajax({
+				type: "GET",
+				url: _http + "/admin/statistical_analysis/breakdown",
+				dataType: 'json',
+				data: {
+					page: 1,
+					size: 10,
+					type: e.city0,
+					project_id: e.city1,
+					device_id: e.city2,
+					dra_id: e.city3
+				},
+				success: function(data) {
+					layui.use('laypage', function() {
+						var laypage = layui.laypage;
+						//console.log(data.data.total);
+						count = data.data.total;
+						//执行一个laypage实例
+						laypage.render({
+							elem: 'pageid',
+							count: count, //数据总数，从服务端得到
+							limit: 10,
+							prev: '<上一页',
+							next: '下一页>',
+							first: '首页',
+							last: '尾页',
+							jump: function(obj, first) {
+								//obj包含了当前分页的所有参数，比如：
+								//console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+								//console.log(obj.limit); //得到每页显示的条数	
+								$.ajax({
+									type: "GET",
+									url: _http + "/admin/statistical_analysis/breakdown",
+									dataType: 'json',
+									data: {
+										page: obj.curr,
+										size: obj.limit,
+										type: conttel.city0,
+										project_id: conttel.city1,
+										device_id: conttel.city2,
+										dra_id: conttel.city3
+									},
+									success: function(data) {
+										//console.log(data);
+										$('#contentthis').find().remove(); //清楚数据
+										var _data = data.data.data;
+										var _html = '';
+										for(var i = 0; i < _data.length; i++) {
+											var state;
+											if(_data[i].status == 0) {
+												state = '<td>正常</td> '
+											} else if(_data[i].status == 1) {
+												state = '<td style="color:#FF4E48;">数据异常</td>'
+											} else if(_data[i].status == 2) {
+												state = '<td style="color:#FFA80B;">通讯失败</td> '
+											}
+											_html += '<tr><td>' + _data[i].passageway_name + '</td><td>' + _data[i].device_name + '</td><td>' + _data[i].project_name + '</td>' + state + '<td>查看</td></tr>';
+										};
+										$('#contentthis').html(_html);
+									}
+								});
+								//首次不执行
+								if(!first) {
+									//do something
+								}
+							}
+						});
+					});
+				}
+			});
+		}pagehtml(conttel)
+	</script>
+
+</html>

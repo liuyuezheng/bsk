@@ -1,0 +1,714 @@
+---------------------------------------------------------------
+[ 2018-09-04T15:22:32+08:00 ] 127.0.0.1 GET /admin/category?addtabs=1
+[ info ] 127.0.0.1/admin/category?addtabs=1 [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：885.41kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/category?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/category' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:37+08:00 ] 127.0.0.1 GET /admin/general/config?addtabs=1
+[ info ] 127.0.0.1/admin/general/config?addtabs=1 [运行时间：0.024001s][吞吐率：41.66req/s] [内存消耗：885.59kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/general/config?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/config' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:38+08:00 ] 127.0.0.1 GET /admin/general/attachment?addtabs=1
+[ info ] 127.0.0.1/admin/general/attachment?addtabs=1 [运行时间：0.020002s][吞吐率：49.99req/s] [内存消耗：885.66kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'attachment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/general/attachment?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/attachment' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:38+08:00 ] 127.0.0.1 GET /admin/general/profile?addtabs=1
+[ info ] 127.0.0.1/admin/general/profile?addtabs=1 [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：885.66kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'profile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/general/profile?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/profile' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:43+08:00 ] 127.0.0.1 GET /admin/auth/admin?addtabs=1
+[ info ] 127.0.0.1/admin/auth/admin?addtabs=1 [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：885.53kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/auth/admin?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/auth/admin' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:43+08:00 ] 127.0.0.1 GET /admin/auth/adminlog?addtabs=1
+[ info ] 127.0.0.1/admin/auth/adminlog?addtabs=1 [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：885.61kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'adminlog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/auth/adminlog?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/auth/adminlog' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:44+08:00 ] 127.0.0.1 GET /admin/auth/group?addtabs=1
+[ info ] 127.0.0.1/admin/auth/group?addtabs=1 [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：885.53kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/auth/group?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/auth/group' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:22:45+08:00 ] 127.0.0.1 GET /admin/auth/rule?addtabs=1
+[ info ] 127.0.0.1/admin/auth/rule?addtabs=1 [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：885.50kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'rule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/auth/rule?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/auth/rule' => '',
+  'addtabs' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:22+08:00 ] 127.0.0.1 GET /assets/fonts/iconfont/iconfont.woff?t=1487643189178
+[ info ] 127.0.0.1/assets/fonts/iconfont/iconfont.woff?t=1487643189178 [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：877.28kb] [文件加载：32]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'fonts',
+    2 => 'iconfont',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/assets/css/backend.min.css?v=1.0.1',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/assets/fonts/iconfont/iconfont_woff' => '',
+  't' => '1487643189178',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:22+08:00 ] 127.0.0.1 GET /assets/fonts/iconfont/iconfont.ttf?t=1487643189178
+[ info ] 127.0.0.1/assets/fonts/iconfont/iconfont.ttf?t=1487643189178 [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：877.27kb] [文件加载：32]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'fonts',
+    2 => 'iconfont',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/assets/css/backend.min.css?v=1.0.1',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/assets/fonts/iconfont/iconfont_ttf' => '',
+  't' => '1487643189178',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:57+08:00 ] 127.0.0.1 GET /admin/general/config?ref=addtabs
+[ info ] 127.0.0.1/admin/general/config?ref=addtabs [运行时间：0.020002s][吞吐率：49.99req/s] [内存消耗：885.88kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/config' => '',
+  'ref' => 'addtabs',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:58+08:00 ] 127.0.0.1 GET /admin/general/config?ref=addtabs
+[ info ] 127.0.0.1/admin/general/config?ref=addtabs [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：885.88kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/config' => '',
+  'ref' => 'addtabs',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:59+08:00 ] 127.0.0.1 GET /admin/general/config?ref=addtabs
+[ info ] 127.0.0.1/admin/general/config?ref=addtabs [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：885.88kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/config' => '',
+  'ref' => 'addtabs',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:59+08:00 ] 127.0.0.1 GET /admin/general/config?ref=addtabs
+[ info ] 127.0.0.1/admin/general/config?ref=addtabs [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：885.88kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/config' => '',
+  'ref' => 'addtabs',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:23:59+08:00 ] 127.0.0.1 GET /admin/general/config?ref=addtabs
+[ info ] 127.0.0.1/admin/general/config?ref=addtabs [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：885.88kb] [文件加载：33]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general',
+    2 => 'config',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/general/config' => '',
+  'ref' => 'addtabs',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:24:05+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：846.45kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:33+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:37+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:38+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.022002s][吞吐率：45.45req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:38+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:38+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:39+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:40+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：846.73kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-04T15:25:52+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.014001s][吞吐率：71.42req/s] [内存消耗：846.49kb] [文件加载：30]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'province_id=1; city_id=2; district_id=3; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536044671; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1536044673; PHPSESSID=i8fcifarl1ldo0rn56vekb0ka3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\xhgj\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File

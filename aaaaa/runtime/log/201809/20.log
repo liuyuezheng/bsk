@@ -1,0 +1,2386 @@
+---------------------------------------------------------------
+[ 2018-09-20T10:43:49+08:00 ] 127.0.0.1 GET /
+[ info ] web.socket.com/ [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,333.83kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Documents\GitHub\websocket\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:D:\Documents\GitHub\websocket\public/../application/index\view\index\index.html[D:\Documents\GitHub\websocket\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-09-20T10:44:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：2,503.55kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.2.1.17116',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000001',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T10:44:08+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,503.37kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000002',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T10:46:55+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.075005s][吞吐率：13.33req/s] [内存消耗：2,535.20kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000003',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: HTTPS[D:\Documents\GitHub\websocket\application\common.php:31]
+---------------------------------------------------------------
+[ 2018-09-20T10:47:17+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：2,535.42kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000004',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: HTTPS[D:\Documents\GitHub\websocket\application\common.php:31]
+---------------------------------------------------------------
+[ 2018-09-20T10:47:20+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,535.42kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000005',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: HTTPS[D:\Documents\GitHub\websocket\application\common.php:31]
+---------------------------------------------------------------
+[ 2018-09-20T10:48:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：2,504.57kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000006',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T10:51:23+08:00 ] 127.0.0.1 GET /push/push/bind?client_id=7f0000010b5400000007&room_id=5
+[ info ] web.socket.com/push/push/bind?client_id=7f0000010b5400000007&room_id=5 [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：2,535.41kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000007',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: HTTPS[D:\Documents\GitHub\websocket\application\common.php:31]
+---------------------------------------------------------------
+[ 2018-09-20T10:51:36+08:00 ] 127.0.0.1 GET /push/push/bind?client_id=7f0000010b5400000008&room_id=5
+[ info ] web.socket.com/push/push/bind?client_id=7f0000010b5400000008&room_id=5 [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：2,504.65kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000008',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T10:54:35+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：2,504.66kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000009',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T10:55:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,504.57kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000a',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T11:01:43+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,504.70kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000b',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T11:02:06+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.096006s][吞吐率：10.42req/s] [内存消耗：2,504.66kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000c',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T14:13:46+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.115006s][吞吐率：8.70req/s] [内存消耗：2,537.05kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000d',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T14:51:43+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.099006s][吞吐率：10.10req/s] [内存消耗：2,537.14kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000e',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` IN (4,3) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:09:19+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：2,459.10kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000f',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:10:04+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,458.75kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000010',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:14:52+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,458.75kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000011',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:18:08+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,459.64kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000012',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:19:45+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.050002s][吞吐率：20.00req/s] [内存消耗：2,428.20kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000013',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:22:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：2,459.88kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000014',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = '4' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:23:24+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：2,460.59kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000015',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = '4' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:24:14+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：2,428.58kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000016',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5  AND `user_id` = '4' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:50:08+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：2,491.67kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000017',
+  'room_id' => '5',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 5 [ RunTime:0.001000s ]
+[ error ] [2]Cannot use a scalar value as an array[D:\Documents\GitHub\websocket\application\push\controller\Push.php:65]
+---------------------------------------------------------------
+[ 2018-09-20T15:50:54+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,491.74kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000018',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ error ] [2]Cannot use a scalar value as an array[D:\Documents\GitHub\websocket\application\push\controller\Push.php:65]
+---------------------------------------------------------------
+[ 2018-09-20T15:51:07+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,491.70kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000019',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [2]Cannot use a scalar value as an array[D:\Documents\GitHub\websocket\application\push\controller\Push.php:65]
+---------------------------------------------------------------
+[ 2018-09-20T15:51:43+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,460.08kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001a',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:53:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,460.08kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001b',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T15:59:07+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.090006s][吞吐率：11.11req/s] [内存消耗：2,490.00kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001c',
+  'room_id' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 6 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 6 [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data[D:\Documents\GitHub\websocket\application\push\model\Points.php:51]
+---------------------------------------------------------------
+[ 2018-09-20T16:02:35+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：2,459.25kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001d',
+  'room_id' => '6',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 6 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 6 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T16:14:13+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,460.73kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001e',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T16:45:08+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,465.47kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001f',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `points`  SET `user_id`='2,4'  WHERE  `id` = 4 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T16:46:37+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：2,497.71kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000020',
+  'room_id' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 2 [ RunTime:0.001000s ]
+[ error ] [8]Object of class app\push\model\Points could not be converted to int[D:\Documents\GitHub\websocket\application\push\model\Points.php:40]
+---------------------------------------------------------------
+[ 2018-09-20T16:48:38+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,464.09kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'dba9cb804f71f0a5731dd661e3a99957',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000021',
+  'room_id' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `points` (`room_id` , `user_id` , `time`) VALUES (2 , '4' , 1537433318) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T16:57:37+08:00 ] 127.0.0.1 GET /push/token/token?username=cccccc&id=3
+[ info ] web.socket.com/push/token/token?username=cccccc&id=3 [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：2,006.16kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'web.socket.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => 'da7a9b84-fa69-46de-96ff-6aa57a413b6c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'cccccc',
+  'id' => '3',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\websocket\application\push\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'cccccc'  AND `user_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-20T16:58:21+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,467.16kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'd98545b2aa5158efa19b562c9410db60',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000022',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T16:58:53+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：2,498.80kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'd98545b2aa5158efa19b562c9410db60',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000023',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组下标: 1[D:\Documents\GitHub\websocket\application\push\model\Points.php:72]
+---------------------------------------------------------------
+[ 2018-09-20T17:01:22+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,498.50kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'd98545b2aa5158efa19b562c9410db60',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000024',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组下标: 1[D:\Documents\GitHub\websocket\application\push\model\Points.php:72]
+---------------------------------------------------------------
+[ 2018-09-20T17:01:58+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：2,464.60kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => 'd98545b2aa5158efa19b562c9410db60',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000025',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `points` (`room_id` , `user_id` , `time`) VALUES (3 , '3' , 1537434118) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T17:03:58+08:00 ] 127.0.0.1 GET /push/token/token?username=aaaaaa&id=1
+[ info ] web.socket.com/push/token/token?username=aaaaaa&id=1 [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,006.16kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'web.socket.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => 'c0bdde2b-d1d2-4db7-b418-e7c7bef99c0f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'aaaaaa',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\websocket\application\push\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'aaaaaa'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T17:04:38+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：2,465.85kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000026',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `points`  SET `user_id`='3,1'  WHERE  `id` = 10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T17:04:42+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,570.34kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000027',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: where1[D:\Documents\GitHub\websocket\application\push\controller\Push.php:54]
+---------------------------------------------------------------
+[ 2018-09-20T17:33:16+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：2,527.80kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000028',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: user_id[D:\Documents\GitHub\websocket\application\push\model\Points.php:97]
+---------------------------------------------------------------
+[ 2018-09-20T17:36:41+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：2,528.12kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000029',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: user_id[D:\Documents\GitHub\websocket\application\push\model\Points.php:98]
+---------------------------------------------------------------
+[ 2018-09-20T17:51:47+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：2,534.74kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002a',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ error ] [8]未定义变量: data[D:\Documents\GitHub\websocket\application\push\controller\Push.php:56]
+---------------------------------------------------------------
+[ 2018-09-20T17:52:17+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,534.68kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002b',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 4 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data[D:\Documents\GitHub\websocket\application\push\controller\Push.php:56]
+---------------------------------------------------------------
+[ 2018-09-20T17:52:18+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：2,534.68kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002c',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: data[D:\Documents\GitHub\websocket\application\push\controller\Push.php:56]
+---------------------------------------------------------------
+[ 2018-09-20T17:53:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：2,534.63kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002d',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: data[D:\Documents\GitHub\websocket\application\push\controller\Push.php:56]
+---------------------------------------------------------------
+[ 2018-09-20T17:54:07+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：2,504.82kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002e',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-20T17:55:13+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,534.20kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002f',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T17:55:16+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：2,534.20kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000030',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T18:03:51+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：2,534.36kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000031',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T18:05:31+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：2,537.05kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000032',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined function app\push\model\int()[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T18:06:42+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,534.37kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000033',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.001001s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T18:07:26+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,501.13kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000034',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T18:07:56+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,501.13kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000035',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:101]
+---------------------------------------------------------------
+[ 2018-09-20T18:09:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] web.socket.com/push/push/bind [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,500.97kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\websocket\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '40',
+  'token' => '6ae1b82f2d54608aa71fc941d46456dd',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'web.socket.com',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000036',
+  'room_id' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\websocket\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `room` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `room` WHERE  `room_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `points` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `points` WHERE  `room_id` = 3 [ RunTime:0.000000s ]
+[ error ] [2]Illegal offset type[D:\Documents\GitHub\websocket\application\push\model\Points.php:100]

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/question.css">
+		<style type="text/css">
+			a {
+				transform: translateX(100%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="logo">
+				<img src="img/logo.png" />
+			</div>
+			<div class="competition">
+				<img src="img/competiton.png" / class="vie">
+				<div class="left">
+					<img src="img/touxiang111.jpg" class="left_photo" />
+					<div class="time">
+						<p class="my">我</p>
+						<p class="shijian mine_score">30分</p>
+					</div>
+				</div>
+				<div class="middle">01:00</div>
+				<div class="right">
+					<div class="time">
+						<p class="my">对方</p>
+						<p class="shijian you_score">30分</p>
+					</div>
+					<img src="img/touxiang111.jpg" class="right_photo" />
+				</div>
+			</div>
+			<div class="index-num">【<span id="curr">1</span>/<span id="total"></span>】</div>
+		</div>
+		<div class="question-wapper">
+			<div class="question-list">
+
+			</div>
+
+		</div>
+		<script src="js/zepto.js"></script>
+		<script src="js/store.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/headerhttp.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function getRoomId(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+    var room_id=getRoomId("room_id");
+			var roomids = store.get('roomids');
+			//所用时间
+			var timeme = 0;
+			//接口请求
+			$.ajax({
+				type: "GET",
+				url: _http+"/push/push/chooseList",
+				dataType: 'json',
+//				headers:{
+//					token: localStorage.getItem("token")
+//				},
+				data: {
+					uid:1,
+					num:5
+				},
+				success: function(data) {
+					console.log(data);
+					textcontent(data.data);
+				},
+				error: function(data) {
+					return false
+				}
+			});
+			//答题渲染
+			function textcontent(data) {
+				var html = "";
+				console.log(data)
+				data.forEach(function(item, index) {
+					html += '<div class="question-item" data-index="' + index + '">';
+					html += '<div class="question-title" data-topic_id="'+item.topic_id+'">' + item.title + '</div>';
+					item.answer.forEach(function(val, valIndex) {
+						html += '<div class="question-val" data-index="' + valIndex + '" data-id = "'+val.id+ '" data-type = "'+val.type+'">' + val.connect + '</div>';
+					})
+					html += '</div>';
+				});
+				$(".question-list").html(html);
+				$("#total").html(data.length);
+				$('.question-item').on("tap", ".question-val", function() {
+					var textnavid= $(this).data("id");//选择栏id
+					var topic_id = $(this).siblings(".question-title").data("topic_id");//题目id
+					var type = $(this).data("type");
+//					console.log(textnavid);
+//					console.log(topic_id);
+					//接口请求
+//					console.log(roomids+"房间")
+				var $this=$(this);
+				var dataArr=data;
+				$.ajax({
+				type: "POST",
+				url:_http+"/push/push/answerQuestions",
+				dataType:"JSON",
+				data: {
+					answer_id:textnavid,
+					topic_id:topic_id,
+					type:type,
+					pktime:timeme,
+					room_id:roomids
+				},
+				success: function(data) {
+					console.log(data);
+//					$(".mine_score").html(data.data.point);
+					var pindex = $this.parent().data("index");
+					var index = $this.data("index");
+					$this.parent().find(".question-val").removeClass("rightVal");
+					$this.parent().find(".error").removeClass("error");
+//					if(data[pindex].rightIndex == index) {
+					if(type == 1) {
+						$this.addClass("rightVal").removeClass("error");
+					} else {
+						$this.addClass("error").removeClass("rightVal");
+					}
+					if(pindex + 1 != dataArr.length) {
+						$("#curr").html(pindex + 2);
+						$('.question-list').animate({
+							left: "-" + (pindex + 1) * 100 + "%"
+						}, 1000, 'swing');
+					} else {
+//						alert("最后一题得出结果");
+//						alert(timeme);
+						window.location.href = 'wait.html';
+					}
+				},
+				error: function(data) {
+					return false
+				}
+			});
+	
+				})
+		};
+			//答题结束请求
+			function answerEnd(){
+				$.ajax({
+					type: "POST",
+					url:_http+"/push/push/answerEnd",
+					dataType:"JSON",
+					data: {
+						room_id:roomids
+					},
+					success: function(data) {
+						console.log(data)
+						if(data.data[1].isend == 0) {
+							window.location.href = 'wait.html'; 	//跳等待页面
+						}else {
+							if(data.data[0].p_status == 1) {
+								window.location.href = 'fail.html'; 	//跳胜利页面
+							}else{
+								window.location.href = 'fail.html'; 	//跳失败页面	
+							}
+						}
+					}
+				})
+			}
+			//时间倒计时
+			function resetTime(time) {
+				var timer = null;
+				var t = time;
+				var m = 0;
+				var s = 0;
+				m = Math.floor(t / 60 % 60);
+				m < 10 && (m = '0' + m);
+				s = Math.floor(t % 60);
+				function countDown() {
+					timeme++;
+					s--;
+					s < 10 && (s = '0' + s);
+					if(s.length >= 3) {
+						s = 59;
+						m = "0" + (Number(m) - 1);
+					}
+					if(m.length >= 3) {
+						m = '00';
+						s = '00';
+						clearInterval(timer);
+						
+						//时间到了跳入失败页面可能是要跳到等待页面
+						//这里应该需要一个接口
+						answerEnd();
+						
+					}
+					//console.log(m + "：" + s );
+					$('.middle').text(m+":"+s);
+				}
+				timer = setInterval(countDown, 1000);
+			};
+			//执行倒计时参数
+			resetTime(300);
+		</script>
+	</body>
+
+</html>

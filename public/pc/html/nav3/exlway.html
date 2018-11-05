@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>修改通道</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			.newway_top {
+				width: 100%;
+				height: 60px;
+				background: #FFFFFF;
+				margin-bottom: 30px;
+			}
+			
+			.newway_top_img {
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				background: #262626;
+				margin-left: 30px;
+				margin-right: 9px;
+				margin-top: 22px;
+				float: left;
+			}
+			
+			.newway_top_title {
+				line-height: 60px;
+				font-size: 16px;
+				color: #333333;
+			}
+			
+			.newway_top_title span {
+				font-size: 14px;
+				color: #BBBBBB;
+				margin-left: 30px;
+			}
+			/*指令大框*/
+			
+			.add_command {
+				margin-bottom: 30px;
+				padding-bottom: 1px;
+				background: #FFFFFF;
+				padding-top: 1px;
+			}
+			/*下发指令名称*/
+			
+			.input_command_name {
+				width: 480px;
+				height: 46px;
+				line-height: 48px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+			/*通道一*/
+			
+			.way_info_box {
+				min-height: 314px;
+				margin: 30px;
+				border: 1px dashed #DDDDDD;
+			}
+			
+			.way_info {
+				margin: 0 30px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 14px;
+				color: #333333;
+				border-bottom: 1px solid #DDDDDD;
+				margin-bottom: 30px;
+			}
+			/*显示计算*/
+			
+			.show_count {
+				margin: 0 30px;
+				min-height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+				color: #333333;
+				margin-bottom: 30px;
+			}
+			
+			.show_count span {
+				color: #BBBBBB;
+			}
+			
+			.input_show_count {
+				width: 264px;
+				height: 46px;
+				line-height: 46px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-left: 30px;
+				margin-bottom: 30px;
+			}
+			
+			.input_way_name {
+				width: 478px;
+				height: 46px;
+				line-height: 46px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-left: 30px;
+				margin-bottom: 30px;
+			}
+			
+			.layui-input-block_project div div .layui-input {
+				height: 48px;
+			}
+			
+			.layui-input-block_project {
+				width: 266px !important;
+				margin-left: 30px !important;
+				margin-bottom: 30px !important;
+				height: 48px !important;
+				line-height: 48px !important;
+				background: #FFFFFF;
+			}
+			
+			.layui-input-block {
+				margin-left: 30px !important;
+			}
+			
+			.layui-card {
+				box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0) !important;
+			}
+			/*按钮*/
+			
+			.layui-btn {
+				width: 136px;
+				height: 44px;
+				line-height: 44px;
+				font-size: 14px;
+				color: #333333;
+				background: #F9CC74;
+				border-radius: 4px;
+				padding: 0;
+				margin-bottom: 30px;
+			}
+			
+			.change_command_color {
+				margin-left: 30px;
+				color: #F9CC74;
+				background: #262626;
+			}
+			
+			.layui-btn:hover {
+				color: #333333;
+			}
+			
+			.change_command_color:hover {
+				color: #F9CC74;
+			}
+			
+			.add_command_btn {
+				display: flex;
+				flex-direction: row;
+			}
+			
+			.layui-form-select .layui-input {
+				width: 100%;
+			}
+			
+			.layui-layer-setwin {
+				top: 0;
+			}
+			
+			.layui-layer-btn a {
+				margin: 0;
+			}
+			
+			.w_tpy {
+				display: block;
+			}
+			
+			.h_tpy {
+				display: none;
+			}
+			
+			.imgesbut {
+				position: absolute;
+				right: -50px;
+				top: 7px;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+			}
+			
+			.addtit {
+				text-align: center;
+				font-size: 18px;
+				padding: 12px 0;
+			}
+			
+			.input_show_add {
+				width: 264px;
+				height: 46px;
+				line-height: 46px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-left: 18px;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<div class="newway_top">
+			<img class="newway_top_img" src="" alt="">
+			<h2 class="newway_top_title">修改通道</h2>
+		</div>
+		<form method="post" class="layui-form">
+			<div class="add_command_box">
+				<div class="add_command">
+					<div class="add_way_box">
+						<div class="way_info_box">
+							<h3 class="way_info">通道</h3>
+							<div>
+								<input type="text" name="name" required lay-verify="required" placeholder="通道名称" autocomplete="off" class="input_show_count">
+								<input type="text" name="start_coding" required lay-verify="required" placeholder="通道编号" autocomplete="off" class="input_show_count" disabled>
+							</div>
+							<div class="inputxx" style="display: none;">
+								<input name="registera" placeholder="选择类型" class="input_show_count" id="inatfast" disabled>
+							</div>
+							<div class="show_count_input_box">
+								<h3 class="show_count">显示计算<br><span>格式为y=ax+b , 请设置a和b的值</span></h3>
+								<div>
+									<input type="number" name="a" placeholder="输入a值" autocomplete="off" class="input_show_count amub">
+									<input type="number" name="b" placeholder="输入b值" autocomplete="off" class="input_show_count bmub">
+									<input type="switch_alarm" name="switch_alarm" placeholder="开关量报警值" autocomplete="off" class="input_show_count cmub">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="add_command_btn">
+				<!--<div class="layui-btn change_command_color add_one_command">增加通道</div>-->
+				<div class="layui-input-block">
+					<div class="layui-btn" lay-submit lay-filter="formDemo" id="Submit">提交</div>
+				</div>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var device_id = store.get('device_id');
+		$("input[name='start_coding']").val(device_id);
+		var td_id = store.get('td_id');
+		var td_state = store.get('td_state');
+		if (td_state == 0) {
+			$('.amub').css('display','block');
+			$('.bmub').css('display','block');
+			$('.cmub').css('display','none');
+		} else{
+			$('.amub').css('display','none');
+			$('.bmub').css('display','none');
+			$('.cmub').css('display','block');
+		};
+		//提交内容
+		$('#Submit').on('click', function() {
+			var objdata = new Object;
+			objdata.name = $("input[name='name']").val();
+			objdata.id = td_id;
+			if(td_state == 0) {//模拟量
+				objdata.a = $("input[name='a']").val();
+				objdata.b = $("input[name='b']").val();
+			} else {
+				objdata.switch_alarm = $("input[name='switch_alarm']").val();
+			};
+			console.log(objdata);
+			//数据上传
+			$.ajax({
+				type: "POST",
+				url: _http + "/admin/device_management/editPass",
+				dataType: 'json',
+				data:objdata,
+				success: function(data) {
+					console.log(data);
+					if(data.code != 1) {
+						alert('请正确填写');
+						return false
+					};
+					window.history.back();
+				}
+			});
+		});
+	</script>
+
+</html>

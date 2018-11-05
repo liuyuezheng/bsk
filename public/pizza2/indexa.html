@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GatewayWorker的websocket连接</title>
+</head>
+<body>
+<h1>GatewayWorker的websocket连接</h1>
+
+<button id='send'>开启</button>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function getRoomId(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+    var url=window.location.href;
+    var room_id=getRoomId("room_id");
+
+    // 这样调用：
+    // alert(getRoomId("参数名1"));
+    // alert(GetQueryString("参数名2"));
+    // alert(GetQueryString("参数名3"));
+    // var user_id = 1;
+    console.log(room_id);
+ console.log(url);
+    //// 与GatewayWorker建立websocket连接，域名和端口改为你实际的域名端口
+    ws = new WebSocket("ws://47.96.8.108:7272");
+    // 服务端主动推送消息时会触发这里的onmessage
+    ws.onmessage = function(e){
+        console.log("onmessage_begin");
+        // json数据转换成js对象
+        var data = JSON.parse(e.data);
+        var type = data.type || '';
+        switch (type){
+            case 'ping':
+                ws.send('{"type":"pong"}');
+                console.log("onmessage_ping");
+                console.log(data.msg);
+                break;
+            // Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+            case 'init':
+                console.log("onmessage_init");
+                console.log(data.client_id);
+                // break;
+                // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                // $.ajax( {
+                //     url: 'http://bsk.mumarenkj.com/push/push/bind',
+                //     type: 'post',
+                //     dataType: 'json',
+                //     data: {client_id: data.client_id,room_id:room_id,uid:4},
+                //     // headers: { token: '2b20ec82deeda9095c192a5f98c15122' },
+                //     success: function(data){
+                //         console.log(data);
+                //     }
+                // });
+                break;
+            case 'close':
+                console.log("非法接入client");
+                console.log(data.msg);
+                break;
+        }
+
+    };
+    $('#send').click(function(){
+        // var name='bbbbbb';
+        $.ajax( {
+            url: 'http://web.socket.com/push/push/answerQuestions',
+            type: 'post',
+            dataType: 'json',
+            /*   $anid=request()->param('answer_id');//选择id
+        $correct=request()->param('type');//正确性
+        $room=request()->param('room_id');//房间id
+        $topic=request()->param('topic_id');//题目id
+        $pktime=request()->param('pktime');//pk时间*/
+            data: {room_id:3,answer_id:7,type:0,topic_id:3,pktime:111},
+            headers: { token: '6ae1b82f2d54608aa71fc941d46456dd' },
+            success: function(data){
+                console.log(data);
+            }
+        });
+        // var content = $('#input').val();
+        // $.post('http://www.laipai.com/index.php/web/Socket/sendToCustomer',{customer_id:customer_id,clerk_id:clerk_id,content:content},function(res){
+        //     $('#window').append('<div style="margin-left:300px;">'+content+'</div>');
+        //     console.log(res);
+        // });
+    })
+
+</script>
+</body>
+</html>

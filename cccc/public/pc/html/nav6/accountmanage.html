@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>管理员</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/xadmin.css">
+    <script type="text/javascript" src="../../js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
+    <style>
+      body {
+        height: 100%;
+      }
+      
+      .layui-tab {
+        margin: 0;
+      }
+      
+      .layui-nav {
+        background-color: #262626;
+      }
+      
+      .layui-nav .layui-this:after,
+      .layui-nav-bar,
+      .layui-nav-tree .layui-nav-itemed:after {
+        background-color: initial;
+      }
+      
+      .layui-this a {
+        font-size: 16px !important;
+      }
+      
+      .layui-nav .layui-nav-item a {
+        padding: 0 30px;
+      }
+      /*列表*/
+      .form-content {
+        background: #FFFFFF;
+        text-align: center;
+      }
+      .layui-table thead tr {
+        background: #FFFFFF;
+      }
+      .layui-table th {
+        line-height: 53px;
+        text-align: center;
+        font-size: 14px;
+        color: #333333;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .layui-table td {
+        font-size: 12px;
+        color: #666666;
+        border: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      tbody tr td span {
+        display: inline-block;
+        width: 100%;
+      }
+      .layui-table td {
+        line-height: 36px;
+      }
+      .logos_size {
+        width: 48px;
+        height: 48px;
+      }
+      .project_options {
+        font-size: 12px;
+        color: #333333;
+      }
+      .project_options span:last-child {
+        font-size: 12px;
+        color: #FF4E48;
+      }
+      /*分页*/
+      .page {
+        position: fixed;
+        bottom: 9px;
+        text-align: center;
+      }
+      .page a {
+        min-width: 10px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 10px;
+        font-size: 12px;
+        color: #333333;
+        border: 1px solid #D9D9D9;
+        padding: 0 10px;
+      }
+      .layui-laypage .layui-laypage-curr {
+        margin-right: 10px;
+      }
+      .layui-laypage .layui-laypage-curr .layui-laypage-em {
+        color: #F9CC74;
+        background: #262626;
+        padding: 0;
+        top: 0;
+        left: 0;
+      }
+      .page span {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+      }
+      .layui-laypage span {
+        height: 24px;
+        line-height: 24px;
+      }
+      .layui-laypage .layui-laypage-spr {
+        margin-right: 10px;
+      }
+      /*筛选*/
+      .layui-card_shaixuan {
+        width: 100%;
+        height: 60px;
+      }
+      .layui-input-block_input {
+        width: 600px;
+        height: 40px;
+        float: left;
+        margin: 10px 15px;
+        /*border: 1px solid #DDDDDD;*/
+        border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+      }
+      .layui-input-block_addproject {
+        float: right;
+        margin: 10px 15px;
+        margin-right: 32px;
+      }
+      .layui-input {
+        width: 600px;
+        height: 48px;
+        background: #F5F5F5;
+      }
+      .layui-input_height40 {
+        height: 40px;
+      }
+      .layui-btn_add_project {
+        width: 84px;
+        height: 32px !important;
+        line-height: 32px !important;
+        background: #424242 !important;
+        border: 0 solid #262626;
+        border-radius: 100px;
+        font-size: 14px !important;
+        color: #F9CC74 !important;
+      }
+      /*新建账户*/
+      .layui-layer-title {
+        background: #FFFFFF;
+        box-shadow: 0 1px 0 0 #EBEBEB;
+        font-size: 18px;
+        color: #333333;
+      }
+      .model_content {
+        padding: 0 12px;
+        margin: 20px 30px 0;
+        border: 1px solid #DDDDDD;
+        background: #FFFFFF;
+      }
+      .model_content2 {
+        padding: 0 12px;
+        margin: 20px 30px 0;
+        background: #FFFFFF;
+        font-size: 12px;
+        color: #999999;
+      }
+      .model_content2 span {
+        font-size: 12px;
+        color: #151515;
+      }
+      .layui-input_name {
+        width: 100%;
+        line-height: 48px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+      }
+      .layui-btn {
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+        color: #FFFFFF;
+        background: #666666;
+        padding: 0 8px;
+        margin-right: 10px;
+      }
+      .layui-input-block_provice {
+        height: 48px !important;
+        line-height: 48px !important;
+        margin: 20px 30px;
+        background: #FFFFFF;
+      }
+      .model_content_box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .model_layui-card {
+        /*width: 200px;*/
+      }
+      .layui-input-block {
+        margin-left: 30px;
+      }
+      .layui-input-block_jingdu,.layui-input-block_weidu {
+        width: 200px;
+        height: 48px !important;
+        line-height: 48px;
+        background: #FFFFFF;
+      }
+      .layui-input_jingdu,.layui-input_weidu {
+        width: 266px;
+        height: 44px;
+        margin-right: 30px;
+        text-indent: 1em;
+        /*border: 1px solid #BBBBBB;*/
+      }
+      .layui-form-select .layui-input {
+        width: 100%;
+        background: #FFFFFF;
+      }
+      .layui-layer-page .layui-layer-btn {
+        text-align: left;
+        padding: 0 !important;
+      }
+      .layui-layer-btn .layui-layer-btn0 {
+        width: 136px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        background: #F9CC74 !important;
+        border-radius: 4px;
+        border-color: transparent !important;
+        margin-left: 30px;
+        color: #333333 !important;
+        font-size: 14px;
+      }
+      .layui-layer-setwin {
+        top: 0;
+      }
+      .layui-layer-btn a {
+        margin: 0;
+      }
+      .logos_size {
+        width: 48px;
+        height: 48px;
+      }
+      .layui-layer-page .layui-layer-btn {
+        position: relative;
+        top: -40px;
+      }
+      /*多选分配项目*/
+      .way_limit_set_choices {
+        min-height: 48px;
+        line-height: 48px;
+        margin: 20px 30px;
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        margin-bottom: 0;
+      }
+      .way_limit_set_choices div div .layui-input {
+        border-width: 0px;
+        background: #FFFFFF;
+      }
+      /*.add_way {
+        margin: 0 30px;
+        min-height: 0px;
+        line-height: 36px;
+        border: 1px solid #DDDDDD;
+        border-top: 0;
+        text-indent: 1em;
+      }
+      .add_way li img {
+        width: 12px;
+        height: 12px;
+        margin-left: 22px;
+        margin-top: -2px;
+      }*/
+      .layui-layer-page .layui-layer-content {
+        overflow: visible !important;
+      }
+      /*搜索按钮*/
+      .set_site_img_search {
+        width: 22px;
+        height: 22px;
+        position: relative;
+        top: 9px;
+        left: -31px;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #FAFAF9;">
+    <!--导航-->
+    <ul class="layui-nav" lay-filter="">
+      <li class="layui-nav-item layui-this">
+        <a href="accountmanage.html">管理员</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="patrolperson.html">巡查员</a>
+      </li>
+      <div class="layui-input-block layui-input-block_addproject">
+        <button class="layui-btn layui-btn_add_project" lay-submit lay-filter="*">新建账户</button>
+      </div>
+    </ul>
+    <!-- 筛选 -->
+    <div class="layui-card layui-card_shaixuan">
+      <div class="layui-input-block layui-input-block_input">
+        <input type="text" name="title" required  lay-verify="required" placeholder="搜索账号/姓名" autocomplete="off" class="layui-input layui-input_height40">
+        <img class="set_site_img_search" src="../../images/icon_sousuo.svg" alt="">
+      </div>
+    </div>
+    <!-- 列表 -->
+    <div class="form-content">
+      <table class="layui-table">
+        <thead>
+          <tr>
+            <th>账号</th>
+            <th>姓名</th>
+            <th>分配项目</th>
+            <th>分配时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="contentthis"></tbody>
+        <!-- <tbody>
+          <tr>
+            <td>123456789</td>
+            <td>张杰</td>
+            <td>
+            	<span>咸亨某某电维项目</span>
+              <span>咸亨某某电维项目</span>
+              <span>咸亨某某电维项目</span>
+            </td>
+            <td>2018-08-31</td>
+            <td class="project_options">
+            	<span class="limit_project">分配项目</span>
+              <span class="limit_set">重置密码</span>
+              <span style="color: #FF4E48;">注销账号</span>
+            </td>
+          </tr>
+        </tbody> -->
+      </table>
+      <!-- 分页 -->
+      <div class="page pagination_position" id="pageid">
+        <div>
+          <a class="num" href="">1</a>
+          <span class="current">2</span>
+          <a class="num" href="">3</a>
+          <a class="num" href="">4</a>
+        </div>
+      </div>
+    </div>
+    <div id="model">
+      <form method="post" class="layui-form">
+        <div class="model_content">
+          <input type="text" name="title" required  lay-verify="required" placeholder="姓名" autocomplete="off" class="layui-input_name get_name">
+        </div>
+        <div class="layui-card">
+          <!--选择框-->
+          <div class="layui-input-block layui-input-block_provice">
+            <select name="city" lay-verify="required" class="get_type">
+              <option value="1" selected>管理员</option>
+              <option value="2">巡检员</option>
+            </select>
+          </div>
+        </div>
+        <div class="model_content">
+          <input type="text" name="title" required  lay-verify="required" placeholder="账户" autocomplete="off" class="layui-input_name get_account">
+        </div>
+        <div class="model_content">
+          <input type="text" name="title" required  lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input_name get_password">
+        </div>
+      </form>
+    </div>
+    <div id="modelproject">
+      <form method="post" class="layui-form">
+        <div class="model_content2">
+          请为<span>管理员</span> <span></span>分配项目
+        </div>
+        <!--多选择框-->
+        <div class="way_limit_set_height">
+          <div class="layui-input-block way_limit_set_choices layui-form" lay-filter="ways">
+            <select name="city" lay-filter="selectway" class="way_limit_set_select">
+              <option value="选择项目" selected disabled>选择项目</option>
+              <!-- <option value="选择项目A">选择项目A </option> -->
+            </select>
+          </div>
+          <!-- <ul class="add_way" lay-verify="required"> -->
+            <!-- <li>温度通道D  X</li> -->
+          <!-- </ul> -->
+        </div>
+      </form>
+    </div>
+    <!-- 重置密码 -->
+    <div id="modelreset">
+      <form method="post" class="layui-form">
+        <div class="model_content">
+          <input type="text" name="title" required  lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input_name get_resetpsd">
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="../../js/vue.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  layui.use('form', function() {
+    var form = layui.form;
+    //监听提交
+    // form.on('submit(formDemo)', function(data) {
+    //   layer.msg(JSON.stringify(data.field));
+    //   return false;
+    // });
+    // 监听选择框
+    form.on('select(selectway)', function(data){
+      console.log(data.elem); //得到select原始DOM对象
+      console.log(data.value); //得到被选中的值
+      console.log(data.othis); //得到美化后的DOM对象
+      // $(".add_way").append("<li>" + data.value + "<img class='delete_selected_project' src='../../images/icon_close.svg' alt=''></li>");
+      // form.render(null, 'ways');
+      // $(".layui-select-title input").val("选择项目");
+    });
+    // 删除所选项目
+    // $(".add_way").on('click','.delete_selected_project',function(e){
+    //   var e = e || event;
+    //   $(this).parents("li").remove();
+    // })
+    // 弹框;
+    // 新建账户
+    $('#model').hide();
+    $(".layui-input-block_addproject").click(function(){
+      $('#model').show();
+      layer.open({
+        type: 1,
+        title: '新建账户',
+        content: $('#model'),
+        area: ['326px','399px'],
+        btn: ['确认新建'],
+        yes: function(index,layero){
+          console.log("name",$(".get_name").val())
+          console.log("type",$(".get_type option:selected").val())
+          console.log("account_number",$(".get_account").val())
+          console.log("password",$(".get_password").val())
+          $.ajax({
+            type: "POST",
+            url: _http + "/admin/account_management/addAdmin",
+            dataType: 'json',
+            data: {
+              name: $(".get_name").val(),
+              type: $(".get_type option:selected").val(),
+              account_number: $(".get_account").val(),
+              password: $(".get_password").val()
+            },
+            success: function(data) {
+              console.log("新建账户success",data)
+            }
+          });
+          layer.close();
+          window.location.reload();
+        },
+        cancel: function(){
+          $('#model').hide();
+          layer.close();
+          window.location.reload();
+        }
+      });
+    });
+    // 重置密码
+    $('#modelreset').hide();
+    $("#contentthis").on("click",".limit_set",function(){
+      $('#modelreset').show();
+      var adminid = $(this).attr("admin-id2");
+      console.log("adminid",adminid)
+      layer.open({
+        type: 1,
+        title: '重置密码',
+        content: $('#modelreset'),
+        area: ['326px','202px'],
+        btn: ['确认重置'],
+        yes: function(index,layero){
+          console.log("admin_id",adminid)
+          console.log("password",$(".get_resetpsd").val())
+          $.ajax({
+            type: "POST",
+            url: _http + "/admin/account_management/assignProject",
+            dataType: 'json',
+            data: {
+              admin_id: adminid,
+              password: $(".get_resetpsd").val()
+            },
+            success: function(data) {
+              console.log("重置密码success",data)
+            }
+          });
+          layer.close();
+          window.location.reload();
+        },
+        cancel: function(){
+          $('#modelreset').hide();
+          layer.close();
+          window.location.reload();
+        }
+      });
+    });
+    // 请求项目列表
+    $.ajax({
+      type: "GET",
+      url: _http + "/admin/statistical_analysis/getProjectList",
+      dataType: 'json',
+      data: {},
+      success: function(data) {
+        var tempoption = "";
+        $.each(data.data,function(index,item){
+          tempoption += "<option value='"+item.id+"' project-id='"+item.id+"'>"+item.project_name+"</option>";
+        });
+        $(".way_limit_set_select").append(tempoption);
+        console.log("请求项目列表success",data)
+        form.render();
+      }
+    });
+    // 分配项目
+    $('#modelproject').hide();
+    $("#contentthis").on("click",".limit_project",function(){
+      $(".model_content2").html("请为<span>管理员</span> <span>"+$(this).attr("admin-name")+"</span>分配项目");
+      $('#modelproject').show();
+      var adminid = $(this).attr("admin-id");
+      layer.open({
+        type: 1,
+        title: '分配项目',
+        content: $('#modelproject'),
+        area: ['326px','270px'],
+        btn: ['确认分配'],
+        yes: function(index,layero){
+          console.log("admin_id",adminid)
+          console.log("project_id",$(".way_limit_set_select option:selected").attr("project-id"))
+          $.ajax({
+            type: "POST",
+            url: _http + "/admin/account_management/assignProject",
+            dataType: 'json',
+            data: {
+              admin_id: adminid,
+              project_id: $(".way_limit_set_select option:selected").attr("project-id")
+            },
+            success: function(data) {
+              console.log("分配项目success",data)
+            }
+          });
+          // layer.close(index);
+          window.location.reload();
+        },
+        cancel: function(){
+          $('#model').hide();
+          window.location.reload();
+        }
+      });
+    });
+    // 注销账号
+    $("#contentthis").on("click",".limit_cancel",function(){
+      var adminid = $(this).attr("admin-idcancel");
+      console.log("注销账号:",adminid)
+      $.ajax({
+        type: "POST",
+        url: _http + "/admin/account_management/deleteAdmin",
+        dataType: 'json',
+        data: {
+          admin_id: adminid
+        },
+        success: function(data) {
+          window.location.reload();
+          console.log("注销账号success",data)
+        }
+      });
+    });
+  });
+  // 分页
+  var count;
+  $.ajax({
+    type: "GET",
+    url: _http + "/admin/account_management/adminList",
+    dataType: 'json',
+    data: {
+      page: 1,
+      size: 10
+    },
+    success: function(data) {
+      layui.use('laypage', function() {
+        var laypage = layui.laypage;
+        //执行一个laypage实例
+        laypage.render({
+          elem: 'pageid',
+          count: data.data.total, //数据总数，从服务端得到
+          limit: 10,
+          prev: '<上一页',
+          next: '下一页>',
+          first: '首页',
+          last: '尾页',
+          jump: function(obj, first) {
+            //obj包含了当前分页的所有参数，比如：
+            //console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+            //console.log(obj.limit); //得到每页显示的条数 
+            $.ajax({
+              type: "GET",
+              url: _http + "/admin/account_management/adminList",
+              dataType: 'json',
+              data: {
+                page: obj.curr,
+                size: obj.limit
+              },
+              success: function(data) {
+                console.log("管理员列表:",data.data)
+                $('#contentthis').find().remove();//清楚数据
+                var _data= data.data.data;
+                var _html='';
+                for (var i=0;i<_data.length;i++) {
+                  var create_time = new Date(parseInt(_data[i].create_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+                  // var ontime = new Date(parseInt(_data[i].maintain_last_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+                  _html += "<tr><td>"+_data[i].account_number+"</td><td>"+_data[i].name+"</td><td><span>"+_data[i].project.project_name+"</span></td><td>"+create_time+"</td><td class='project_options'><span class='limit_project' admin-name='"+_data[i].name+"' admin-id='"+_data[i].id+"'>分配项目</span><span class='limit_set' admin-id2='"+_data[i].id+"'>重置密码</span><span class='limit_cancel' admin-idcancel='"+_data[i].id+"' style='color: #FF4E48;'>注销账号</span></td></tr>"
+                };
+                $('#contentthis').html(_html);
+              }
+            });
+            //首次不执行
+            if(!first) {
+              //do something
+            }
+          }
+        });
+      });
+    }
+  });
+  // 搜索(带有分页)
+  $(".set_site_img_search").click(function(){
+    var contxt = $(".layui-input_height40").val();
+    $.ajax({
+      type: "GET",
+      url: _http + "/admin/account_management/inspectorList",
+      dataType: 'json',
+      data: {
+        search: contxt,
+        page: 1,
+        size: 5
+      },
+      success: function(data) {
+        layui.use('laypage', function() {
+          var laypage = layui.laypage;
+          //执行一个laypage实例
+          laypage.render({
+            elem: 'pageid',
+            count: data.data.total, //数据总数，从服务端得到
+            limit: 5,
+            prev: '<上一页',
+            next: '下一页>',
+            first: '首页',
+            last: '尾页',
+            jump: function(obj, first) {
+              //obj包含了当前分页的所有参数，比如：
+              //console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+              //console.log(obj.limit); //得到每页显示的条数 
+              $.ajax({
+                type: "GET",
+                url: _http + "/admin/account_management/inspectorList",
+                dataType: 'json',
+                data: {
+                  search: contxt,
+                  page: obj.curr,
+                  size: obj.limit
+                },
+                success: function(data) {
+                  console.log("管理员列表:",data.data)
+                  $('#contentthis').find().remove();//清楚数据
+                  var _data= data.data.data;
+                  var _html='';
+                  var _station = '';
+                  for (var i=0;i<_data.length;i++) {
+                    var create_time = new Date(parseInt(_data[i].create_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+                    $.each(_data[i].device,function(index,item){
+                      _station += "<h5 style='display:inline-block;width:100%;height:16px;line-height:16px;margin:0;'>"+item+"</h5>";
+                    })
+                    // var ontime = new Date(parseInt(_data[i].maintain_last_time) * 1000).toLocaleString().replace(/:\d{1,2}$/,' '); 
+                    _html += "<tr><td>"+_data[i].account_number+"</td><td>"+_data[i].name+"</td><td>"+_data[i].project+"</td><td>"+_station+"</td><td>"+create_time+"</td><td class='project_options'><span class='limit_station' admin-name='"+_data[i].name+"' admin-id='"+_data[i].id+"'>分配站点</span><span class='limit_set' admin-id2='"+_data[i].id+"'>重置密码</span><span class='limit_cancel' admin-idcancel='"+_data[i].id+"' style='color: #FF4E48;'>注销账号</span></td></tr>";
+                  };
+                  $('#contentthis').html(_html);
+                }
+              });
+              //首次不执行
+              if(!first) {
+                //do something
+              }
+            }
+          });
+        });
+      }
+    });
+  })
+  </script>
+</html>

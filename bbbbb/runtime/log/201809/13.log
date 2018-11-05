@@ -1,0 +1,4584 @@
+---------------------------------------------------------------
+[ 2018-09-13T09:18:40+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,425.51kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000001',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:19:04+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,425.60kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.2.1.17116',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000003',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:19:13+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,425.51kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000004',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:20:41+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,425.36kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000005',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:22:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,425.24kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000006',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:22:21+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,425.24kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000007',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:24:16+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,068.95kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000008',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:25:18+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,069.02kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000009',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:25:43+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.125008s][吞吐率：8.00req/s] [内存消耗：2,068.85kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000a',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047003s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:25:44+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.126007s][吞吐率：7.94req/s] [内存消耗：2,068.78kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000b',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052003s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:25:45+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：2,068.78kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000c',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:25:56+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：2,068.75kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000d',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:26:53+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：2,068.95kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000e',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:27:09+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,068.93kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000f',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:13+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,463.54kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000001',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:44+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000002',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:48+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000003',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:49+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000004',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:49+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000005',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000006',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000007',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000008',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:50+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000009',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:51+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000a',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:51+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036003s][吞吐率：27.78req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000b',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:28:55+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,463.19kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000c',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:29:34+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,463.19kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000d',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:29:55+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,463.19kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '43',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000e',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:30:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000f',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:26+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000010',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:27+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000011',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:27+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000012',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000013',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000014',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000015',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:28+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000016',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:29+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000017',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:29+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000018',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:29+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000019',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:29+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001a',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001b',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001c',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001d',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:31+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001e',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:31+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000001f',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:31+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000020',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:31+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000021',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:32+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000022',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:32+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000023',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:32+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000024',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:32+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000025',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:32+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000026',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:33+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000027',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:33+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000028',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:33+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,463.07kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000029',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:42+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002a',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:42+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002b',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:42+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002c',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:31:43+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,463.17kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002d',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T11:38:26+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,425.41kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002e',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:44:11+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,069.03kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '42',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000002f',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:44:34+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.083004s][吞吐率：12.05req/s] [内存消耗：2,069.08kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000030',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:45:11+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：1,425.34kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000031',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:45:26+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,069.08kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000032',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:45:34+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024001s][吞吐率：41.66req/s] [内存消耗：1,425.34kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000033',
+  'uid' => '',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:46:37+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,425.27kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000034',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:46:37+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,425.27kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000035',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T11:48:30+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.081004s][吞吐率：12.35req/s] [内存消耗：2,069.00kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000036',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T11:49:41+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：2,069.00kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000037',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025002s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xhgj.dan' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T12:01:15+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：1,425.33kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000039',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T12:01:48+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,201.29kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000003a',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:05:19+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,201.42kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000003b',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:05:20+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,201.38kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000003c',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:05:25+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,201.29kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000003d',
+  'uid' => '1',
+  'group' => '',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:51:37+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,201.26kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000041',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:55:36+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000042',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:55:37+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000043',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:55:38+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000044',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:56:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000045',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:56:04+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000046',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:56:05+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000047',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:56:05+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000048',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:56:08+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.021002s][吞吐率：47.61req/s] [内存消耗：1,201.23kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000049',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T14:56:44+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：1,201.17kb] [文件加载：40]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000004a',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T15:02:07+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,805.15kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000004b',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T15:29:39+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：1,805.15kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000004c',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-09-13T15:59:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：1,805.10kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000004d',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T15:59:06+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,805.08kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000004e',
+  'uid' => '1',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T16:17:01+08:00 ] 127.0.0.1 POST /api/test/devs
+[ info ] 127.0.0.1/api/test/devs [运行时间：0.052002s][吞吐率：19.23req/s] [内存消耗：2,241.84kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'devs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------518267983213396321745904',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '0a8909d9-2d4c-4646-9a2a-8656bc55529d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/test/devs' => '',
+)
+[ info ] [ RUN ] app\api\controller\Test->devs[ D:\Documents\GitHub\xhgj\application\api\controller\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'websocket.project_admin' doesn't exist[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T16:17:25+08:00 ] 127.0.0.1 POST /api/test/devs
+[ info ] 127.0.0.1/api/test/devs [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：2,213.25kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'devs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'content-type' => 'multipart/form-data; boundary=--------------------------727521421980459406500792',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'token' => '8633349eeb7931523bd3badef146178d',
+  'postman-token' => '081481be-450c-47be-a902-966bcbab9c9e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/api/test/devs' => '',
+)
+[ info ] [ RUN ] app\api\controller\Test->devs[ D:\Documents\GitHub\xhgj\application\api\controller\Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=47.96.8.108;port=3306;dbname=xhgj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `project_admin` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `project_admin` [ RunTime:0.010001s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:11:31+08:00 ] 127.0.0.1 GET /push/token/token?username=aaaaaa&id=1
+[ info ] 127.0.0.1/push/token/token?username=aaaaaa&id=1 [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,360.33kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '3741e2a9-1249-4ea5-9c00-fe76dec974ac',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'aaaaaa',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\xhgj\application\push\controller\Token.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\push\model\ProjectAdmin' not found[D:\Documents\GitHub\xhgj\application\push\model\UserToken.php:21]
+---------------------------------------------------------------
+[ 2018-09-13T17:12:16+08:00 ] 127.0.0.1 GET /push/token/token?username=aaaaaa&id=1
+[ info ] 127.0.0.1/push/token/token?username=aaaaaa&id=1 [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,960.91kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '46b3fa87-37a7-4b4e-8191-dc701a4628b0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'aaaaaa',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\xhgj\application\push\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'[D:\Documents\GitHub\xhgj\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-09-13T17:12:45+08:00 ] 127.0.0.1 GET /push/token/token?username=aaaaaa&id=1
+[ info ] 127.0.0.1/push/token/token?username=aaaaaa&id=1 [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,002.71kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'token',
+    2 => 'token',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=anlg2pbhoanejs3ahhel0haop2',
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.9',
+  'postman-token' => '5e287652-3c54-4405-bc84-f12c97382994',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/push/token/token' => '',
+  'username' => 'aaaaaa',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\push\controller\Token->token[ D:\Documents\GitHub\xhgj\application\push\controller\Token.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `username` = 'aaaaaa'  AND `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:23:56+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：2,104.27kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000004f',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:23:58+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000050',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:23:59+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000051',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:23:59+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000052',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000053',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000054',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000055',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000056',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:00+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000057',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000058',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000059',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000005a',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:01+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001001s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000005b',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000005c',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000005d',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000005e',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:02+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000005f',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:03+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000060',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:03+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000061',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:03+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000062',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:04+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000063',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:24:04+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000064',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:26:10+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,538.54kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000001',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T17:26:32+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,538.57kb] [文件加载：54]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '30',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000002',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [2]stream_socket_sendto(): Զ�����ǿ�ȹر��һ�����е���ӡ�
+
+[D:\Documents\GitHub\xhgj\vendor\workerman\gateway-worker-for-win\src\Lib\Gateway.php:795]
+---------------------------------------------------------------
+[ 2018-09-13T17:37:55+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：2,104.36kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'null',
+  'content-length' => '30',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000001',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:38:20+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000002',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:40:41+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000003',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:41:18+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000004',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:41:18+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000005',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:41:18+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000006',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:41:19+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000007',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:41:19+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000008',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:42:15+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b5400000009',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:42:16+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000a',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:42:46+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000b',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-13T17:43:34+08:00 ] 127.0.0.1 POST /push/push/bind
+[ info ] 127.0.0.1/push/push/bind [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,104.33kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run app\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\Documents\GitHub\xhgj\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'push',
+    1 => 'push',
+    2 => 'bind',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'token' => '689e8f9946f99914528919d63150a417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
+  'origin' => 'null',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/push/push/bind' => '',
+  'client_id' => '7f0000010b540000000c',
+)
+[ info ] [ RUN ] app\push\controller\push->bind[ D:\Documents\GitHub\xhgj\application\push\controller\Push.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=websocket;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dan` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `dan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]

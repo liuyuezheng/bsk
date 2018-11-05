@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新增通道</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../css/xadmin.css">
+		<style>
+			body {
+				height: 100%;
+			}
+			
+			.newway_top {
+				width: 100%;
+				height: 60px;
+				background: #FFFFFF;
+				margin-bottom: 30px;
+			}
+			
+			.newway_top_img {
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				background: #262626;
+				margin-left: 30px;
+				margin-right: 9px;
+				margin-top: 22px;
+				float: left;
+			}
+			
+			.newway_top_title {
+				line-height: 60px;
+				font-size: 16px;
+				color: #333333;
+			}
+			
+			.newway_top_title span {
+				font-size: 14px;
+				color: #BBBBBB;
+				margin-left: 30px;
+			}
+			/*指令大框*/
+			
+			.add_command {
+				margin-bottom: 30px;
+				padding-bottom: 1px;
+				background: #FFFFFF;
+				padding-top: 1px;
+			}
+			/*下发指令名称*/
+			
+			.input_command_name {
+				width: 480px;
+				height: 46px;
+				line-height: 48px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+			/*通道一*/
+			
+			.way_info_box {
+				min-height: 314px;
+				margin: 30px;
+				border: 1px dashed #DDDDDD;
+			}
+			
+			.way_info {
+				margin: 0 30px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 14px;
+				color: #333333;
+				border-bottom: 1px solid #DDDDDD;
+				margin-bottom: 30px;
+			}
+			/*显示计算*/
+			
+			.show_count {
+				margin: 0 30px;
+				min-height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+				color: #333333;
+				margin-bottom: 30px;
+			}
+			
+			.show_count span {
+				color: #BBBBBB;
+			}
+			
+			.input_show_count {
+				width: 264px;
+				height: 46px;
+				line-height: 46px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-left: 30px;
+				margin-bottom: 30px;
+			}
+			
+			.input_way_name {
+				width: 478px;
+				height: 46px;
+				line-height: 46px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-left: 30px;
+				margin-bottom: 30px;
+			}
+			
+			.layui-input-block_project div div .layui-input {
+				height: 48px;
+			}
+			
+			.layui-input-block_project {
+				width: 266px !important;
+				margin-left: 30px !important;
+				margin-bottom: 30px !important;
+				height: 48px !important;
+				line-height: 48px !important;
+				background: #FFFFFF;
+			}
+			
+			.layui-input-block {
+				margin-left: 30px !important;
+			}
+			
+			.layui-card {
+				box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0) !important;
+			}
+			/*按钮*/
+			
+			.layui-btn {
+				width: 136px;
+				height: 44px;
+				line-height: 44px;
+				font-size: 14px;
+				color: #333333;
+				background: #F9CC74;
+				border-radius: 4px;
+				padding: 0;
+				margin-bottom: 30px;
+			}
+			
+			.change_command_color {
+				margin-left: 30px;
+				color: #F9CC74;
+				background: #262626;
+			}
+			
+			.layui-btn:hover {
+				color: #333333;
+			}
+			
+			.change_command_color:hover {
+				color: #F9CC74;
+			}
+			
+			.add_command_btn {
+				display: flex;
+				flex-direction: row;
+			}
+			
+			.layui-form-select .layui-input {
+				width: 100%;
+			}
+			
+			.layui-layer-setwin {
+				top: 0;
+			}
+			
+			.layui-layer-btn a {
+				margin: 0;
+			}
+			
+			.w_tpy {
+				display: block;
+			}
+			
+			.h_tpy {
+				display: none;
+			}
+			
+			.imgesbut {
+				position: absolute;
+				right: -50px;
+				top: 7px;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+			}
+			
+			.addtit {
+				text-align: center;
+				font-size: 18px;
+				padding: 12px 0;
+			}
+			
+			.input_show_add {
+				width: 264px;
+				height: 46px;
+				line-height: 46px;
+				border: 1px solid #DDDDDD;
+				text-indent: 1em;
+				margin-left: 18px;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FAFAF9;">
+		<div class="newway_top">
+			<img class="newway_top_img" src="" alt="">
+			<h2 class="newway_top_title">新增通道</h2>
+		</div>
+		<form method="post" class="layui-form">
+			<div style="background-color:#FFF;margin-bottom: 24px;padding-top: 24px;" id="statek">
+				<div class="layui-input-block layui-input-block_project">
+					<select name="city" lay-verify="required" lay-filter="rep" id="xuz">
+						<option value="0">自定义</option>
+						<option value="1">电流</option>
+						<option value="2">温度</option>
+					</select>
+				</div>
+				<div class="layui-input-block layui-input-block_project">
+					<select name="city" lay-verify="required" lay-filter="rep2" class="getCategory">
+						<!--通道类别-->
+					</select>
+					<img class="imgesbut" src="../../images/icon_tianjia.svg" />
+				</div>
+				<div class="layui-input-block layui-input-block_project inputxx" style="display: none;">
+					<select name="category_id" lay-verify="required" lay-filter="rep1" class="registerList">
+						<!--内容-->
+					</select>
+				</div>
+				<div class="inputxy">
+					<input type="number" placeholder="x" class="input_show_count" id="x">
+					<input type="number" placeholder="y" class="input_show_count" id="y">
+				</div>
+				<div>
+					<input type="text" required lay-verify="required" placeholder="通道编号" autocomplete="off" class="input_show_count" id="tdbh">
+				</div>
+			</div>
+			<div class="add_command_box">
+				<div class="add_command">
+					<div class="add_way_box">
+						<div class="way_info_box">
+							<h3 class="way_info">通道</h3>
+							<div>
+								<input type="text" name="name" required lay-verify="required" placeholder="通道名称" autocomplete="off" class="input_show_count">
+								<input type="text" name="start_coding" required lay-verify="required" placeholder="通道编号" autocomplete="off" class="input_show_count" disabled>
+							</div>
+							<div class="inputxx" style="display: none;">
+								<input name="registera" placeholder="选择类型" class="input_show_count" id="inatfast" disabled>
+							</div>
+							<div class="inputkg">
+								<input name="switch_id" placeholder="开关量id" class="input_show_count">
+							</div>
+							<div class="inputxy">
+								<input name="registerb" placeholder="输入类型内容" class="input_show_count">
+								<input placeholder="x" class="input_show_count inputx" disabled>
+								<input placeholder="y" class="input_show_count inputy" disabled>
+							</div>
+							<div class="show_count_input_box">
+								<h3 class="show_count">显示计算<br><span>格式为y=ax+b , 请设置a和b的值</span></h3>
+								<div>
+									<input type="number" name="a" placeholder="输入a值" autocomplete="off" class="input_show_count amub">
+									<input type="number" name="b" placeholder="输入b值" autocomplete="off" class="input_show_count bmub">
+									<input type="switch_alarm" name="switch_alarm" placeholder="开关量报警值" autocomplete="off" class="input_show_count cmub">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="add_command_btn">
+				<div class="layui-btn change_command_color add_one_command">增加通道</div>
+				<div class="layui-input-block">
+					<div class="layui-btn" lay-submit lay-filter="formDemo" id="Submit">提交</div>
+				</div>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../js/xadmin.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
+	<script src="../../js/store.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/http.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var device_id = store.get('device_id');
+		var stateid = 0,
+			x, y, //xy初始
+			stateobj, //类型数组
+			stateobjlen = 0, //类型长度
+			mubtype, //模拟量0，开关量1
+			tpya, //状态影藏域
+			tpyb, //状态影藏域
+			tdbh, //通道编号
+			cat_id; //通道类型id
+		var arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+		layui.use('form', function() {
+			var form = layui.form;
+			//监听提交			
+			// 增加通道
+			var command;
+			$(".add_one_command").click(function() {
+				mudtype();				
+				if(stateid == 0) { //之定义类型
+					//请求发送添加类别
+					var lenes = $('.add_command_box').find('.inputxy').length;
+					var conlen = $('.add_command_box').find('.inputxy').eq(lenes - 1).find('input').eq(0).val();
+					var xconlen = $('.add_command_box').find('.inputxy').eq(lenes - 1).find('.inputx').val();
+					var yconlen = $('.add_command_box').find('.inputxy').eq(lenes - 1).find('.inputy').val();
+					$.ajax({
+						type: "POST",
+						url: _http + "/admin/device_management/addRegister",
+						dataType: 'json',
+						data: {
+							x: xconlen,
+							y: yconlen,
+							data: conlen
+						},
+						success: function(data) {
+							//console.log(data);							
+							if(data.code != '1') {
+								alert('分类名称已存在');
+								return false
+							};
+						},
+						error: function(data) {
+							return false
+						}
+					});
+					//继承x,y
+					x = parseInt(x) + 1;
+					if(mubtype==0) {
+						if(x > 15 || x == undefined || y == undefined) {
+							alert('请先输入自定义值');
+							return false;
+						};
+					};
+					var onx = arr[x];
+					var ony = arr[y];
+					command = '<div class="add_command">' +
+						'<div class="add_way_box">' +
+						'<div class="way_info_box">' +
+						'<h3 class="way_info">通道</h3>' +
+						'<div>' +
+						'<input type="text" name="name" required lay-verify="required" placeholder="通道名称" autocomplete="off" class="input_show_count">' +
+						'<input type="text" name="start_coding" required lay-verify="required" placeholder=' + tdbh + '  value=' + tdbh + ' autocomplete="off" class="input_show_count" disabled>' +
+						'</div>' +
+						'<div class="inputxy  ' + tpya + '">' +
+						'<input name="registerb" placeholder="输入类型内容" class="input_show_count" disabled>' +
+						'<input placeholder=' + onx + ' value=' + onx + ' class="input_show_count inputx"  disabled>' +
+						'<input placeholder=' + ony + ' value=' + ony + ' class="input_show_count inputy" disabled>' +
+						'</div>' +
+						'<div class="inputkg ' + tpyb + '">' +
+						'<input name="switch_id" placeholder="开关量id" class="input_show_count">' +
+						'</div>' +
+						'<div class="show_count_input_box">' +
+						'<h3 class="show_count">显示计算<br><span>格式为y=ax+b , 请设置a和b的值</span></h3>' +
+						'<div>' +
+						'<input type="number" name="a" placeholder="输入a值" autocomplete="off" class="input_show_count ' + tpya + '">' +
+						'<input type="number" name="b" placeholder="输入b值" autocomplete="off" class="input_show_count ' + tpya + '">' +
+						'<input type="switch_alarm" name="switch_alarm"  placeholder="开关量报警值" autocomplete="off" class="input_show_count ' + tpyb + '">' +
+						'</div>' +
+						'</div>' +
+						'</div>' +
+						'</div>' +
+						'</div>';
+				} else {					
+					stateobjlen = parseInt(stateobjlen) + 1;
+					if(stateobj[stateobjlen] == undefined) {
+						alert('没有更多类别了');
+						return false
+					};
+					command = '<div class="add_command">' +
+						'<div class="add_way_box">' +
+						'<div class="way_info_box">' +
+						'<h3 class="way_info">通道</h3>' +
+						'<div>' +
+						'<input type="text" name="name" required lay-verify="required" placeholder="通道名称" autocomplete="off" class="input_show_count">' +
+						'<input type="text" name="start_coding" required lay-verify="required" placeholder=' + tdbh + '  value=' + tdbh + ' autocomplete="off" class="input_show_count" disabled>' +
+						'</div>' +
+						'<div class="inputxx">' +
+						'<input name="registera" placeholder=' + stateobj[stateobjlen].data + ' value=' + stateobj[stateobjlen].data + ' class="input_show_count" disabled>' +
+						'</div>' +
+						'<div class="inputkg ' + tpyb + '">' +
+						'<input name="switch_id" placeholder="开关量id" class="input_show_count">' +
+						'</div>' +
+						'<div class="show_count_input_box">' +
+						'<h3 class="show_count">显示计算<br><span>格式为y=ax+b , 请设置a和b的值</span></h3>' +
+						'<div>' +
+						'<input type="number" name="a"  placeholder="输入a值" autocomplete="off" class="input_show_count ' + tpya + '">' +
+						'<input type="number" name="b"  placeholder="输入b值" autocomplete="off" class="input_show_count ' + tpya + '">' +
+						'<input type="switch_alarm" name="switch_alarm"  placeholder="开关量报警值" autocomplete="off" class="input_show_count ' + tpyb + '">' +
+						'</div>' +
+						'</div>' +
+						'</div>' +
+						'</div>' +
+						'</div>';
+				};
+				//去除
+				$('#statek').remove();
+				mudtype();
+				$(".add_command_box").append(command);
+			});
+			//数据读取
+		});
+		//渲染类别
+		function getCategory() {
+			layui.use('form', function() {
+				var form = layui.form;
+				form.on('select(rep)', function(data) {
+					console.log(data);
+					if(data.value == 0) {
+						$('.inputxx').css('display', 'none');
+						$('.inputxy').css('display', 'block');
+						stateid = 0;
+					} else {
+						$('.inputxx').css('display', 'block');
+						$('.inputxy').css('display', 'none');
+						stateid = 1;
+					};
+					mudtype();
+					$.ajax({
+						type: "GET",
+						url: _http + "/admin/device_management/registerList",
+						dataType: 'json',
+						data: {
+							type: data.value
+						},
+						success: function(data) {
+							//console.log(data);							
+							if(data == '') {
+								return false
+							};
+							if(stateid == 1) {
+								$('#inatfast').val(data[0].data);
+							};
+							stateobj = data;
+							var html = '';
+							for(var i = 0; i < data.length; i++) {
+								html += '<option value=' + i + '>' + data[i].data + '</option>'
+							}
+							$('.registerList').html(html);
+							form.render();
+						}
+					});
+				});
+				//项目列表							
+			});
+		};
+		getCategory();
+		//监听选择的值位数
+		layui.use('form', function() {
+			var form = layui.form;
+			form.on('select(rep1)', function(_data) {
+				stateobjlen = _data.value;
+				$('#inatfast').val(stateobj[stateobjlen].data);
+			});
+			//项目列表							
+		});
+		//监听输入事件
+		//X
+		$('#x').bind('input propertychange', function() {
+			contentmud($(this), $(".inputx"));
+			x = $(this).val();
+		});
+		//Y
+		$('#y').bind('input propertychange', function() {
+			contentmud($(this), $(".inputy"));
+			y = $(this).val();
+		});
+		//监听输入
+		$('#tdbh').bind('input propertychange', function() {
+			tdbh = $(this).val();
+			$("input[name='start_coding']").val(tdbh);
+		});
+		//判断分装
+		var contentmud = function(_this, e) {
+			var inputmud = _this.val();
+			if(inputmud < 0 || inputmud > 15) {
+				alert('请输入正确数值');
+				return false
+			};
+			inputmud = arr[inputmud];
+			e.val(inputmud);
+		};
+		//获取通道类别
+		function getCategoryxr() {
+			layui.use('form', function() {
+				var form = layui.form;
+				$.ajax({
+					type: "GET",
+					url: _http + "/admin/statistical_analysis/getCategory",
+					dataType: 'json',
+					success: function(data) {
+						//console.log(data);						
+						if(data == '') {
+							return false
+						};
+						mubtype = data.data[0].type;
+						cat_id = data.data[0].id;
+						mudtype();
+						var html = '';
+						for(var i = 0; i < data.data.length; i++) {
+							html += '<option value=' + data.data[i].id + data.data[i].type + '>' + data.data[i].name + '</option>';
+						};
+						$('.getCategory').html(html);
+						form.render();
+					}
+				});
+			});
+		};
+		getCategoryxr();
+		//选择类别
+		var mudtype = function() {
+			if(mubtype == '0') {
+				$('body').find('.amub').css('display', 'block');
+				$('body').find('.bmub').css('display', 'block');
+				$('body').find('.cmub').css('display', 'none');
+				if (stateid ==1) {
+					$('.inputxy').css('display', 'none');
+				} else{
+					$('.inputxy').css('display', 'block');
+				}				
+				$('.inputkg').css('display', 'none');
+				tpya = 'w_tpy',
+				tpyb = 'h_tpy';
+			} else {
+				$('body').find('.amub').css('display', 'none');
+				$('body').find('.bmub').css('display', 'none');
+				$('body').find('.cmub').css('display', 'block');
+				$('.inputxy').css('display', 'none');
+				$('.inputkg').css('display', 'block');
+				tpya = 'h_tpy',
+					tpyb = 'w_tpy';
+			};
+		};
+		//选择通道类别
+		layui.use('form', function() {
+			var form = layui.form;
+			form.on('select(rep2)', function(_data) {
+				mubtype = _data.value.substr(-1);
+				cat_id = _data.value.substring(0, _data.value.length - 1);
+				mudtype();
+			});
+			//项目列表							
+		});
+		//添加类别
+		$('body').on('click', '.imgesbut', function() {
+
+			layer.open({
+				type: 1,
+				title: false,
+				closeBtn: false,
+				area: '300px;',
+				shade: 0.5,
+				id: 'LAY_layuipro',
+				btn: ['确认', '取消'],
+				btnAlign: 'c',
+				moveType: 1,
+				content: '<p class="addtit">添加类别</p><input placeholder="输入类别名称"  class="input_show_add"><input placeholder="类型请输入0,或者1"  class="input_show_add"><input placeholder="数据地址"  class="input_show_add">',
+				success: function(layero) {
+					var btn = layero.find('.layui-layer-btn');
+					btn.find('.layui-layer-btn0').click(function() {
+						var addval0 = $('.input_show_add').eq(0).val();
+						var addval1 = $('.input_show_add').eq(1).val();
+						var addval2 = $('.input_show_add').eq(2).val();
+						if(addval0 == '' || addval1 == '' || addval2 == "") {
+							alert('内容不能为空');
+							return false
+						};
+						if(addval1 != '0' && addval1 != '1') {
+							alert('请输入正确的类型');
+							return false
+						};
+						$.ajax({
+							type: "POST",
+							url: _http + "/admin/device_management/addCategory",
+							dataType: 'json',
+							data: {
+								data_address: addval2,
+								type: addval1,
+								name: addval0
+							},
+							success: function(data) {
+								console.log(data);
+								getCategoryxr();
+							}
+						});
+					})
+				}
+
+			});
+		});
+		//提交内容
+		$('#Submit').on('click', function() {
+			var passageways = [];
+			console.log(mubtype);
+			if(mubtype == 0) { //模拟量
+				for(var i = 0; i < $('.add_command').length; i++) {
+					var con = new Object;
+					con.device_id = device_id; //设备编号
+					con.name = $("input[name='name']").eq(i).val(); //通道名称
+					con.start_coding = $("input[name='start_coding']").eq(i).val(); //通道编码a
+					if(stateid == 0) {
+						con.register = $("input[name='registerb']").eq(i).val(); //类型内容
+					} else {
+						con.register = $("input[name='registera']").eq(i).val(); //类型内容
+					};
+					con.a = $("input[name='a']").eq(i).val(); //a
+					con.b = $("input[name='b']").eq(i).val(); //b
+					con.switch_alarm = ''; //开关量报警值
+					con.end_coding = ''; //通道编码b
+					con.category_id = cat_id; //通道类型ID
+					passageways.push(con);
+				};
+			} else {//开关量
+				for(var i = 0; i < $('.add_command').length; i++) {
+					var con = new Object;
+					con.device_id = device_id; //设备编号
+					con.name = $("input[name='name']").eq(i).val(); //通道名称
+					con.start_coding = $("input[name='start_coding']").eq(i).val(); //通道编码a
+					con.switch_id = $("input[name='switch_id']").eq(i).val();
+					if(stateid == 0) {
+						con.register = ''; //类型内容
+					} else {
+						con.register = $("input[name='registera']").eq(i).val(); //类型内容
+					}
+					con.a = ''; //a
+					con.b = ''; //b
+					con.switch_alarm = $("input[name='switch_alarm']").eq(i).val(); //开关量报警值
+					con.end_coding = ''; //通道编码b
+					con.category_id = cat_id //通道类型ID
+					passageways.push(con);
+				};
+			};
+			console.log(passageways);
+			//数据上传
+			$.ajax({
+				type: "POST",
+				url: _http + "/admin/device_management/addPass",
+				dataType: 'json',
+				data: {
+					passageways: passageways
+				},
+				success: function(data) {
+					console.log(data);
+					if(data.code != 1) {
+						alert('请正确填写');
+						return false
+					};
+					window.history.back();
+				}
+			});
+		});
+	</script>
+
+</html>

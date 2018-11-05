@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>咸亨国际</title>
+		<script type="text/javascript" src="chplayer/chplayer.min.js"></script>
+	</head>
+	<style type="text/css">
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.video {
+			width: 100%;
+			height: 100%;
+			background-color: #000000;
+		}
+		
+		.video1,
+		.video2,
+		.video3,
+		.video4,
+		.video6,
+		.video8 {
+			position: inherit !important;
+			float: left;
+		}
+		
+		.video1 {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.video2 {
+			width: 50%;
+			height: 100%;
+		}
+		
+		.video3 {
+			width: 33.3%;
+			height: 100%;
+		}
+		
+		.video4 {
+			width: 50%;
+			height: 50%;
+		}
+		
+		.video6 {
+			width: 33.3%;
+			height: 50%;
+		}
+		
+		.video8 {
+			width: 25%;
+			height: 50%;
+		}
+	</style>
+
+	<body>
+		<div class="video">
+			<!--<div class="video3" id="video"></div>-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		var len = 8;
+		var html = '';
+		for(var i = 0; i < len; i++) {
+			var lens = len;
+			if(len == 5) {
+				lens = 6
+			};
+			if(len == 7) {
+				lens = 8
+			};
+			html += '<div class="video' + lens + '" id="video' + i + '"></div>';
+		}
+		document.getElementsByClassName('video')[0].innerHTML = html;
+		if(len == 1) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+		} else if(len == 2) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+		} else if(len == 3) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+			var videoObject2 = {
+				container: '#video2', //容器的ID或className
+				variable: 'player2',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player2 = new chplayer(videoObject2);
+		}else if(len == 4) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+			var videoObject2 = {
+				container: '#video2', //容器的ID或className
+				variable: 'player2',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player2 = new chplayer(videoObject2);
+			var videoObject3 = {
+				container: '#video3', //容器的ID或className
+				variable: 'player3',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player3 = new chplayer(videoObject3);
+		}else if(len == 5) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+			var videoObject2 = {
+				container: '#video2', //容器的ID或className
+				variable: 'player2',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player2 = new chplayer(videoObject2);
+			var videoObject3 = {
+				container: '#video3', //容器的ID或className
+				variable: 'player3',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player3 = new chplayer(videoObject3);
+			var videoObject4 = {
+				container: '#video4', //容器的ID或className
+				variable: 'player4',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player4 = new chplayer(videoObject4);
+		}else if(len == 6) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+			var videoObject2 = {
+				container: '#video2', //容器的ID或className
+				variable: 'player2',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player2 = new chplayer(videoObject2);
+			var videoObject3 = {
+				container: '#video3', //容器的ID或className
+				variable: 'player3',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player3 = new chplayer(videoObject3);
+			var videoObject4 = {
+				container: '#video4', //容器的ID或className
+				variable: 'player4',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player4 = new chplayer(videoObject4);
+			var videoObject5 = {
+				container: '#video5', //容器的ID或className
+				variable: 'player5',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player5 = new chplayer(videoObject5);
+		}else if(len == 7) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+			var videoObject2 = {
+				container: '#video2', //容器的ID或className
+				variable: 'player2',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player2 = new chplayer(videoObject2);
+			var videoObject3 = {
+				container: '#video3', //容器的ID或className
+				variable: 'player3',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player3 = new chplayer(videoObject3);
+			var videoObject4 = {
+				container: '#video4', //容器的ID或className
+				variable: 'player4',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player4 = new chplayer(videoObject4);
+			var videoObject5 = {
+				container: '#video5', //容器的ID或className
+				variable: 'player5',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player5 = new chplayer(videoObject5);
+			var videoObject6 = {
+				container: '#video6', //容器的ID或className
+				variable: 'player6',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player6 = new chplayer(videoObject6);
+		}else if(len == 8) {
+			var videoObject = {
+				container: '#video0', //容器的ID或className
+				variable: 'player',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player = new chplayer(videoObject);
+			var videoObject1 = {
+				container: '#video1', //容器的ID或className
+				variable: 'player1',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player1 = new chplayer(videoObject1);
+			var videoObject2 = {
+				container: '#video2', //容器的ID或className
+				variable: 'player2',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player2 = new chplayer(videoObject2);
+			var videoObject3 = {
+				container: '#video3', //容器的ID或className
+				variable: 'player3',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player3 = new chplayer(videoObject3);
+			var videoObject4 = {
+				container: '#video4', //容器的ID或className
+				variable: 'player4',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player4 = new chplayer(videoObject4);
+			var videoObject5 = {
+				container: '#video5', //容器的ID或className
+				variable: 'player5',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player5 = new chplayer(videoObject5);
+			var videoObject6 = {
+				container: '#video6', //容器的ID或className
+				variable: 'player6',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player6 = new chplayer(videoObject6);
+			var videoObject7 = {
+				container: '#video7', //容器的ID或className
+				variable: 'player7',
+				autoplay: true, //是否自动播放
+				video: 'http://hls.open.ys7.com/openlive/751ea834bf66421a8b8c83f2af6389ef.m3u8'
+			};
+			var player7 = new chplayer(videoObject7);
+		}
+	</script>
+
+</html>

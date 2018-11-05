@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/team_question.css">
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">
+				<img src="../../images/logo.png"/>
+			</div>
+			<div class="competition">
+			 	<img src="../../images/competiton.png"/ class="vie">
+			 	<div class="left">
+				  <img src="../../images/touxiang111.jpg" id="headImg" class="left_photo"/>
+				  <img src="../../images/touxiang111.jpg"  id="headImg2" class="left1_photo"/>
+				  
+				  <div class="time">
+					  <p class="my">我方队</p>
+					  <p class="shijian"><span id="myScore">0</span>分</p>
+				  </div>
+				</div>
+				<div class="middle">00:15</div>
+				 <div class="right">
+					<div class="time1"> 
+					  <p class="my">对方队</p>
+					  <p class="shijian">挑战中..</p>
+					</div>
+				  	<img src="../../images/touxiang111.jpg" id="headImg3" class="right_photo"/>
+				    <img src="../../images/touxiang111.jpg"id="headImg4" class="right1_photo"/>
+				</div>
+			</div>
+			<div class="index-num">【<span id="curr">1</span>/<span id="total"></span>】</div>
+		</div>
+		<div class="question-wapper">
+			<div class="question-list">
+				
+			</div>
+			
+		</div>
+		<script src="../../js/zepto.js"></script>
+		<script src="../../js/common.js"></script>
+		<script type="text/javascript">
+
+            var room_id = chuanzhi().room_id;
+            var uid = chuanzhi().uid;
+			_post('/push/push/listInfo2',{
+				room_id: room_id,
+				uid: uid
+			},function(data){
+                console.log(data);
+                sessionStorage.setItem('pid',data.pid);
+//                var pid=data.pid;
+				$('#headImg').prop('src',data['users'][0].staff[0].headimgurl);
+				$('#headImg2').prop('src',data['users'][0].staff[1].headimgurl);
+				$('#headImg3').prop('src',data['users'][1].staff[0].headimgurl);
+				$('#headImg4').prop('src',data['users'][1].staff[1].headimgurl)
+			});
+            //所用时间
+            var timeme = 0;
+            //总分数
+            var totalScore = 0;
+            //回答结果;
+            var answerArr = [];
+            //时间倒计时
+            var qIndex = 0; //第几道题默认第一道 最多5道题
+
+            var questionArr=[];
+            function resetTime(time) {
+                var timer = null;
+                var t = time;
+                var m = 0;
+                var s = 0;
+                m = Math.floor(t / 60 % 60);
+                m < 10 && (m = '0' + m);
+                s = Math.floor(t % 60);
+
+                function countDown() {
+                    timeme++;
+                    s--;
+                    s < 10 && (s = '0' + s);
+                    if (s.length >= 3) {
+                        s = 59;
+                        m = "0" + (Number(m) - 1);
+                    }
+                    if (m.length >= 3) {
+                        m = '00';
+                        s = '00';
+                        clearInterval(timer);
+                        qIndex++;
+                        if (qIndex == questionArr.length) {
+                            //答题完成
+                            answerEnd();
+                        } else {
+                            $("#curr").html(qIndex + 1);
+                            $('.question-list').animate({
+                                left: "-" + (qIndex ) * 100 + "%"
+                            }, 1000, 'swing');
+                            resetTime(15+1);
+                        }
+
+                        timeme = 0;
+                    }
+                    //console.log(m + "：" + s );
+                    $('.middle').text(m + ":" + s);
+                }
+                timer = setInterval(countDown, 1000);
+            }
+            //接口请求题目
+            _post('/push/push/chooseList',{
+                room_id: room_id
+            },function(data){
+                //执行倒计时参数
+                questionArr=data;
+                resetTime(15);
+                textcontent(data);
+            });
+            //答题渲染
+            function textcontent(data) {
+                var html = "";
+                // console.log(data)
+                data.forEach(function(item, index) {
+                    answerArr.push(
+                        {
+                            score: 0,
+                            time: 15,
+                            isAnswered: false
+                        }
+                    );
+
+                    html += '<div class="question-item" data-index="' + index + '" data-question_id="' + item.question_id + '">';
+                    html += '<div class="question-title" >' + item.content + '</div>';
+                    html += '<div class="question-val" data-index="a">' + item.answer.a + '</div>';
+                    html += '<div class="question-val" data-index="b">' + item.answer.b + '</div>';
+                    html += '<div class="question-val" data-index="c">' + item.answer.c + '</div>';
+                    html += '<div class="question-val" data-index="d">' + item.answer.d + '</div>';
+                    html += '</div>';
+                });
+                $(".question-list").html(html);
+                $("#total").html(data.length);
+                $('.question-val').on("tap", function() {
+                    var index = $(this).data('index');
+                    var dataArr = data;
+                    //计算分数
+                    var pIndex = $(this).parent().data('index');
+                    var rightIndex = dataArr[pIndex].right;
+                    //判断如果回答过就不用回答了
+                    if (answerArr[pIndex].isAnswered) {
+                        return;
+                    }
+                    answerArr[pIndex].isAnswered = true;
+                    if (rightIndex == index) {
+                        //回答正确
+                        wx.
+//						var ptype=1;
+                        totalScore += 10;
+                        $("#myScore").text(totalScore);
+                        $(this).addClass('rightVal');
+                        answerArr[pIndex].score = 10;
+//                        sessionStorage.setItem('pid',1);
+                    } else {
+                        sessionStorage.setItem('ptype',0);
+//                        var ptype=0;
+                        //回答失败
+                        $(this).addClass('error');
+                    }
+                    answerArr[pIndex].time = timeme;
+                    timeme = 0;
+
+                })
+            }
+            var ptype=sessionStorage.getItem('ptype');
+            var pid=sessionStorage.getItem('pid');
+            console.log("队id"+pid);
+            console.log("答题正确否"+ptype);
+            ws = new WebSocket("ws://127.0.0.1:7272");
+            // 服务端主动推送消息时会触发这里的onmessage
+            ws.onmessage = function(e) {
+                console.log("onmessage_begin");
+                // json数据转换成js对象
+                var data = JSON.parse(e.data);
+                var type = data.type || '';
+                switch(type) {
+                    case 'ping':
+                        ws.send('{"type":"pong"}');
+                        console.log("onmessage_ping");
+                        console.log(data.msg);
+                        break;
+                    // Events.php中返回的init类型的消息，实际运用时，可以将client_id发给后台进行uid绑定
+                    case 'init':
+                        console.log("onmessage_init");
+                        console.log(data.client_id);
+                        // break;
+                        // 利用jquery发起ajax请求，将client_id发给后端进行uid绑定
+                        _post('/push/push/bind',{
+                            client_id: data.client_id,
+                            room_id: room_id,
+                            uid: uid
+                        },function(data){
+
+                        });
+                        break;
+                    case 'message':
+//                        ws.send('{"type":"pong"}');
+//                        console.log(data.content);
+                        _post('/push/push/quest',{
+//                            client_id: data.client_id,
+                            ptype:ptype,
+                            qid: pid,
+                            uid: uid
+                        },function(data){
+
+                        });
+//                        if(data.content==0){
+//                            location.href=baseUrl+"/pizza/views/index.html?uid="+uid;
+//                        }
+//                        else{
+//                            //头像
+//                            $('#headImg').prop('src',data.content.users[0].staff[0].headimgurl);
+//                            //判断人数
+//                            if(data.content.users.length==2){
+//                                location.href=baseUrl+"/pizza/views/personal/match_success.html?homeId="+data.content.home_id+"&room_id="+data.content.users[0].room_id+"&uid="+uid;
+//                            }
+//                        }
+                        break;
+                    case 'content':
+//                        console.log("非法接入client");
+                        console.log(data.content);
+                        break;
+
+                    case 'close':
+                        console.log("非法接入client");
+                        console.log(data.msg);
+                        break;
+                }
+
+            };
+
+			//答题结束请求
+			function answerEnd() {
+                var totalTime=0;
+                answerArr.forEach(function(item){
+                    totalTime+=item.time;
+                })
+				_post('/push/push/results',{
+					room_id: room_id,
+					uid: uid,
+					point: totalScore,
+					num: totalScore / 10,
+					pktime:totalTime
+				},function(data){
+					if(data==1){
+                        location.href = baseUrl+"/pizza/views/wait.html?room_id="+room_id+"&uid="+uid;
+					}
+				})
+			}
+			
+		</script>
+	</body>
+</html>

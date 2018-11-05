@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>必胜客-披萨保卫战</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/matching.css">
+	</head>
+
+	<body>
+		<img src="img/01_03.png" class="logo" />
+		<div class="matchhing"><img src="img/pipei.png" /></div>
+		<div class="vs">
+			<div class="white">
+				<img src="img/touxiang111.jpg" />
+			</div>
+			<img src="img/12.png" / class="vs_logo">
+			<img src="img/touxiang.png" class="wait_people" />
+		</div>
+		<div class="hhh">
+			<div class="my_name">我 </div>
+			<div class="duishou">
+				<div class="wait_name">等待对手</div>
+				<div class="invatition" onclick="share()">发起邀请</div>
+			</div>
+		</div>
+
+		<div class="zhezhao">
+			<img src="img/share.png" class="share" />
+		</div>
+
+		<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/store.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/headerhttp.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".zhezhao").click(function() {
+				$(".zhezhao").css('display', "none")
+			});
+			//获取http连接路径的房间ID信息
+			function getRoomId(name) {
+				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) {
+					return unescape(r[2]);
+				}
+				return null;
+			} 
+			var room_id = getRoomId("room_id");
+			//console.log(room_id)
+			store.set('roomids',room_id);
+			//邀请好友
+			function share() {				
+				$(".zhezhao").css('display', "block");
+				window.location.href = 'match_success.html';
+			};
+			//			接口请求， 获取token
+			$.ajax({
+				type: "get",
+				url: _http + "/push/push/bind",
+				dataType: 'json',
+				data: {
+					room_id:room_id,
+					uid:1
+				},
+				success: function(data) {
+			       console.log(data)
+				},
+				error: function(data) {
+					return false
+				}
+			});
+		</script>
+	</body>
+
+</html>

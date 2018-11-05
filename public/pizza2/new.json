@@ -1,0 +1,188 @@
+{
+  "code": 1,
+  "msg": "请求成功",
+  "data": [
+    {
+      "topic_id": 1,
+      "title": "题目一",
+      "answer_id": 15,
+      "createtime": 222,
+      "answer": [
+        {
+          "id": 13,
+          "connect": "1选项一",
+          "topic_id": 1,
+          "type": 0,
+          "creattime": 11111
+        },
+        {
+          "id": 14,
+          "connect": "1选项二",
+          "topic_id": 1,
+          "type": 0,
+          "creattime": 11111
+        },
+        {
+          "id": 15,
+          "connect": "1选项三",
+          "topic_id": 1,
+          "type": 1,
+          "creattime": 11111
+        },
+        {
+          "id": 16,
+          "connect": "1选项四",
+          "topic_id": 1,
+          "type": 0,
+          "creattime": 11111
+        }
+      ]
+    },
+    {
+      "topic_id": 3,
+      "title": "题目三",
+      "answer_id": 8,
+      "createtime": 22222,
+      "answer": [
+        {
+          "id": 5,
+          "connect": "3选项一",
+          "topic_id": 3,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 6,
+          "connect": "3选项二",
+          "topic_id": 3,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 7,
+          "connect": "3选项三",
+          "topic_id": 3,
+          "type": 0,
+          "creattime": 1111
+        },
+        {
+          "id": 8,
+          "connect": "3选项四",
+          "topic_id": 3,
+          "type": 1,
+          "creattime": 11111
+        }
+      ]
+    },
+    {
+      "topic_id": 4,
+      "title": "题目四",
+      "answer_id": 10,
+      "createtime": 22222,
+      "answer": [
+        {
+          "id": 9,
+          "connect": "4选项一",
+          "topic_id": 4,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 10,
+          "connect": "4选项二",
+          "topic_id": 4,
+          "type": 1,
+          "creattime": 11111
+        },
+        {
+          "id": 11,
+          "connect": "4选项三",
+          "topic_id": 4,
+          "type": 0,
+          "creattime": 11111
+        },
+        {
+          "id": 12,
+          "connect": "4选项四",
+          "topic_id": 4,
+          "type": 0,
+          "creattime": 1111
+        }
+      ]
+    },
+    {
+      "topic_id": 5,
+      "title": "题目五",
+      "answer_id": 20,
+      "createtime": 111111,
+      "answer": [
+        {
+          "id": 17,
+          "connect": "5选项一",
+          "topic_id": 5,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 18,
+          "connect": "5选项二",
+          "topic_id": 5,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 19,
+          "connect": "5选项三",
+          "topic_id": 5,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 20,
+          "connect": "5选项四",
+          "topic_id": 5,
+          "type": 1,
+          "creattime": 111111
+        }
+      ]
+    },
+    {
+      "topic_id": 6,
+      "title": "题目六",
+      "answer_id": 22,
+      "createtime": 111111,
+      "answer": [
+        {
+          "id": 21,
+          "connect": "6选项一",
+          "topic_id": 6,
+          "type": 0,
+          "creattime": 111111
+        },
+        {
+          "id": 22,
+          "connect": "6选项二",
+          "topic_id": 6,
+          "type": 1,
+          "creattime": 11111
+        },
+        {
+          "id": 23,
+          "connect": "6选项三",
+          "topic_id": 6,
+          "type": 0,
+          "creattime": 11111
+        },
+        {
+          "id": 24,
+          "connect": "6选项四",
+          "topic_id": 6,
+          "type": 0,
+          "creattime": 11111
+        }
+      ]
+    }
+  ],
+  "url": "",
+  "wait": 3
+}
